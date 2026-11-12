@@ -1,0 +1,45 @@
+name: Сборка и релиз
+
+on:
+  push:
+    branches: [claude/creative-vs-project-animations-nxp313]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: microsoft/setup-msbuild@v2
+
+      - name: Сборка Forecast
+        run: msbuild Forecast\Forecast.sln /p:Configuration=Release /v:m /nologo
+
+      - name: Сборка Den1
+        run: msbuild Den1\Den1.sln /p:Configuration=Release /v:m /nologo
+
+      - name: Архивы готовых программ
+        shell: pwsh
+        run: |
+          Remove-Item Forecast\bin\Release\*.pdb -ErrorAction SilentlyContinue
+          Remove-Item Den1\Den1\bin\Release\*.pdb -ErrorAction SilentlyContinue
+          Compress-Archive -Path Forecast\bin\Release\* -DestinationPath Forecast_exe.zip
+          Compress-Archive -Path Den1\Den1\bin\Release\* -DestinationPath Den1_exe.zip
+
+      - name: Релиз
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $tag = "v1.0"
+          gh release view $tag *> $null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create $tag --target $env:GITHUB_SHA --title "Практика: Forecast и День 1 (анимированный интерфейс)" --notes-file RELEASE.md
+          } else {
+            gh release edit $tag --notes-file RELEASE.md
+          }
+          gh release upload $tag Forecast.zip Den1.zip Forecast_exe.zip Den1_exe.zip --clobber

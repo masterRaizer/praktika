@@ -1,4 +1,4 @@
-namespace Forecast.Core
+﻿namespace Forecast.Core
 {
     /// <summary>
     /// Линейная регрессия по времени (y = a + b*t, t = 1..n) как метод прогноза ряда.

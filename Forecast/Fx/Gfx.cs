@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
@@ -237,9 +237,17 @@ namespace FxKit
             }
         }
 
-        public static Form TopForm(Control c)
+        /// <summary>Часть изображения в заданный прямоугольник с прозрачностью.</summary>
+        public static void DrawImageAlpha(Graphics g, Image img, RectangleF dest, RectangleF src, float alpha)
         {
-            return c.FindForm();
+            if (img == null || alpha <= 0.003f) return;
+            var cm = new ColorMatrix { Matrix33 = Math.Min(1f, alpha) };
+            using (var ia = new ImageAttributes())
+            {
+                ia.SetColorMatrix(cm, ColorMatrixFlag.Default, ColorAdjustType.Bitmap);
+                var pts = new[] { new PointF(dest.X, dest.Y), new PointF(dest.Right, dest.Y), new PointF(dest.X, dest.Bottom) };
+                g.DrawImage(img, pts, src, GraphicsUnit.Pixel, ia);
+            }
         }
     }
 
@@ -394,7 +402,18 @@ namespace FxKit
         [DllImport("gdi32.dll", CharSet = CharSet.Unicode)]
         private static extern int AddFontResourceEx(string file, uint flags, IntPtr reserved);
 
+        [DllImport("user32.dll", CharSet = CharSet.Unicode)]
+        private static extern IntPtr SendMessage(IntPtr hWnd, int msg, IntPtr wParam, string lParam);
+
         private static bool unavailable;
+
+        /// <summary>Текст-подсказка в пустом поле ввода (стандартная возможность Windows).</summary>
+        public static void SetCue(TextBox box, string text)
+        {
+            if (unavailable || !box.IsHandleCreated) return;
+            try { SendMessage(box.Handle, 0x1501, (IntPtr)1, text ?? ""); }   // EM_SETCUEBANNER
+            catch (Exception) { }
+        }
 
         /// <summary>Делает шрифт из файла доступным системным элементам (полям ввода) этого процесса.</summary>
         public static void RegisterFont(string path)

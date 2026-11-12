@@ -1,4 +1,4 @@
-namespace Forecast.Core
+﻿namespace Forecast.Core
 {
     /// <summary>Способ задания начального значения экспоненциального сглаживания.</summary>
     public enum SesInit

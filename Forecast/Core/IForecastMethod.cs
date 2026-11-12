@@ -1,4 +1,4 @@
-namespace Forecast.Core
+﻿namespace Forecast.Core
 {
     /// <summary>
     /// Общий интерфейс методов прогнозирования временного ряда.

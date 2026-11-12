@@ -1,4 +1,4 @@
-namespace Forecast.Core
+﻿namespace Forecast.Core
 {
     /// <summary>
     /// Метод Хольта (двойное экспоненциальное сглаживание).

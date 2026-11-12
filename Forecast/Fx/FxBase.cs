@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -616,6 +616,7 @@ namespace FxKit
 
         protected override void OnPaint(PaintEventArgs e)
         {
+            e.Graphics.Clear(Theme.P.Bg);
             if (image != null) e.Graphics.DrawImageUnscaled(image, 0, 0);
             else if (painter != null) painter(e.Graphics, ClientRectangle);
             if (radius > 1)
@@ -645,11 +646,18 @@ namespace FxKit
             Animator.Run(this, "reveal", 0, max, ms, Ease.InOutCubic, delegate(float v)
             {
                 radius = v;
+                // Круглое «окно» набирается из горизонтальных полос: так область строится быстро и одинаково на любой системе.
                 var region = new Region(new Rectangle(0, 0, Width, Height));
-                using (var path = new GraphicsPath())
+                const int band = 3;
+                int yFrom = Math.Max(0, (int)(center.Y - v)), yTo = Math.Min(Height, (int)(center.Y + v) + 1);
+                for (int y = yFrom; y < yTo; y += band)
                 {
-                    path.AddEllipse(center.X - v, center.Y - v, v * 2, v * 2);
-                    region.Exclude(path);
+                    float dy = y + band / 2f - center.Y;
+                    float half = v * v - dy * dy;
+                    if (half <= 0) continue;
+                    half = (float)Math.Sqrt(half);
+                    int x0 = Math.Max(0, (int)(center.X - half)), x1 = Math.Min(Width, (int)(center.X + half) + 1);
+                    if (x1 > x0) region.Exclude(new Rectangle(x0, y, x1 - x0, band));
                 }
                 Region old = Region;
                 Region = region;

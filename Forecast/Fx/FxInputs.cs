@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -539,6 +539,9 @@ namespace FxKit
 
         public event EventHandler ValueChanged;
 
+        /// <summary>Минимальное число цифр целого значения (2 — «09» вместо «9»).</summary>
+        public int Digits = 1;
+
         public FxNumber()
         {
             focus = new AnimValue(this);
@@ -549,7 +552,12 @@ namespace FxKit
             box.GotFocus += delegate { focus.To(1f); };
             box.LostFocus += delegate { focus.To(0f, 240); Commit(); };
             box.KeyDown += Box_KeyDown;
-            box.MouseWheel += delegate(object s, MouseEventArgs e) { Step(Math.Sign(e.Delta)); };
+            box.MouseWheel += delegate(object s, MouseEventArgs e)
+            {
+                Step(Math.Sign(e.Delta));
+                var h = e as HandledMouseEventArgs;
+                if (h != null) h.Handled = true;   // иначе сообщение дойдёт до родителя и шаг выполнится дважды
+            };
             Controls.Add(box);
             repeat.Tick += delegate
             {
@@ -599,7 +607,9 @@ namespace FxKit
         private void ShowValue()
         {
             settingText = true;
-            box.Text = value.ToString("F" + decimals, CultureInfo.CurrentCulture);
+            box.Text = decimals == 0 && Digits > 1
+                ? ((long)value).ToString("D" + Digits, CultureInfo.CurrentCulture)
+                : value.ToString("F" + decimals, CultureInfo.CurrentCulture);
             settingText = false;
         }
 
@@ -741,6 +751,7 @@ namespace FxKit
                 EventHandler h = EnterPressed;
                 if (h != null) h(this, EventArgs.Empty);
             };
+            box.HandleCreated += delegate { Native.SetCue(box, placeholder); };
             Controls.Add(box);
             Cursor = Cursors.IBeam;
             ApplyTheme();
@@ -757,7 +768,7 @@ namespace FxKit
         public string Placeholder
         {
             get { return placeholder; }
-            set { placeholder = value ?? ""; Invalidate(); }
+            set { placeholder = value ?? ""; Native.SetCue(box, placeholder); }
         }
 
         public void ApplyTheme()
@@ -803,15 +814,6 @@ namespace FxKit
                 Gfx.Glow(g, r, 10, error.Value > 0.01f ? P.Bad : P.Accent, 3, 1f, (int)(44 * Math.Max(focus.Value, error.Value)));
             Gfx.FillRound(g, P.Surface2, r, 10);
             Gfx.DrawRound(g, ring, r, 10, 1f + 0.4f * Math.Max(focus.Value, error.Value));
-        }
-
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            base.OnPaint(e);
-            // подсказка рисуется поверх рамки, пока поле пустое и не в фокусе
-            box.Visible = box.Focused || box.TextLength > 0 || placeholder.Length == 0;
-            if (!box.Visible)
-                Gfx.Text(e.Graphics, placeholder, Fonts.Body(10f), P.TextMute, new RectangleF(13, 0, Width - 26, Height - 1));
         }
     }
 
