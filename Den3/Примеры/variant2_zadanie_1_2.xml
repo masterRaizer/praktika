@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StrategyData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Items>
+    <StrategyItem>
+      <Name>Консервативная</Name>
+      <Investment>90</Investment>
+      <Profit>130</Profit>
+      <Probability>0.7</Probability>
+    </StrategyItem>
+    <StrategyItem>
+      <Name>Умеренная</Name>
+      <Investment>190</Investment>
+      <Profit>295</Profit>
+      <Probability>0.65</Probability>
+    </StrategyItem>
+    <StrategyItem>
+      <Name>Агрессивная</Name>
+      <Investment>240</Investment>
+      <Profit>385</Profit>
+      <Probability>0.5</Probability>
+    </StrategyItem>
+  </Items>
+  <Budget>280</Budget>
+</StrategyData>

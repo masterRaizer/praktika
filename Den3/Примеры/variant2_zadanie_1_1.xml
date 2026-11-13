@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LaunchData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LaunchCost>110</LaunchCost>
+  <PSuccess>0.7</PSuccess>
+  <Profit>375</Profit>
+  <Loss>40</Loss>
+  <ResearchCost>10</ResearchCost>
+  <PFavGivenSuccess>0.8</PFavGivenSuccess>
+  <PUnfavGivenFailure>0.7</PUnfavGivenFailure>
+</LaunchData>
