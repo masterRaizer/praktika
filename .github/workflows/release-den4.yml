@@ -1,0 +1,28 @@
+name: Релиз диаграмм (день 4)
+
+on:
+  push:
+    branches: [ccr-243f62ed-x6fyhm]
+    paths: ['Den4/**', 'Den4.zip', '.github/workflows/release-den4.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Релиз
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="v1.1-den4"
+          if gh release view "$tag" > /dev/null 2>&1; then
+            gh release edit "$tag" --notes-file Den4/RELEASE.md
+          else
+            gh release create "$tag" --target "$GITHUB_SHA" --title "День 4: диаграммы онлайн-библиотеки" --notes-file Den4/RELEASE.md
+          fi
+          gh release upload "$tag" Den4.zip Den4/*.png Den4/*.drawio --clobber
