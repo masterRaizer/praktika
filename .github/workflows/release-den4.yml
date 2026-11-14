@@ -25,4 +25,14 @@ jobs:
           else
             gh release create "$tag" --target "$GITHUB_SHA" --title "День 4: диаграммы онлайн-библиотеки" --notes-file Den4/RELEASE.md
           fi
-          gh release upload "$tag" Den4.zip Den4/*.png Den4/*.drawio --clobber
+          # GitHub вырезает кириллицу из имён файлов релиза, поэтому прикладываем копии с латинскими именами
+          mkdir out
+          for ext in png drawio; do
+            cp "Den4/Диаграмма_классов.$ext" "out/class-diagram.$ext"
+            cp "Den4/Диаграмма_вариантов_использования.$ext" "out/use-case-diagram.$ext"
+            cp "Den4/Диаграмма_сущность-связь.$ext" "out/er-diagram.$ext"
+          done
+          for name in $(gh release view "$tag" --json assets --jq '.assets[].name'); do
+            gh release delete-asset "$tag" "$name" --yes
+          done
+          gh release upload "$tag" Den4.zip out/* --clobber
