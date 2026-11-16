@@ -1,0 +1,39 @@
+name: Релиз UML (день 1)
+
+on:
+  push:
+    branches: [claude/modest-einstein-rjcvzn]
+    paths:
+      - 'UML_Den1/**'
+      - '.github/release-notes/den1-uml.md'
+      - '.github/workflows/release-den1-uml.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Файлы релиза
+        run: |
+          mkdir dist
+          zip -r dist/Den1_UML.zip UML_Den1
+          cp "UML_Den1/Отчёт_День1_UML.pdf" dist/Den1_UML_Otchet.pdf
+          cp UML_Den1/usecase.png UML_Den1/activity.png UML_Den1/usecase.drawio UML_Den1/activity.drawio dist/
+
+      - name: Релиз
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="den1-uml-v1.0"
+          notes=".github/release-notes/den1-uml.md"
+          if gh release view "$tag" > /dev/null 2>&1; then
+            gh release edit "$tag" --notes-file "$notes"
+          else
+            gh release create "$tag" --target "$GITHUB_SHA" --title "День 1: анализ предметной области и UML (кинотеатр)" --notes-file "$notes"
+          fi
+          gh release upload "$tag" dist/* --clobber
