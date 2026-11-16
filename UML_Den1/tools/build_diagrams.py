@@ -298,49 +298,51 @@ def render_drawio(d):
 
 # ---------------------------------------------------------------- Use Case
 def use_case():
-    d = Diagram("usecase", 1580, 1080)
-    d.boundary = ("Система онлайн-продажи билетов «Киноточка»", 270, 30, 1300, 1050)
+    d = Diagram("usecase", 1600, 1100)
+    d.boundary = ("Система онлайн-продажи билетов «Киноточка»", 270, 30, 1310, 1070)
 
-    d.node("Guest", "actor", 125, 230, "Гость")
-    d.node("Viewer", "actor", 125, 580, "Зритель")
-    d.node("Cashier", "actor", 125, 890, "Кассир")
-    d.node("Admin", "actor", 1450, 270, "Администратор")
-    d.node("PaySys", "actor", 1450, 780, "Платёжная система", stereo="«внешняя система»")
+    d.node("Viewer", "actor", 125, 420, "Зритель")
+    d.node("Cashier", "actor", 125, 930, "Кассир")
+    d.node("PaySys", "actor", 1470, 560, "Платёжная система", stereo="«внешняя система»")
+    d.node("Admin", "actor", 1470, 880, "Администратор")
 
-    A, B, C = 480, 830, 1120
+    A, B, C = 480, 830, 1140
     for nid, x, y, t in [
-        ("Poster", A, 120, "Просмотреть афишу"),
-        ("Find", A, 192, "Найти фильм"),
-        ("Hall", A, 264, "Просмотреть схему зала"),
-        ("Reg", A, 336, "Зарегистрироваться"),
-        ("History", A, 460, "Просмотреть историю покупок"),
-        ("Buy", A, 580, "Купить билет"),
-        ("Refund", A, 710, "Вернуть билет"),
+        ("Find", A, 120, "Найти фильм в афише"),
+        ("Card", A, 240, "Просмотреть карточку фильма"),
+        ("Buy", A, 400, "Купить билет"),
+        ("MyTickets", A, 620, "Просмотреть мои билеты"),
         ("Sell", A, 860, "Продать билет в кассе"),
-        ("Check", A, 960, "Проверить билет на входе"),
-        ("Mail", B, 440, "Отправить билет на e-mail"),
-        ("Session", B, 520, "Выбрать сеанс"),
-        ("Seats", B, 600, "Выбрать места"),
-        ("Pay", B, 680, "Оплатить заказ"),
-        ("Promo", C, 590, "Применить промокод"),
-        ("Film", C, 140, "Добавить фильм"),
-        ("Schedule", C, 220, "Составить расписание сеансов"),
-        ("Price", C, 300, "Установить цены"),
-        ("Report", C, 380, "Сформировать отчёт о продажах"),
+        ("Check", A, 980, "Проверить билет на входе"),
+        ("Info", B + 70, 240, "Просмотреть сеансы и отзывы"),
+        ("Login", B, 330, "Войти в систему"),
+        ("Seats", B, 430, "Выбрать сеанс и места"),
+        ("Pay", B, 530, "Оплатить заказ"),
+        ("Refund", B, 660, "Вернуть билет"),
+        ("Reg", C, 330, "Зарегистрироваться"),
+        ("Cost", C, 430, "Рассчитать стоимость"),
+        ("Films", C, 730, "Добавить / скрыть фильм"),
+        ("Schedule", C, 810, "Составить расписание сеансов"),
+        ("Price", C, 890, "Установить цены и скидки"),
+        ("Stats", C, 970, "Просмотреть статистику продаж"),
     ]:
         d.node(nid, "usecase", x, y, t, fs=14)
 
-    d.edge("Viewer", "Guest", "gen")
-    for a, ucs in [("Guest", ["Poster", "Find", "Hall", "Reg"]),
-                   ("Viewer", ["History", "Buy", "Refund"]),
-                   ("Cashier", ["Refund", "Sell", "Check"]),
-                   ("Admin", ["Film", "Schedule", "Price", "Report"])]:
+    for a, ucs in [("Viewer", ["Find", "Card", "Buy", "MyTickets"]),
+                   ("Cashier", ["Sell", "Check"]),
+                   ("Admin", ["Films", "Schedule", "Price", "Stats"])]:
         for uc in ucs:
             d.edge(a, uc, "assoc")
-    for t in ["Mail", "Session", "Seats", "Pay"]:
-        d.edge("Buy", t, "include", "«include»", lpos=0.55)
-    d.edge("Sell", "Seats", "include", "«include»", lpos=0.4)
-    d.edge("Promo", "Pay", "extend", "«extend»")
+    inc, ext = "«include»", "«extend»"
+    d.edge("Find", "Card", "include", inc)
+    d.edge("Card", "Info", "include", inc)
+    d.edge("Buy", "Card", "extend", ext)
+    d.edge("Buy", "Login", "include", inc, lpos=0.55)
+    d.edge("Reg", "Login", "extend", ext)
+    d.edge("Buy", "Seats", "include", inc)
+    d.edge("Buy", "Pay", "include", inc, lpos=0.55)
+    d.edge("Seats", "Cost", "include", inc)
+    d.edge("Refund", "MyTickets", "extend", ext)
     d.edge("Pay", "PaySys", "assoc")
     d.edge("Refund", "PaySys", "assoc")
     return d
@@ -348,95 +350,87 @@ def use_case():
 
 # ---------------------------------------------------------------- Activity
 def activity():
-    d = Diagram("activity", 1400, 2110)
+    d = Diagram("activity", 1400, 2020)
     d.title = ("Диаграмма деятельности: покупка билета онлайн", 700, 32)
-    V, S, SL, SR, P = 190, 780, 520, 1010, 1260
-    top, bottom = 60, 2090
+    V, S, SL, SR, P = 190, 780, 520, 1010, 1250
+    top, bottom = 60, 2000
     d.lanes = [("Зритель", 20, 380, top, bottom, LANE_COLORS[0]),
                ("Система «Киноточка»", 380, 1120, top, bottom, LANE_COLORS[1]),
                ("Платёжная система", 1120, 1380, top, bottom, LANE_COLORS[2])]
 
     n = d.node
-    n("start", "start", V, 130)
-    n("a_poster", "action", V, 200, "Открыть афишу")
-    n("a_film", "action", V, 280, "Выбрать фильм и сеанс")
-    n("a_hall", "action", S, 280, "Показать схему зала\nсо свободными местами")
-    n("a_seats", "action", V, 380, "Выбрать места")
-    n("a_check", "action", S, 380, "Проверить, свободны\nли выбранные места")
-    n("d_free", "decision", S, 470, "Места\nсвободны?")
-    n("a_busy", "action", SL, 470, "Сообщить, что места\nзаняты, обновить схему")
-    n("a_lock", "action", S, 560, "Заблокировать места\nна 15 минут, создать заказ", w=230)
-    n("d_auth", "decision", S, 650, "Зритель\nавторизован?")
-    n("a_login", "action", V, 650, "Войти или\nзарегистрироваться")
-    n("m_auth", "merge", S, 740)
-    n("a_review", "action", V, 830, "Проверить\nсостав заказа")
-    n("d_promo", "decision", V, 920, "Есть\nпромокод?")
-    n("a_promo", "action", V, 1010, "Ввести промокод")
-    n("d_valid", "decision", S, 1080, "Промокод\nдействителен?")
-    n("a_disc", "action", SL, 1080, "Пересчитать стоимость\nсо скидкой")
-    n("a_bad", "action", SR, 1080, "Сообщить: «Промокод\nнедействителен»", w=196)
-    n("m_valid", "merge", S, 1170)
-    n("m_promo", "merge", V, 1240)
-    n("m_pay", "merge", V, 1310)
-    n("a_card", "action", V, 1390, "Ввести данные карты\nи подтвердить оплату")
-    n("a_proc", "action", P, 1390, "Обработать платёж", w=200)
-    n("d_paid", "decision", S, 1480, "Оплата\nпрошла?")
-    n("d_time", "decision", SL, 1480, "Время брони\nистекло?")
-    n("a_unlock", "action", SL, 1575, "Снять блокировку мест")
-    n("a_cancel", "action", SL, 1665, "Отменить заказ")
-    n("a_notify", "action", V, 1665, "Получить уведомление\nоб отмене заказа")
-    n("end_fail", "end", V, 1750)
-    n("a_issue", "action", S, 1575, "Оформить билеты,\nсгенерировать QR-коды")
-    n("a_sold", "action", S, 1665, "Отметить места\nкак проданные")
-    n("fork", "bar", 840, 1740, w=420)
-    n("a_mail", "action", 735, 1820, "Отправить билеты\nна e-mail", w=190)
-    n("a_hist", "action", 960, 1820, "Добавить заказ\nв историю покупок", w=190)
-    n("join", "bar", 840, 1900, w=420)
-    n("a_ticket", "action", V, 1970, "Получить\nэлектронный билет")
-    n("end_ok", "end", V, 2045)
+    n("start", "start", V, 125)
+    n("a_open", "action", V, 190, "Открыть афишу кинотеатра")
+    n("m_query", "merge", V, 260)
+    n("a_query", "action", V, 335, "Ввести запрос: название,\nдата, жанр")
+    n("a_search", "action", S, 335, "Найти фильмы\nпо запросу")
+    n("d_found", "decision", S, 425, "Фильмы\nнайдены?")
+    n("a_none", "action", SR, 425, "Сообщить\n«Ничего не найдено»", w=196)
+    n("a_card", "action", V, 520, "Выбрать фильм, открыть\nкарточку: описание,\nсеансы, отзывы", h=64)
+    n("d_buy", "decision", V, 620, "Купить\nбилет?")
+    n("d_auth", "decision", S, 710, "Вход\nвыполнен?")
+    n("a_login", "action", V, 710, "Войти или\nзарегистрироваться")
+    n("m_auth", "merge", S, 800)
+    n("a_session", "action", V, 885, "Выбрать дату\nи сеанс")
+    n("a_hall", "action", S, 885, "Показать схему зала\nсо свободными местами")
+    n("m_seats", "merge", V, 960)
+    n("a_seats", "action", V, 1035, "Выбрать места")
+    n("a_check", "action", S, 1035, "Проверить, свободны\nли выбранные места")
+    n("d_free", "decision", S, 1125, "Места\nсвободны?")
+    n("a_busy", "action", SL, 1125, "Сообщить, что места\nзаняты, обновить схему")
+    n("a_lock", "action", S, 1215, "Заблокировать места на 15 мин,\nрассчитать стоимость со скидкой", w=270)
+    n("m_pay", "merge", V, 1305)
+    n("a_pay", "action", V, 1385, "Проверить заказ, ввести\nданные карты, оплатить")
+    n("a_proc", "action", P, 1385, "Обработать платёж", w=200)
+    n("d_paid", "decision", S, 1475, "Оплата\nпрошла?")
+    n("d_time", "decision", SL, 1475, "Время брони\nистекло?")
+    n("a_unlock", "action", SL, 1570, "Снять блокировку мест")
+    n("a_cancel", "action", SL, 1660, "Отменить заказ")
+    n("a_notify", "action", V, 1660, "Получить уведомление\nоб отмене заказа")
+    n("end_fail", "end", V, 1745)
+    n("a_issue", "action", S, 1570, "Оформить билеты,\nсгенерировать QR-коды")
+    n("a_mail", "action", S, 1660, "Отправить билеты\nна e-mail")
+    n("a_ticket", "action", V, 1850, "Получить\nэлектронный билет")
+    n("end_ok", "end", V, 1935)
 
     e = d.edge
-    e("start", "a_poster", out="b", inn="t")
-    e("a_poster", "a_film", out="b", inn="t")
-    e("a_film", "a_hall", out="r", inn="l")
-    e("a_hall", "a_seats", out="b", inn="t", via=[(S, 330), (V, 330)])
+    e("start", "a_open", out="b", inn="t")
+    e("a_open", "m_query", out="b", inn="t")
+    e("m_query", "a_query", out="b", inn="t")
+    e("a_query", "a_search", out="r", inn="l")
+    e("a_search", "d_found", out="b", inn="t")
+    e("d_found", "a_none", label="нет", out="r", inn="l")
+    e("a_none", "m_query", out="t", inn="r", via=[(SR, 260)])
+    e("d_found", "a_card", label="да", out="b", inn="t", via=[(S, 475), (V, 475)], lpos=0.06)
+    e("a_card", "d_buy", out="b", inn="t")
+    e("d_buy", "m_query", label="нет", out="l", inn="l",
+      via=[(50, 620), (50, 260)], lpos=0.04)
+    e("d_buy", "d_auth", label="да", out="b", inn="t", via=[(V, 662), (S, 662)], lpos=0.1)
+    e("d_auth", "a_login", label="нет", out="l", inn="r", lpos=0.2)
+    e("d_auth", "m_auth", label="да", out="b", inn="t", lpos=0.35)
+    e("a_login", "m_auth", out="b", inn="l", via=[(V, 800)])
+    e("m_auth", "a_session", out="b", inn="t", via=[(S, 840), (V, 840)])
+    e("a_session", "a_hall", out="r", inn="l")
+    e("a_hall", "m_seats", out="b", inn="r", via=[(S, 960)])
+    e("m_seats", "a_seats", out="b", inn="t")
     e("a_seats", "a_check", out="r", inn="l")
     e("a_check", "d_free", out="b", inn="t")
     e("d_free", "a_busy", label="нет", out="l", inn="r")
-    e("a_busy", "a_seats", out="l", inn="l", via=[(50, 470), (50, 380)])
+    e("a_busy", "m_seats", out="l", inn="l", via=[(50, 1125), (50, 960)])
     e("d_free", "a_lock", label="да", out="b", inn="t", lpos=0.35)
-    e("a_lock", "d_auth", out="b", inn="t")
-    e("d_auth", "a_login", label="нет", out="l", inn="r", lpos=0.2)
-    e("d_auth", "m_auth", label="да", out="b", inn="t", lpos=0.35)
-    e("a_login", "m_auth", out="b", inn="l", via=[(V, 740)])
-    e("m_auth", "a_review", out="b", inn="t", via=[(S, 780), (V, 780)])
-    e("a_review", "d_promo", out="b", inn="t")
-    e("d_promo", "a_promo", label="да", out="b", inn="t", lpos=0.4)
-    e("d_promo", "m_promo", label="нет", out="l", inn="l", via=[(50, 920), (50, 1240)], lpos=0.04)
-    e("a_promo", "d_valid", out="r", inn="t", via=[(S, 1010)])
-    e("d_valid", "a_disc", label="да", out="l", inn="r")
-    e("d_valid", "a_bad", label="нет", out="r", inn="l")
-    e("a_disc", "m_valid", out="b", inn="l", via=[(SL, 1170)])
-    e("a_bad", "m_valid", out="b", inn="r", via=[(SR, 1170)])
-    e("m_valid", "m_promo", out="b", inn="r", via=[(S, 1240)])
-    e("m_promo", "m_pay", out="b", inn="t")
-    e("m_pay", "a_card", out="b", inn="t")
-    e("a_card", "a_proc", out="r", inn="l")
-    e("a_proc", "d_paid", out="b", inn="r", via=[(P, 1480)])
+    e("a_lock", "m_pay", out="b", inn="t", via=[(S, 1265), (V, 1265)])
+    e("m_pay", "a_pay", out="b", inn="t")
+    e("a_pay", "a_proc", out="r", inn="l")
+    e("a_proc", "d_paid", out="b", inn="r", via=[(P, 1475)])
     e("d_paid", "d_time", label="нет", out="l", inn="r")
-    e("d_time", "m_pay", label="нет —\nповторить", out="l", inn="l", via=[(50, 1480), (50, 1310)], lpos=0.12)
+    e("d_time", "m_pay", label="нет —\nповторить", out="l", inn="l", via=[(50, 1475), (50, 1305)], lpos=0.12)
     e("d_time", "a_unlock", label="да", out="b", inn="t", lpos=0.35)
     e("a_unlock", "a_cancel", out="b", inn="t")
     e("a_cancel", "a_notify", out="l", inn="r")
     e("a_notify", "end_fail", out="b", inn="t")
     e("d_paid", "a_issue", label="да", out="b", inn="t", lpos=0.35)
-    e("a_issue", "a_sold", out="b", inn="t")
-    e("a_sold", "fork", out="b", inn="t", via=[(S, 1740)])
-    e("fork", "a_mail", out="b", inn="t", via=[(735, 1744)])
-    e("fork", "a_hist", out="b", inn="t", via=[(960, 1744)])
-    e("a_mail", "join", out="b", inn="t", via=[(735, 1896)])
-    e("a_hist", "join", out="b", inn="t", via=[(960, 1896)])
-    e("join", "a_ticket", out="b", inn="r", via=[(840, 1904), (840, 1970)])
+    e("a_issue", "a_mail", out="b", inn="t")
+    e("a_mail", "a_ticket", out="b", inn="r", via=[(S, 1850)])
     e("a_ticket", "end_ok", out="b", inn="t")
     return d
 
