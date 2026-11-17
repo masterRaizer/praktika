@@ -312,6 +312,7 @@ def use_case():
         ("Card", A, 240, "Просмотреть карточку фильма"),
         ("Buy", A, 400, "Купить билет"),
         ("MyTickets", A, 620, "Просмотреть мои билеты"),
+        ("ReviewUC", A, 740, "Оставить отзыв"),
         ("Sell", A, 860, "Продать билет в кассе"),
         ("Check", A, 980, "Проверить билет на входе"),
         ("Info", B + 70, 240, "Просмотреть сеансы и отзывы"),
@@ -343,6 +344,7 @@ def use_case():
     d.edge("Buy", "Pay", "include", inc, lpos=0.55)
     d.edge("Seats", "Cost", "include", inc)
     d.edge("Refund", "MyTickets", "extend", ext)
+    d.edge("ReviewUC", "MyTickets", "extend", ext)
     d.edge("Pay", "PaySys", "assoc")
     d.edge("Refund", "PaySys", "assoc")
     return d

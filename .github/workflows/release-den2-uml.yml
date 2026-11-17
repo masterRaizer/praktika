@@ -1,0 +1,39 @@
+name: Релиз UML (день 2)
+
+on:
+  push:
+    branches: [claude/modest-einstein-rjcvzn]
+    paths:
+      - 'UML_Den2/**'
+      - '.github/release-notes/den2-uml.md'
+      - '.github/workflows/release-den2-uml.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Файлы релиза
+        run: |
+          mkdir dist
+          zip -r dist/Den2_UML.zip UML_Den2
+          cp "UML_Den2/Отчёт_День2_UML.pdf" dist/Den2_UML_Otchet.pdf
+          cp UML_Den2/state.png UML_Den2/class.png UML_Den2/state.drawio UML_Den2/class.drawio dist/
+
+      - name: Релиз
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="den2-uml-v1.0"
+          notes=".github/release-notes/den2-uml.md"
+          if gh release view "$tag" > /dev/null 2>&1; then
+            gh release edit "$tag" --notes-file "$notes"
+          else
+            gh release create "$tag" --target "$GITHUB_SHA" --title "День 2: моделирование состояний и классов (кинотеатр)" --notes-file "$notes"
+          fi
+          gh release upload "$tag" dist/* --clobber

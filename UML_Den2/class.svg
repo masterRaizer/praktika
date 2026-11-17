@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1660" height="1110" viewBox="0 0 1660 1110">
+<rect width="1660" height="1110" fill="#FFFFFF"/>
+<text x="830.0" y="40.0" font-family="DejaVu Sans" font-size="22" font-weight="bold" fill="#1F2937" text-anchor="middle">Диаграмма классов системы «Киноточка»</text>
+<polyline points="230.0,463.0 230.0,229.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-dasharray="7,5"/>
+<polyline points="223.5,242.0 230.0,229.0 236.5,242.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="630.0,463.0 630.0,286.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-dasharray="7,5"/>
+<polyline points="623.5,299.0 630.0,286.0 636.5,299.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="380.0,533.0 480.0,533.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="780.0,523.0 890.0,523.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="780.0,650.0 1280.0,650.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1430.0,463.0 1430.0,373.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1430.0,669.0 1430.0,854.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1280.0,914.0 1170.0,914.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1280.0,914.0 1269.0,921.0 1258.0,914.0 1269.0,907.0" fill="#475569" stroke="#475569" stroke-width="1.2"/>
+<polyline points="780.0,914.0 890.0,914.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="630.0,764.0 630.0,854.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="630.0,764.0 637.0,775.0 630.0,786.0 623.0,775.0" fill="#475569" stroke="#475569" stroke-width="1.2"/>
+<polyline points="520.0,764.0 520.0,821.0 230.0,821.0 230.0,854.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1170.0,170.0 1280.0,170.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="940.0,110.0 940.0,92.0 40.0,92.0 40.0,503.0 80.0,503.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<rect x="100.0" y="110" width="260" height="119" fill="#FFF7ED" stroke="#B45309" stroke-width="1.6"/>
+<rect x="100.0" y="110" width="260" height="52" fill="#FCE9D2" stroke="#B45309" stroke-width="1.6"/>
+<text x="230.0" y="131.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">«enumeration»</text>
+<text x="230.0" y="151.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Роль</text>
+<text x="110.0" y="181.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">ЗРИТЕЛЬ</text>
+<text x="110.0" y="200.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">КАССИР</text>
+<text x="110.0" y="219.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">АДМИНИСТРАТОР</text>
+<rect x="500.0" y="110" width="260" height="176" fill="#FFF7ED" stroke="#B45309" stroke-width="1.6"/>
+<rect x="500.0" y="110" width="260" height="52" fill="#FCE9D2" stroke="#B45309" stroke-width="1.6"/>
+<text x="630.0" y="131.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">«enumeration»</text>
+<text x="630.0" y="151.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">СтатусЗаказа</text>
+<text x="510.0" y="181.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">ЗАБРОНИРОВАН</text>
+<text x="510.0" y="200.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">ОПЛАЧИВАЕТСЯ</text>
+<text x="510.0" y="219.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">ОПЛАЧЕН</text>
+<text x="510.0" y="238.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">ЗАВЕРШЁН</text>
+<text x="510.0" y="257.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">ОТМЕНЁН</text>
+<text x="510.0" y="276.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">ВОЗВРАЩЁН</text>
+<rect x="890.0" y="110" width="280" height="149" fill="#F3F7FC" stroke="#2B4C7E" stroke-width="1.6"/>
+<rect x="890.0" y="110" width="280" height="34" fill="#E2EBF7" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="1030.0" y="133.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Отзыв</text>
+<text x="900.0" y="163.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">id: int</text>
+<text x="900.0" y="182.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">оценка: int (1–5)</text>
+<text x="900.0" y="201.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">текст: string</text>
+<text x="900.0" y="220.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">дата: DateTime</text>
+<line x1="890.0" y1="230" x2="1170.0" y2="230" stroke="#2B4C7E" stroke-width="1.2"/>
+<text x="900.0" y="249.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">оставить(): bool</text>
+<rect x="1280.0" y="110" width="300" height="263" fill="#F3F7FC" stroke="#2B4C7E" stroke-width="1.6"/>
+<rect x="1280.0" y="110" width="300" height="34" fill="#E2EBF7" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="1430.0" y="133.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Фильм</text>
+<text x="1290.0" y="163.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">id: int</text>
+<text x="1290.0" y="182.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">название: string</text>
+<text x="1290.0" y="201.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">жанр: string</text>
+<text x="1290.0" y="220.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">длительностьМин: int</text>
+<text x="1290.0" y="239.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">возрастнойРейтинг: string</text>
+<text x="1290.0" y="258.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">описание: string</text>
+<text x="1290.0" y="277.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">активен: bool</text>
+<line x1="1280.0" y1="287" x2="1580.0" y2="287" stroke="#2B4C7E" stroke-width="1.2"/>
+<text x="1290.0" y="306.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">найти(запрос): List&lt;Фильм&gt;</text>
+<text x="1290.0" y="325.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">получитьСеансы(дата): List&lt;Сеанс&gt;</text>
+<text x="1290.0" y="344.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">рейтинг(): decimal</text>
+<text x="1290.0" y="363.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">скрыть(): void</text>
+<rect x="80.0" y="463" width="300" height="225" fill="#F3F7FC" stroke="#2B4C7E" stroke-width="1.6"/>
+<rect x="80.0" y="463" width="300" height="34" fill="#E2EBF7" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="230.0" y="486.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Пользователь</text>
+<text x="90.0" y="516.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">id: int</text>
+<text x="90.0" y="535.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">ФИО: string</text>
+<text x="90.0" y="554.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">email: string</text>
+<text x="90.0" y="573.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">телефон: string</text>
+<text x="90.0" y="592.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">хешПароля: string</text>
+<text x="90.0" y="611.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">роль: Роль</text>
+<line x1="80.0" y1="621" x2="380.0" y2="621" stroke="#2B4C7E" stroke-width="1.2"/>
+<text x="90.0" y="640.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">войти(email, пароль): bool</text>
+<text x="90.0" y="659.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">зарегистрироваться(): bool</text>
+<text x="90.0" y="678.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">выйти(): void</text>
+<rect x="480.0" y="463" width="300" height="301" fill="#F3F7FC" stroke="#2B4C7E" stroke-width="1.6"/>
+<rect x="480.0" y="463" width="300" height="34" fill="#E2EBF7" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="630.0" y="486.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Заказ</text>
+<text x="490.0" y="516.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">id: int</text>
+<text x="490.0" y="535.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">датаСоздания: DateTime</text>
+<text x="490.0" y="554.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">броньДо: DateTime</text>
+<text x="490.0" y="573.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">сумма: decimal</text>
+<text x="490.0" y="592.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">скидка: decimal</text>
+<text x="490.0" y="611.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">итого: decimal</text>
+<text x="490.0" y="630.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">статус: СтатусЗаказа</text>
+<line x1="480.0" y1="640" x2="780.0" y2="640" stroke="#2B4C7E" stroke-width="1.2"/>
+<text x="490.0" y="659.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">рассчитатьСтоимость(): decimal</text>
+<text x="490.0" y="678.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">применитьПромокод(код): bool</text>
+<text x="490.0" y="697.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">оплатить(): bool</text>
+<text x="490.0" y="716.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">отменить(): void</text>
+<text x="490.0" y="735.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">вернуть(): bool</text>
+<text x="490.0" y="754.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">выручкаЗаПериод(с, по): decimal</text>
+<rect x="890.0" y="463" width="280" height="168" fill="#F3F7FC" stroke="#2B4C7E" stroke-width="1.6"/>
+<rect x="890.0" y="463" width="280" height="34" fill="#E2EBF7" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="1030.0" y="486.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Промокод</text>
+<text x="900.0" y="516.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">код: string</text>
+<text x="900.0" y="535.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">скидкаПроцент: int</text>
+<text x="900.0" y="554.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">действуетДо: DateTime</text>
+<text x="900.0" y="573.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">активен: bool</text>
+<line x1="890.0" y1="583" x2="1170.0" y2="583" stroke="#2B4C7E" stroke-width="1.2"/>
+<text x="900.0" y="602.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">проверить(): bool</text>
+<text x="900.0" y="621.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">применить(сумма): decimal</text>
+<rect x="1280.0" y="463" width="300" height="206" fill="#F3F7FC" stroke="#2B4C7E" stroke-width="1.6"/>
+<rect x="1280.0" y="463" width="300" height="34" fill="#E2EBF7" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="1430.0" y="486.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Сеанс</text>
+<text x="1290.0" y="516.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">id: int</text>
+<text x="1290.0" y="535.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">датаВремя: DateTime</text>
+<text x="1290.0" y="554.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">формат: string</text>
+<text x="1290.0" y="573.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">базоваяЦена: decimal</text>
+<line x1="1280.0" y1="583" x2="1580.0" y2="583" stroke="#2B4C7E" stroke-width="1.2"/>
+<text x="1290.0" y="602.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">свободныеМеста(): List&lt;Место&gt;</text>
+<text x="1290.0" y="621.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">заблокироватьМеста(места): bool</text>
+<text x="1290.0" y="640.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">освободитьМеста(места): void</text>
+<text x="1290.0" y="659.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">заполняемость(): decimal</text>
+<rect x="80.0" y="854" width="300" height="206" fill="#F3F7FC" stroke="#2B4C7E" stroke-width="1.6"/>
+<rect x="80.0" y="854" width="300" height="34" fill="#E2EBF7" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="230.0" y="877.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Платёж</text>
+<text x="90.0" y="907.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">id: int</text>
+<text x="90.0" y="926.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">сумма: decimal</text>
+<text x="90.0" y="945.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">тип: string (оплата / возврат)</text>
+<text x="90.0" y="964.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">транзакцияБанка: string</text>
+<text x="90.0" y="983.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">успешен: bool</text>
+<text x="90.0" y="1002.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">дата: DateTime</text>
+<line x1="80.0" y1="1012" x2="380.0" y2="1012" stroke="#2B4C7E" stroke-width="1.2"/>
+<text x="90.0" y="1031.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">провести(): bool</text>
+<text x="90.0" y="1050.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">вернутьДеньги(): bool</text>
+<rect x="480.0" y="854" width="300" height="168" fill="#F3F7FC" stroke="#2B4C7E" stroke-width="1.6"/>
+<rect x="480.0" y="854" width="300" height="34" fill="#E2EBF7" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="630.0" y="877.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Билет</text>
+<text x="490.0" y="907.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">id: int</text>
+<text x="490.0" y="926.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">цена: decimal</text>
+<text x="490.0" y="945.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">qrКод: string</text>
+<text x="490.0" y="964.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">использован: bool</text>
+<line x1="480.0" y1="974" x2="780.0" y2="974" stroke="#2B4C7E" stroke-width="1.2"/>
+<text x="490.0" y="993.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">сгенерироватьQR(): string</text>
+<text x="490.0" y="1012.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">проверитьНаВходе(): bool</text>
+<rect x="890.0" y="854" width="280" height="168" fill="#F3F7FC" stroke="#2B4C7E" stroke-width="1.6"/>
+<rect x="890.0" y="854" width="280" height="34" fill="#E2EBF7" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="1030.0" y="877.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Место</text>
+<text x="900.0" y="907.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">id: int</text>
+<text x="900.0" y="926.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">ряд: int</text>
+<text x="900.0" y="945.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">номер: int</text>
+<text x="900.0" y="964.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">тип: string</text>
+<text x="900.0" y="983.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">коэффициентЦены: decimal</text>
+<line x1="890.0" y1="993" x2="1170.0" y2="993" stroke="#2B4C7E" stroke-width="1.2"/>
+<text x="900.0" y="1012.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">цена(сеанс): decimal</text>
+<rect x="1280.0" y="854" width="300" height="149" fill="#F3F7FC" stroke="#2B4C7E" stroke-width="1.6"/>
+<rect x="1280.0" y="854" width="300" height="34" fill="#E2EBF7" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="1430.0" y="877.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Зал</text>
+<text x="1290.0" y="907.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">id: int</text>
+<text x="1290.0" y="926.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">номер: int</text>
+<text x="1290.0" y="945.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">рядов: int</text>
+<text x="1290.0" y="964.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">местВРяду: int</text>
+<line x1="1280.0" y1="974" x2="1580.0" y2="974" stroke="#2B4C7E" stroke-width="1.2"/>
+<text x="1290.0" y="993.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="start">схемаМест(): List&lt;Место&gt;</text>
+<rect x="235.0" y="337.0" width="42.0" height="19.6" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="238.0" y="350.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">«use»</text>
+<rect x="635.0" y="365.5" width="42.0" height="19.6" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="638.0" y="378.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">«use»</text>
+<rect x="385.0" y="511.0" width="13.8" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="388.0" y="525.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">1</text>
+<rect x="437.8" y="511.0" width="37.2" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="472.0" y="525.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="end">0..*</text>
+<rect x="394.6" y="538.0" width="70.8" height="19.6" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="430.0" y="551.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">оформляет</text>
+<rect x="785.0" y="501.0" width="37.2" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="788.0" y="515.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">0..*</text>
+<rect x="847.8" y="501.0" width="37.2" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="882.0" y="515.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="end">0..1</text>
+<rect x="803.2" y="528.0" width="63.6" height="19.6" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="835.0" y="541.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">применён</text>
+<rect x="785.0" y="628.0" width="37.2" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="788.0" y="642.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">0..*</text>
+<rect x="1261.2" y="628.0" width="13.8" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="1272.0" y="642.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="end">1</text>
+<rect x="1193.2" y="655.0" width="63.6" height="19.6" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="1225.0" y="668.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">на сеанс</text>
+<rect x="1435.0" y="439.0" width="37.2" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="1438.0" y="453.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">0..*</text>
+<rect x="1435.0" y="379.0" width="13.8" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="1438.0" y="393.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">1</text>
+<rect x="1347.0" y="409.0" width="78.0" height="19.6" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="1422.0" y="422.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="end" font-style="italic">показывает</text>
+<rect x="1435.0" y="675.0" width="37.2" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="1438.0" y="689.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">0..*</text>
+<rect x="1435.0" y="830.0" width="13.8" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="1438.0" y="844.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">1</text>
+<rect x="1347.0" y="752.5" width="78.0" height="19.6" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="1422.0" y="765.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="end" font-style="italic">проходит в</text>
+<rect x="1243.2" y="890.0" width="13.8" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="1254.0" y="904.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="end">1</text>
+<rect x="1175.0" y="892.0" width="37.2" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="1178.0" y="906.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">1..*</text>
+<rect x="785.0" y="892.0" width="37.2" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="788.0" y="906.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">0..*</text>
+<rect x="871.2" y="892.0" width="13.8" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="882.0" y="906.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="end">1</text>
+<rect x="803.2" y="919.0" width="63.6" height="19.6" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="835.0" y="932.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">на место</text>
+<rect x="639.0" y="784.0" width="13.8" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="642.0" y="798.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">1</text>
+<rect x="635.0" y="830.0" width="37.2" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="638.0" y="844.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">1..*</text>
+<rect x="559.4" y="800.0" width="63.6" height="19.6" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="620.0" y="813.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="end" font-style="italic">содержит</text>
+<rect x="525.0" y="770.0" width="13.8" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="528.0" y="784.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">1</text>
+<rect x="235.0" y="830.0" width="37.2" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="238.0" y="844.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">0..*</text>
+<rect x="328.8" y="800.0" width="92.4" height="19.6" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="375.0" y="813.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">оплачивается</text>
+<rect x="1175.0" y="148.0" width="37.2" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="1178.0" y="162.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">0..*</text>
+<rect x="1261.2" y="148.0" width="13.8" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="1272.0" y="162.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="end">1</text>
+<rect x="1193.2" y="175.0" width="63.6" height="19.6" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="1225.0" y="188.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">о фильме</text>
+<rect x="945.0" y="70.0" width="37.2" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="948.0" y="84.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="start">0..*</text>
+<rect x="61.2" y="481.0" width="13.8" height="20.9" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="72.0" y="495.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="end">1</text>
+<rect x="669.0" y="73.0" width="42.0" height="19.6" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="690.0" y="86.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">пишет</text>
+</svg>
