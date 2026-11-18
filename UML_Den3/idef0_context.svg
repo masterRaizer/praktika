@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="720" viewBox="0 0 1500 720">
+<rect width="1500" height="720" fill="#FFFFFF"/>
+<text x="750.0" y="40.0" font-family="DejaVu Sans" font-size="22" font-weight="bold" fill="#1F2937" text-anchor="middle">IDEF0, контекстная диаграмма A-0</text>
+<polyline points="60.0,300.0 560.0,300.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="548.0,294.5 560.0,300.0 548.0,305.5" fill="#475569"/>
+<polyline points="60.0,340.0 560.0,340.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="548.0,334.5 560.0,340.0 548.0,345.5" fill="#475569"/>
+<polyline points="60.0,380.0 560.0,380.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="548.0,374.5 560.0,380.0 548.0,385.5" fill="#475569"/>
+<polyline points="60.0,420.0 560.0,420.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="548.0,414.5 560.0,420.0 548.0,425.5" fill="#475569"/>
+<polyline points="600.0,120.0 600.0,270.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="605.5,258.0 600.0,270.0 594.5,258.0" fill="#475569"/>
+<polyline points="750.0,176.0 750.0,270.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="755.5,258.0 750.0,270.0 744.5,258.0" fill="#475569"/>
+<polyline points="900.0,214.0 900.0,270.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="905.5,258.0 900.0,270.0 894.5,258.0" fill="#475569"/>
+<polyline points="940.0,315.0 1440.0,315.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1428.0,309.5 1440.0,315.0 1428.0,320.5" fill="#475569"/>
+<polyline points="940.0,360.0 1440.0,360.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1428.0,354.5 1440.0,360.0 1428.0,365.5" fill="#475569"/>
+<polyline points="940.0,405.0 1440.0,405.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1428.0,399.5 1440.0,405.0 1428.0,410.5" fill="#475569"/>
+<polyline points="610.0,560.0 610.0,450.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="604.5,462.0 610.0,450.0 615.5,462.0" fill="#475569"/>
+<polyline points="700.0,610.0 700.0,450.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="694.5,462.0 700.0,450.0 705.5,462.0" fill="#475569"/>
+<polyline points="800.0,560.0 800.0,450.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="794.5,462.0 800.0,450.0 805.5,462.0" fill="#475569"/>
+<polyline points="890.0,610.0 890.0,450.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="884.5,462.0 890.0,450.0 895.5,462.0" fill="#475569"/>
+<rect x="560" y="270" width="380" height="180" rx="0" fill="#F3F7FC" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="750.0" y="355.2" font-family="DejaVu Sans" font-size="17" font-weight="bold" fill="#1F2937" text-anchor="middle">Продавать билеты</text><text x="750.0" y="377.0" font-family="DejaVu Sans" font-size="17" font-weight="bold" fill="#1F2937" text-anchor="middle">в кинотеатр «Киноточка»</text>
+<text x="932.0" y="442.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#2B4C7E" text-anchor="end">A0</text>
+<rect x="67.0" y="280.0" width="265.2" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="70.0" y="293.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">запрос зрителя: название, дата, жанр</text>
+<rect x="67.0" y="320.0" width="222.0" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="70.0" y="333.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">выбранные места и данные карты</text>
+<rect x="67.0" y="360.0" width="250.8" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="70.0" y="373.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">данные регистрации, логин и пароль</text>
+<rect x="67.0" y="400.0" width="294.0" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="70.0" y="413.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">данные о фильмах, залах, сеансах и ценах</text>
+<rect x="605.0" y="109.0" width="308.4" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="608.0" y="122.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">правила продажи и возврата</text>
+<text x="608.0" y="137.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">(бронь 15 минут, возврат до начала сеанса)</text>
+<rect x="755.0" y="165.0" width="164.4" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="758.0" y="178.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">ролевая модель доступа</text>
+<rect x="905.0" y="203.0" width="200.4" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="908.0" y="216.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">закон о персональных данных</text>
+<text x="908.0" y="231.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">(пароли только в виде хеша)</text>
+<rect x="951.0" y="295.0" width="222.0" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="954.0" y="308.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">электронные билеты с QR-кодами</text>
+<rect x="951.0" y="340.0" width="265.2" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="954.0" y="353.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">уведомления на e-mail, возврат денег</text>
+<rect x="951.0" y="385.0" width="243.6" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="954.0" y="398.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">отчёты о продажах и заполняемости</text>
+<rect x="560.2" y="565.0" width="99.6" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="610.0" y="578.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">Администратор</text>
+<rect x="675.4" y="615.0" width="49.2" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="700.0" y="628.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">Кассир</text>
+<rect x="735.8" y="565.0" width="128.4" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="800.0" y="578.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">Платёжная система</text>
+<rect x="811.4" y="615.0" width="157.2" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="890.0" y="628.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">БД «Киноточка» (СУБД)</text>
+<text x="60.0" y="684.3" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">Слева — входы, сверху — управление, справа — выходы, снизу — механизмы (исполнители).</text>
+</svg>

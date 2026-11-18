@@ -1,0 +1,40 @@
+name: Релиз функциональной модели (день 3)
+
+on:
+  push:
+    branches: [claude/modest-einstein-rjcvzn]
+    paths:
+      - 'UML_Den3/**'
+      - '.github/release-notes/den3-func.md'
+      - '.github/workflows/release-den3-func.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Файлы релиза
+        run: |
+          mkdir dist
+          zip -r dist/Den3_Func.zip UML_Den3
+          cp "UML_Den3/Отчёт_День3.pdf" dist/Den3_Otchet.pdf
+          cp UML_Den3/hierarchy.png UML_Den3/idef0_context.png UML_Den3/idef0_a0.png dist/
+          cp UML_Den3/hierarchy.drawio UML_Den3/idef0_context.drawio UML_Den3/idef0_a0.drawio UML_Den3/functions.csv dist/
+
+      - name: Релиз
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="den3-func-v1.0"
+          notes=".github/release-notes/den3-func.md"
+          if gh release view "$tag" > /dev/null 2>&1; then
+            gh release edit "$tag" --notes-file "$notes"
+          else
+            gh release create "$tag" --target "$GITHUB_SHA" --title "День 3: функциональная модель системы (кинотеатр)" --notes-file "$notes"
+          fi
+          gh release upload "$tag" dist/* --clobber
