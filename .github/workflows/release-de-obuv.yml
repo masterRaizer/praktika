@@ -1,0 +1,56 @@
+name: Демоэкзамен — задание 2 (сборка и релиз)
+
+on:
+  push:
+    branches: [claude/modest-einstein-rjcvzn]
+    paths:
+      - 'DE_Obuv/**'
+      - '.github/release-notes/de-obuv.md'
+      - '.github/workflows/release-de-obuv.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Архив исходников
+        shell: pwsh
+        run: Compress-Archive -Path DE_Obuv -DestinationPath DE_Obuv_src.zip
+
+      - uses: microsoft/setup-msbuild@v2
+
+      - name: Сборка
+        run: msbuild DE_Obuv\src\ShagShoes.sln /p:Configuration=Release /v:m /nologo
+
+      - name: Проверки модуля цены
+        shell: pwsh
+        run: |
+          & DE_Obuv\src\ShagShoes.Tests\bin\Release\ShagShoes.Tests.exe
+          if ($LASTEXITCODE -ne 0) { throw "Проверки не пройдены" }
+
+      - name: Файлы релиза
+        shell: pwsh
+        run: |
+          Remove-Item DE_Obuv\src\ShagShoes\bin\Release\*.pdb -ErrorAction SilentlyContinue
+          Compress-Archive -Path DE_Obuv\src\ShagShoes\bin\Release\* -DestinationPath ShagShoes_exe.zip
+          Copy-Item DE_Obuv\db\ShagShoes.sql .
+          Copy-Item DE_Obuv\algorithms\algorithm_system.png, DE_Obuv\algorithms\algorithm_price.png, DE_Obuv\algorithms\algorithm_system.drawio, DE_Obuv\algorithms\algorithm_price.drawio .
+
+      - name: Релиз
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $tag = "de-obuv-task2-v1.0"
+          gh release view $tag *> $null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create $tag --target $env:GITHUB_SHA --title "Демоэкзамен, задание 2: «Шаг» — каталог обуви" --notes-file .github/release-notes/de-obuv.md
+          } else {
+            gh release edit $tag --notes-file .github/release-notes/de-obuv.md
+          }
+          gh release upload $tag ShagShoes_exe.zip DE_Obuv_src.zip ShagShoes.sql algorithm_system.png algorithm_price.png algorithm_system.drawio algorithm_price.drawio --clobber
