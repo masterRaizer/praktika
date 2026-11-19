@@ -46,10 +46,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          $tag = "de-obuv-task2-v1.0"
+          $tag = "den4-2026-11-19"
           gh release view $tag *> $null
           if ($LASTEXITCODE -ne 0) {
-            gh release create $tag --target $env:GITHUB_SHA --title "Демоэкзамен, задание 2: «Шаг» — каталог обуви" --notes-file .github/release-notes/de-obuv.md
+            gh release create $tag --target $env:GITHUB_SHA --title "День 4 — 19.11.2026: демоэкзамен, задание 2 «Шаг» — каталог обуви" --notes-file .github/release-notes/de-obuv.md
           } else {
             gh release edit $tag --notes-file .github/release-notes/de-obuv.md
           }
