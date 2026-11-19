@@ -1,0 +1,40 @@
+name: Релиз базы данных (день 4)
+
+on:
+  push:
+    branches: [claude/modest-einstein-rjcvzn]
+    paths:
+      - 'UML_Den4/**'
+      - '.github/release-notes/den4-db.md'
+      - '.github/workflows/release-den4-db.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Файлы релиза
+        run: |
+          mkdir dist
+          zip -r dist/Den4_DB.zip UML_Den4
+          cp "UML_Den4/Отчёт_День4.pdf" dist/Den4_Otchet.pdf
+          cp UML_Den4/sql/01_create.sql UML_Den4/sql/02_data.sql UML_Den4/sql/03_queries.sql dist/
+          cp UML_Den4/er.png UML_Den4/er.drawio dist/
+
+      - name: Релиз
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="den4-db-v1.0"
+          notes=".github/release-notes/den4-db.md"
+          if gh release view "$tag" > /dev/null 2>&1; then
+            gh release edit "$tag" --notes-file "$notes"
+          else
+            gh release create "$tag" --target "$GITHUB_SHA" --title "День 4: база данных «Киноточка» (MS SQL Server)" --notes-file "$notes"
+          fi
+          gh release upload "$tag" dist/* --clobber

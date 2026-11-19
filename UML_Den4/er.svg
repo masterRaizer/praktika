@@ -1,0 +1,365 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1770" height="1132" viewBox="0 0 1770 1132">
+<rect width="1770" height="1132" fill="#FFFFFF"/>
+<text x="885.0" y="42.0" font-family="DejaVu Sans" font-size="22" font-weight="bold" fill="#1F2937" text-anchor="middle">ER-диаграмма базы данных «Киноточка»</text>
+<polyline points="210.0,197.0 210.0,372.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="202.0" y1="206.0" x2="218.0" y2="206.0" stroke="#475569" stroke-width="1.6"/><line x1="202.0" y1="213.0" x2="218.0" y2="213.0" stroke="#475569" stroke-width="1.6"/>
+<line x1="210.0" y1="356.0" x2="201.0" y2="372.0" stroke="#475569" stroke-width="1.6"/><line x1="210.0" y1="356.0" x2="210.0" y2="372.0" stroke="#475569" stroke-width="1.6"/><line x1="210.0" y1="356.0" x2="219.0" y2="372.0" stroke="#475569" stroke-width="1.6"/><circle cx="210.0" cy="346.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<polyline points="380.0,406.0 435.0,406.0 435.0,114.0 490.0,114.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="389.0" y1="414.0" x2="389.0" y2="398.0" stroke="#475569" stroke-width="1.6"/><line x1="396.0" y1="414.0" x2="396.0" y2="398.0" stroke="#475569" stroke-width="1.6"/>
+<line x1="474.0" y1="114.0" x2="490.0" y2="123.0" stroke="#475569" stroke-width="1.6"/><line x1="474.0" y1="114.0" x2="490.0" y2="114.0" stroke="#475569" stroke-width="1.6"/><line x1="474.0" y1="114.0" x2="490.0" y2="105.0" stroke="#475569" stroke-width="1.6"/><circle cx="464.0" cy="114.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<polyline points="940.0,140.0 830.0,140.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="931.0" y1="132.0" x2="931.0" y2="148.0" stroke="#475569" stroke-width="1.6"/><line x1="924.0" y1="132.0" x2="924.0" y2="148.0" stroke="#475569" stroke-width="1.6"/>
+<line x1="846.0" y1="140.0" x2="830.0" y2="131.0" stroke="#475569" stroke-width="1.6"/><line x1="846.0" y1="140.0" x2="830.0" y2="140.0" stroke="#475569" stroke-width="1.6"/><line x1="846.0" y1="140.0" x2="830.0" y2="149.0" stroke="#475569" stroke-width="1.6"/><circle cx="856.0" cy="140.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1390.0,140.0 1280.0,140.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="1381.0" y1="132.0" x2="1381.0" y2="148.0" stroke="#475569" stroke-width="1.6"/><line x1="1374.0" y1="132.0" x2="1374.0" y2="148.0" stroke="#475569" stroke-width="1.6"/>
+<line x1="1296.0" y1="140.0" x2="1280.0" y2="131.0" stroke="#475569" stroke-width="1.6"/><line x1="1296.0" y1="140.0" x2="1280.0" y2="140.0" stroke="#475569" stroke-width="1.6"/><line x1="1296.0" y1="140.0" x2="1280.0" y2="149.0" stroke="#475569" stroke-width="1.6"/><circle cx="1306.0" cy="140.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<polyline points="380.0,442.0 490.0,442.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="390.0" y1="450.0" x2="390.0" y2="434.0" stroke="#475569" stroke-width="1.6"/><circle cx="402.0" cy="442.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<line x1="474.0" y1="442.0" x2="490.0" y2="451.0" stroke="#475569" stroke-width="1.6"/><line x1="474.0" y1="442.0" x2="490.0" y2="442.0" stroke="#475569" stroke-width="1.6"/><line x1="474.0" y1="442.0" x2="490.0" y2="433.0" stroke="#475569" stroke-width="1.6"/><circle cx="464.0" cy="442.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<rect x="399.0" y="426.0" width="72.0" height="13" fill="#FFFFFF"/>
+<text x="435.0" y="436.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">покупатель</text>
+<polyline points="380.0,484.0 490.0,484.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="390.0" y1="492.0" x2="390.0" y2="476.0" stroke="#475569" stroke-width="1.6"/><circle cx="402.0" cy="484.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<line x1="474.0" y1="484.0" x2="490.0" y2="493.0" stroke="#475569" stroke-width="1.6"/><line x1="474.0" y1="484.0" x2="490.0" y2="484.0" stroke="#475569" stroke-width="1.6"/><line x1="474.0" y1="484.0" x2="490.0" y2="475.0" stroke="#475569" stroke-width="1.6"/><circle cx="464.0" cy="484.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<rect x="412.2" y="468.0" width="45.6" height="13" fill="#FFFFFF"/>
+<text x="435.0" y="478.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">кассир</text>
+<polyline points="940.0,462.0 830.0,462.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="931.0" y1="454.0" x2="931.0" y2="470.0" stroke="#475569" stroke-width="1.6"/><line x1="924.0" y1="454.0" x2="924.0" y2="470.0" stroke="#475569" stroke-width="1.6"/>
+<line x1="846.0" y1="462.0" x2="830.0" y2="453.0" stroke="#475569" stroke-width="1.6"/><line x1="846.0" y1="462.0" x2="830.0" y2="462.0" stroke="#475569" stroke-width="1.6"/><line x1="846.0" y1="462.0" x2="830.0" y2="471.0" stroke="#475569" stroke-width="1.6"/><circle cx="856.0" cy="462.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1110.0,302.0 1110.0,372.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="1102.0" y1="311.0" x2="1118.0" y2="311.0" stroke="#475569" stroke-width="1.6"/><line x1="1102.0" y1="318.0" x2="1118.0" y2="318.0" stroke="#475569" stroke-width="1.6"/>
+<line x1="1110.0" y1="356.0" x2="1101.0" y2="372.0" stroke="#475569" stroke-width="1.6"/><line x1="1110.0" y1="356.0" x2="1110.0" y2="372.0" stroke="#475569" stroke-width="1.6"/><line x1="1110.0" y1="356.0" x2="1119.0" y2="372.0" stroke="#475569" stroke-width="1.6"/><circle cx="1110.0" cy="346.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1390.0,442.0 1280.0,442.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="1381.0" y1="434.0" x2="1381.0" y2="450.0" stroke="#475569" stroke-width="1.6"/><line x1="1374.0" y1="434.0" x2="1374.0" y2="450.0" stroke="#475569" stroke-width="1.6"/>
+<line x1="1296.0" y1="442.0" x2="1280.0" y2="433.0" stroke="#475569" stroke-width="1.6"/><line x1="1296.0" y1="442.0" x2="1280.0" y2="442.0" stroke="#475569" stroke-width="1.6"/><line x1="1296.0" y1="442.0" x2="1280.0" y2="451.0" stroke="#475569" stroke-width="1.6"/><circle cx="1306.0" cy="442.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1560.0,531.0 1560.0,664.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="1552.0" y1="540.0" x2="1568.0" y2="540.0" stroke="#475569" stroke-width="1.6"/><line x1="1552.0" y1="547.0" x2="1568.0" y2="547.0" stroke="#475569" stroke-width="1.6"/>
+<line x1="1560.0" y1="648.0" x2="1551.0" y2="664.0" stroke="#475569" stroke-width="1.6"/><line x1="1560.0" y1="648.0" x2="1560.0" y2="664.0" stroke="#475569" stroke-width="1.6"/><line x1="1560.0" y1="648.0" x2="1569.0" y2="664.0" stroke="#475569" stroke-width="1.6"/><line x1="1568.0" y1="642.0" x2="1552.0" y2="642.0" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1560.0,935.0 1560.0,823.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="1568.0" y1="926.0" x2="1552.0" y2="926.0" stroke="#475569" stroke-width="1.6"/><line x1="1568.0" y1="919.0" x2="1552.0" y2="919.0" stroke="#475569" stroke-width="1.6"/>
+<line x1="1560.0" y1="839.0" x2="1569.0" y2="823.0" stroke="#475569" stroke-width="1.6"/><line x1="1560.0" y1="839.0" x2="1560.0" y2="823.0" stroke="#475569" stroke-width="1.6"/><line x1="1560.0" y1="839.0" x2="1551.0" y2="823.0" stroke="#475569" stroke-width="1.6"/><circle cx="1560.0" cy="849.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1390.0,734.0 1280.0,734.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="1381.0" y1="726.0" x2="1381.0" y2="742.0" stroke="#475569" stroke-width="1.6"/><line x1="1374.0" y1="726.0" x2="1374.0" y2="742.0" stroke="#475569" stroke-width="1.6"/>
+<line x1="1296.0" y1="734.0" x2="1280.0" y2="725.0" stroke="#475569" stroke-width="1.6"/><line x1="1296.0" y1="734.0" x2="1280.0" y2="734.0" stroke="#475569" stroke-width="1.6"/><line x1="1296.0" y1="734.0" x2="1280.0" y2="743.0" stroke="#475569" stroke-width="1.6"/><circle cx="1306.0" cy="734.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<polyline points="830.0,564.0 885.0,564.0 885.0,704.0 940.0,704.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="839.0" y1="572.0" x2="839.0" y2="556.0" stroke="#475569" stroke-width="1.6"/><line x1="846.0" y1="572.0" x2="846.0" y2="556.0" stroke="#475569" stroke-width="1.6"/>
+<line x1="924.0" y1="704.0" x2="940.0" y2="713.0" stroke="#475569" stroke-width="1.6"/><line x1="924.0" y1="704.0" x2="940.0" y2="704.0" stroke="#475569" stroke-width="1.6"/><line x1="924.0" y1="704.0" x2="940.0" y2="695.0" stroke="#475569" stroke-width="1.6"/><line x1="918.0" y1="696.0" x2="918.0" y2="712.0" stroke="#475569" stroke-width="1.6"/>
+<polyline points="660.0,594.0 660.0,664.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="652.0" y1="603.0" x2="668.0" y2="603.0" stroke="#475569" stroke-width="1.6"/><line x1="652.0" y1="610.0" x2="668.0" y2="610.0" stroke="#475569" stroke-width="1.6"/>
+<line x1="660.0" y1="648.0" x2="651.0" y2="664.0" stroke="#475569" stroke-width="1.6"/><line x1="660.0" y1="648.0" x2="660.0" y2="664.0" stroke="#475569" stroke-width="1.6"/><line x1="660.0" y1="648.0" x2="669.0" y2="664.0" stroke="#475569" stroke-width="1.6"/><circle cx="660.0" cy="638.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<polyline points="380.0,704.0 415.0,704.0 415.0,522.0 490.0,522.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="390.0" y1="712.0" x2="390.0" y2="696.0" stroke="#475569" stroke-width="1.6"/><circle cx="402.0" cy="704.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<line x1="474.0" y1="522.0" x2="490.0" y2="531.0" stroke="#475569" stroke-width="1.6"/><line x1="474.0" y1="522.0" x2="490.0" y2="522.0" stroke="#475569" stroke-width="1.6"/><line x1="474.0" y1="522.0" x2="490.0" y2="513.0" stroke="#475569" stroke-width="1.6"/><circle cx="464.0" cy="522.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<polyline points="380.0,975.0 455.0,975.0 455.0,558.0 490.0,558.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<line x1="389.0" y1="983.0" x2="389.0" y2="967.0" stroke="#475569" stroke-width="1.6"/><line x1="396.0" y1="983.0" x2="396.0" y2="967.0" stroke="#475569" stroke-width="1.6"/>
+<line x1="474.0" y1="558.0" x2="490.0" y2="567.0" stroke="#475569" stroke-width="1.6"/><line x1="474.0" y1="558.0" x2="490.0" y2="558.0" stroke="#475569" stroke-width="1.6"/><line x1="474.0" y1="558.0" x2="490.0" y2="549.0" stroke="#475569" stroke-width="1.6"/><circle cx="464.0" cy="558.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<rect x="40" y="80" width="340" height="117" fill="#FFFFFF" stroke="#B45309" stroke-width="1.6"/>
+<rect x="40" y="80" width="340" height="46" fill="#FDEBD3" stroke="#B45309" stroke-width="1.6"/>
+<text x="52.0" y="100.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="start">Roles</text>
+<text x="52.0" y="117.0" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">Роли</text>
+<rect x="41" y="130" width="338" height="21" fill="#FDEBD3" fill-opacity="0.45"/>
+<text x="50.0" y="145.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start">PK</text>
+<text x="104.0" y="145.0" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" fill="#1F2937" text-anchor="start">RoleId</text>
+<text x="370.0" y="145.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="50.0" y="166.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start">UQ</text>
+<text x="104.0" y="166.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Code</text>
+<text x="370.0" y="166.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(20)</text>
+<text x="50.0" y="187.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start"></text>
+<text x="104.0" y="187.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Name</text>
+<text x="370.0" y="187.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(50)</text>
+<rect x="490" y="80" width="340" height="180" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.6"/>
+<rect x="490" y="80" width="340" height="46" fill="#DCE9FA" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="502.0" y="100.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="start">Reviews</text>
+<text x="502.0" y="117.0" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">Отзывы</text>
+<rect x="491" y="130" width="338" height="21" fill="#DCE9FA" fill-opacity="0.45"/>
+<text x="500.0" y="145.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2B4C7E" text-anchor="start">PK</text>
+<text x="554.0" y="145.0" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" fill="#1F2937" text-anchor="start">ReviewId</text>
+<text x="820.0" y="145.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="500.0" y="166.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2B4C7E" text-anchor="start">FK,UQ</text>
+<text x="554.0" y="166.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">UserId</text>
+<text x="820.0" y="166.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="500.0" y="187.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2B4C7E" text-anchor="start">FK,UQ</text>
+<text x="554.0" y="187.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">FilmId</text>
+<text x="820.0" y="187.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="500.0" y="208.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2B4C7E" text-anchor="start"></text>
+<text x="554.0" y="208.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Rating</text>
+<text x="820.0" y="208.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">tinyint</text>
+<text x="500.0" y="229.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2B4C7E" text-anchor="start"></text>
+<text x="554.0" y="229.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#64748B" text-anchor="start">Text</text>
+<text x="820.0" y="229.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(1000) NULL</text>
+<text x="500.0" y="250.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2B4C7E" text-anchor="start"></text>
+<text x="554.0" y="250.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">CreatedAt</text>
+<text x="820.0" y="250.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">datetime2(0)</text>
+<rect x="940" y="80" width="340" height="222" fill="#FFFFFF" stroke="#2F7A47" stroke-width="1.6"/>
+<rect x="940" y="80" width="340" height="46" fill="#DDF1E3" stroke="#2F7A47" stroke-width="1.6"/>
+<text x="952.0" y="100.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="start">Films</text>
+<text x="952.0" y="117.0" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">Фильмы</text>
+<rect x="941" y="130" width="338" height="21" fill="#DDF1E3" fill-opacity="0.45"/>
+<text x="950.0" y="145.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start">PK</text>
+<text x="1004.0" y="145.0" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" fill="#1F2937" text-anchor="start">FilmId</text>
+<text x="1270.0" y="145.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="950.0" y="166.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start"></text>
+<text x="1004.0" y="166.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Title</text>
+<text x="1270.0" y="166.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(150)</text>
+<text x="950.0" y="187.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start">FK</text>
+<text x="1004.0" y="187.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">GenreId</text>
+<text x="1270.0" y="187.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="950.0" y="208.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start"></text>
+<text x="1004.0" y="208.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">DurationMin</text>
+<text x="1270.0" y="208.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">smallint</text>
+<text x="950.0" y="229.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start"></text>
+<text x="1004.0" y="229.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">AgeRating</text>
+<text x="1270.0" y="229.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(3)</text>
+<text x="950.0" y="250.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start"></text>
+<text x="1004.0" y="250.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#64748B" text-anchor="start">Description</text>
+<text x="1270.0" y="250.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(1000) NULL</text>
+<text x="950.0" y="271.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start"></text>
+<text x="1004.0" y="271.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#64748B" text-anchor="start">PosterPath</text>
+<text x="1270.0" y="271.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(260) NULL</text>
+<text x="950.0" y="292.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start"></text>
+<text x="1004.0" y="292.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">IsActive</text>
+<text x="1270.0" y="292.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">bit</text>
+<rect x="1390" y="80" width="340" height="96" fill="#FFFFFF" stroke="#B45309" stroke-width="1.6"/>
+<rect x="1390" y="80" width="340" height="46" fill="#FDEBD3" stroke="#B45309" stroke-width="1.6"/>
+<text x="1402.0" y="100.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="start">Genres</text>
+<text x="1402.0" y="117.0" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">Жанры</text>
+<rect x="1391" y="130" width="338" height="21" fill="#FDEBD3" fill-opacity="0.45"/>
+<text x="1400.0" y="145.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start">PK</text>
+<text x="1454.0" y="145.0" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" fill="#1F2937" text-anchor="start">GenreId</text>
+<text x="1720.0" y="145.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="1400.0" y="166.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start">UQ</text>
+<text x="1454.0" y="166.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Name</text>
+<text x="1720.0" y="166.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(50)</text>
+<rect x="40" y="372" width="340" height="222" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.6"/>
+<rect x="40" y="372" width="340" height="46" fill="#DCE9FA" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="52.0" y="392.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="start">Users</text>
+<text x="52.0" y="409.0" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">Пользователи</text>
+<rect x="41" y="422" width="338" height="21" fill="#DCE9FA" fill-opacity="0.45"/>
+<text x="50.0" y="437.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2B4C7E" text-anchor="start">PK</text>
+<text x="104.0" y="437.0" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" fill="#1F2937" text-anchor="start">UserId</text>
+<text x="370.0" y="437.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="50.0" y="458.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2B4C7E" text-anchor="start"></text>
+<text x="104.0" y="458.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">FullName</text>
+<text x="370.0" y="458.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(100)</text>
+<text x="50.0" y="479.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2B4C7E" text-anchor="start">UQ</text>
+<text x="104.0" y="479.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Email</text>
+<text x="370.0" y="479.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(100)</text>
+<text x="50.0" y="500.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2B4C7E" text-anchor="start"></text>
+<text x="104.0" y="500.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#64748B" text-anchor="start">Phone</text>
+<text x="370.0" y="500.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(20) NULL</text>
+<text x="50.0" y="521.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2B4C7E" text-anchor="start"></text>
+<text x="104.0" y="521.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">PasswordHash</text>
+<text x="370.0" y="521.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(200)</text>
+<text x="50.0" y="542.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2B4C7E" text-anchor="start">FK</text>
+<text x="104.0" y="542.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">RoleId</text>
+<text x="370.0" y="542.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="50.0" y="563.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2B4C7E" text-anchor="start"></text>
+<text x="104.0" y="563.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">IsBlocked</text>
+<text x="370.0" y="563.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">bit</text>
+<text x="50.0" y="584.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2B4C7E" text-anchor="start"></text>
+<text x="104.0" y="584.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">CreatedAt</text>
+<text x="370.0" y="584.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">datetime2(0)</text>
+<rect x="490" y="372" width="340" height="222" fill="#FFFFFF" stroke="#B4234A" stroke-width="1.6"/>
+<rect x="490" y="372" width="340" height="46" fill="#FBE0E6" stroke="#B4234A" stroke-width="1.6"/>
+<text x="502.0" y="392.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="start">Orders</text>
+<text x="502.0" y="409.0" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">Заказы</text>
+<rect x="491" y="422" width="338" height="21" fill="#FBE0E6" fill-opacity="0.45"/>
+<text x="500.0" y="437.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start">PK</text>
+<text x="554.0" y="437.0" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" fill="#1F2937" text-anchor="start">OrderId</text>
+<text x="820.0" y="437.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="500.0" y="458.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start">FK</text>
+<text x="554.0" y="458.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#64748B" text-anchor="start">UserId</text>
+<text x="820.0" y="458.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int NULL</text>
+<text x="500.0" y="479.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start">FK</text>
+<text x="554.0" y="479.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#64748B" text-anchor="start">CashierId</text>
+<text x="820.0" y="479.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int NULL</text>
+<text x="500.0" y="500.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start">FK</text>
+<text x="554.0" y="500.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">SessionId</text>
+<text x="820.0" y="500.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="500.0" y="521.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start">FK</text>
+<text x="554.0" y="521.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#64748B" text-anchor="start">PromoCodeId</text>
+<text x="820.0" y="521.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int NULL</text>
+<text x="500.0" y="542.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start">FK</text>
+<text x="554.0" y="542.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">StatusId</text>
+<text x="820.0" y="542.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="500.0" y="563.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start"></text>
+<text x="554.0" y="563.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">CreatedAt</text>
+<text x="820.0" y="563.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">datetime2(0)</text>
+<text x="500.0" y="584.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start"></text>
+<text x="554.0" y="584.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">ReservedUntil</text>
+<text x="820.0" y="584.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">datetime2(0)</text>
+<rect x="940" y="372" width="340" height="180" fill="#FFFFFF" stroke="#2F7A47" stroke-width="1.6"/>
+<rect x="940" y="372" width="340" height="46" fill="#DDF1E3" stroke="#2F7A47" stroke-width="1.6"/>
+<text x="952.0" y="392.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="start">Sessions</text>
+<text x="952.0" y="409.0" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">Сеансы</text>
+<rect x="941" y="422" width="338" height="21" fill="#DDF1E3" fill-opacity="0.45"/>
+<text x="950.0" y="437.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start">PK</text>
+<text x="1004.0" y="437.0" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" fill="#1F2937" text-anchor="start">SessionId</text>
+<text x="1270.0" y="437.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="950.0" y="458.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start">FK</text>
+<text x="1004.0" y="458.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">FilmId</text>
+<text x="1270.0" y="458.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="950.0" y="479.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start">FK,UQ</text>
+<text x="1004.0" y="479.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">HallId</text>
+<text x="1270.0" y="479.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="950.0" y="500.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start">UQ</text>
+<text x="1004.0" y="500.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">StartsAt</text>
+<text x="1270.0" y="500.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">datetime2(0)</text>
+<text x="950.0" y="521.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start"></text>
+<text x="1004.0" y="521.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Format</text>
+<text x="1270.0" y="521.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(10)</text>
+<text x="950.0" y="542.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start"></text>
+<text x="1004.0" y="542.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">BasePrice</text>
+<text x="1270.0" y="542.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">decimal(10,2)</text>
+<rect x="1390" y="372" width="340" height="159" fill="#FFFFFF" stroke="#2F7A47" stroke-width="1.6"/>
+<rect x="1390" y="372" width="340" height="46" fill="#DDF1E3" stroke="#2F7A47" stroke-width="1.6"/>
+<text x="1402.0" y="392.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="start">Halls</text>
+<text x="1402.0" y="409.0" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">Залы</text>
+<rect x="1391" y="422" width="338" height="21" fill="#DDF1E3" fill-opacity="0.45"/>
+<text x="1400.0" y="437.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start">PK</text>
+<text x="1454.0" y="437.0" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" fill="#1F2937" text-anchor="start">HallId</text>
+<text x="1720.0" y="437.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="1400.0" y="458.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start">UQ</text>
+<text x="1454.0" y="458.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Number</text>
+<text x="1720.0" y="458.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">tinyint</text>
+<text x="1400.0" y="479.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start"></text>
+<text x="1454.0" y="479.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Name</text>
+<text x="1720.0" y="479.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(50)</text>
+<text x="1400.0" y="500.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start"></text>
+<text x="1454.0" y="500.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">RowsCount</text>
+<text x="1720.0" y="500.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">tinyint</text>
+<text x="1400.0" y="521.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start"></text>
+<text x="1454.0" y="521.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">SeatsPerRow</text>
+<text x="1720.0" y="521.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">tinyint</text>
+<rect x="40" y="664" width="340" height="159" fill="#FFFFFF" stroke="#B45309" stroke-width="1.6"/>
+<rect x="40" y="664" width="340" height="46" fill="#FDEBD3" stroke="#B45309" stroke-width="1.6"/>
+<text x="52.0" y="684.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="start">PromoCodes</text>
+<text x="52.0" y="701.0" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">Промокоды</text>
+<rect x="41" y="714" width="338" height="21" fill="#FDEBD3" fill-opacity="0.45"/>
+<text x="50.0" y="729.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start">PK</text>
+<text x="104.0" y="729.0" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" fill="#1F2937" text-anchor="start">PromoCodeId</text>
+<text x="370.0" y="729.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="50.0" y="750.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start">UQ</text>
+<text x="104.0" y="750.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Code</text>
+<text x="370.0" y="750.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(30)</text>
+<text x="50.0" y="771.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start"></text>
+<text x="104.0" y="771.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">DiscountPercent</text>
+<text x="370.0" y="771.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">tinyint</text>
+<text x="50.0" y="792.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start"></text>
+<text x="104.0" y="792.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">ValidUntil</text>
+<text x="370.0" y="792.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">date</text>
+<text x="50.0" y="813.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start"></text>
+<text x="104.0" y="813.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">IsActive</text>
+<text x="370.0" y="813.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">bit</text>
+<rect x="490" y="664" width="340" height="201" fill="#FFFFFF" stroke="#B4234A" stroke-width="1.6"/>
+<rect x="490" y="664" width="340" height="46" fill="#FBE0E6" stroke="#B4234A" stroke-width="1.6"/>
+<text x="502.0" y="684.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="start">Payments</text>
+<text x="502.0" y="701.0" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">Платежи</text>
+<rect x="491" y="714" width="338" height="21" fill="#FBE0E6" fill-opacity="0.45"/>
+<text x="500.0" y="729.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start">PK</text>
+<text x="554.0" y="729.0" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" fill="#1F2937" text-anchor="start">PaymentId</text>
+<text x="820.0" y="729.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="500.0" y="750.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start">FK</text>
+<text x="554.0" y="750.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">OrderId</text>
+<text x="820.0" y="750.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="500.0" y="771.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start"></text>
+<text x="554.0" y="771.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Kind</text>
+<text x="820.0" y="771.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(10)</text>
+<text x="500.0" y="792.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start"></text>
+<text x="554.0" y="792.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Amount</text>
+<text x="820.0" y="792.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">decimal(10,2)</text>
+<text x="500.0" y="813.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start">UQ</text>
+<text x="554.0" y="813.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">BankTransactionId</text>
+<text x="820.0" y="813.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(50)</text>
+<text x="500.0" y="834.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start"></text>
+<text x="554.0" y="834.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">IsSuccessful</text>
+<text x="820.0" y="834.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">bit</text>
+<text x="500.0" y="855.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start"></text>
+<text x="554.0" y="855.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">CreatedAt</text>
+<text x="820.0" y="855.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">datetime2(0)</text>
+<rect x="940" y="664" width="340" height="180" fill="#FFFFFF" stroke="#B4234A" stroke-width="1.6"/>
+<rect x="940" y="664" width="340" height="46" fill="#FBE0E6" stroke="#B4234A" stroke-width="1.6"/>
+<text x="952.0" y="684.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="start">Tickets</text>
+<text x="952.0" y="701.0" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">Билеты</text>
+<rect x="941" y="714" width="338" height="21" fill="#FBE0E6" fill-opacity="0.45"/>
+<text x="950.0" y="729.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start">PK</text>
+<text x="1004.0" y="729.0" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" fill="#1F2937" text-anchor="start">TicketId</text>
+<text x="1270.0" y="729.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="950.0" y="750.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start">FK,UQ</text>
+<text x="1004.0" y="750.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">OrderId</text>
+<text x="1270.0" y="750.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="950.0" y="771.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start">FK,UQ</text>
+<text x="1004.0" y="771.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">SeatId</text>
+<text x="1270.0" y="771.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="950.0" y="792.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start"></text>
+<text x="1004.0" y="792.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Price</text>
+<text x="1270.0" y="792.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">decimal(10,2)</text>
+<text x="950.0" y="813.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start">UQ</text>
+<text x="1004.0" y="813.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">QrCode</text>
+<text x="1270.0" y="813.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">uniqueidentifier</text>
+<text x="950.0" y="834.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B4234A" text-anchor="start"></text>
+<text x="1004.0" y="834.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#64748B" text-anchor="start">UsedAt</text>
+<text x="1270.0" y="834.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">datetime2(0) NULL</text>
+<rect x="1390" y="664" width="340" height="159" fill="#FFFFFF" stroke="#2F7A47" stroke-width="1.6"/>
+<rect x="1390" y="664" width="340" height="46" fill="#DDF1E3" stroke="#2F7A47" stroke-width="1.6"/>
+<text x="1402.0" y="684.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="start">Seats</text>
+<text x="1402.0" y="701.0" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">Места</text>
+<rect x="1391" y="714" width="338" height="21" fill="#DDF1E3" fill-opacity="0.45"/>
+<text x="1400.0" y="729.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start">PK</text>
+<text x="1454.0" y="729.0" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" fill="#1F2937" text-anchor="start">SeatId</text>
+<text x="1720.0" y="729.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="1400.0" y="750.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start">FK,UQ</text>
+<text x="1454.0" y="750.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">HallId</text>
+<text x="1720.0" y="750.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="1400.0" y="771.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start">UQ</text>
+<text x="1454.0" y="771.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">RowNum</text>
+<text x="1720.0" y="771.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">tinyint</text>
+<text x="1400.0" y="792.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start">UQ</text>
+<text x="1454.0" y="792.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">SeatNum</text>
+<text x="1720.0" y="792.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">tinyint</text>
+<text x="1400.0" y="813.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#2F7A47" text-anchor="start">FK</text>
+<text x="1454.0" y="813.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">SeatTypeId</text>
+<text x="1720.0" y="813.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<rect x="40" y="935" width="340" height="117" fill="#FFFFFF" stroke="#B45309" stroke-width="1.6"/>
+<rect x="40" y="935" width="340" height="46" fill="#FDEBD3" stroke="#B45309" stroke-width="1.6"/>
+<text x="52.0" y="955.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="start">OrderStatuses</text>
+<text x="52.0" y="972.0" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">Статусы заказа</text>
+<rect x="41" y="985" width="338" height="21" fill="#FDEBD3" fill-opacity="0.45"/>
+<text x="50.0" y="1000.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start">PK</text>
+<text x="104.0" y="1000.0" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" fill="#1F2937" text-anchor="start">StatusId</text>
+<text x="370.0" y="1000.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="50.0" y="1021.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start">UQ</text>
+<text x="104.0" y="1021.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Code</text>
+<text x="370.0" y="1021.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(20)</text>
+<text x="50.0" y="1042.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start"></text>
+<text x="104.0" y="1042.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Name</text>
+<text x="370.0" y="1042.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(50)</text>
+<rect x="1390" y="935" width="340" height="117" fill="#FFFFFF" stroke="#B45309" stroke-width="1.6"/>
+<rect x="1390" y="935" width="340" height="46" fill="#FDEBD3" stroke="#B45309" stroke-width="1.6"/>
+<text x="1402.0" y="955.0" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="start">SeatTypes</text>
+<text x="1402.0" y="972.0" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#64748B" text-anchor="start" font-style="italic">Типы мест</text>
+<rect x="1391" y="985" width="338" height="21" fill="#FDEBD3" fill-opacity="0.45"/>
+<text x="1400.0" y="1000.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start">PK</text>
+<text x="1454.0" y="1000.0" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" fill="#1F2937" text-anchor="start">SeatTypeId</text>
+<text x="1720.0" y="1000.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">int</text>
+<text x="1400.0" y="1021.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start">UQ</text>
+<text x="1454.0" y="1021.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">Name</text>
+<text x="1720.0" y="1021.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">nvarchar(50)</text>
+<text x="1400.0" y="1042.0" font-family="DejaVu Sans" font-size="10.5" font-weight="bold" fill="#B45309" text-anchor="start"></text>
+<text x="1454.0" y="1042.0" font-family="DejaVu Sans" font-size="12.5" font-weight="normal" fill="#1F2937" text-anchor="start">PriceFactor</text>
+<text x="1720.0" y="1042.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="end">decimal(4,2)</text>
+<line x1="40" y1="1092" x2="100" y2="1092" stroke="#475569" stroke-width="1.6"/>
+<line x1="91.0" y1="1084.0" x2="91.0" y2="1100.0" stroke="#475569" stroke-width="1.6"/><line x1="84.0" y1="1084.0" x2="84.0" y2="1100.0" stroke="#475569" stroke-width="1.6"/>
+<text x="110.0" y="1096.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">ровно один</text>
+<line x1="260" y1="1092" x2="320" y2="1092" stroke="#475569" stroke-width="1.6"/>
+<line x1="310.0" y1="1084.0" x2="310.0" y2="1100.0" stroke="#475569" stroke-width="1.6"/><circle cx="298.0" cy="1092.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<text x="330.0" y="1096.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">ноль или один</text>
+<line x1="480" y1="1092" x2="540" y2="1092" stroke="#475569" stroke-width="1.6"/>
+<line x1="524.0" y1="1092.0" x2="540.0" y2="1101.0" stroke="#475569" stroke-width="1.6"/><line x1="524.0" y1="1092.0" x2="540.0" y2="1092.0" stroke="#475569" stroke-width="1.6"/><line x1="524.0" y1="1092.0" x2="540.0" y2="1083.0" stroke="#475569" stroke-width="1.6"/><line x1="518.0" y1="1084.0" x2="518.0" y2="1100.0" stroke="#475569" stroke-width="1.6"/>
+<text x="550.0" y="1096.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">один или много</text>
+<line x1="700" y1="1092" x2="760" y2="1092" stroke="#475569" stroke-width="1.6"/>
+<line x1="744.0" y1="1092.0" x2="760.0" y2="1101.0" stroke="#475569" stroke-width="1.6"/><line x1="744.0" y1="1092.0" x2="760.0" y2="1092.0" stroke="#475569" stroke-width="1.6"/><line x1="744.0" y1="1092.0" x2="760.0" y2="1083.0" stroke="#475569" stroke-width="1.6"/><circle cx="734.0" cy="1092.0" r="5" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<text x="770.0" y="1096.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">ноль или много</text>
+<text x="930.0" y="1088.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">PK — первичный ключ, FK — внешний ключ, UQ — уникальное значение (у нескольких столбцов — уникальна их комбинация);</text>
+<text x="930.0" y="1104.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">серым — столбцы, допускающие NULL</text>
+</svg>

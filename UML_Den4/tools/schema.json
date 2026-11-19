@@ -1,0 +1,693 @@
+[
+ {
+  "tbl": "Films",
+  "ord": 1,
+  "col": "FilmId",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Films",
+  "ord": 2,
+  "col": "Title",
+  "type": "nvarchar(150)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Films",
+  "ord": 3,
+  "col": "GenreId",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Genres",
+  "uq": 0
+ },
+ {
+  "tbl": "Films",
+  "ord": 4,
+  "col": "DurationMin",
+  "type": "smallint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Films",
+  "ord": 5,
+  "col": "AgeRating",
+  "type": "nvarchar(3)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Films",
+  "ord": 6,
+  "col": "Description",
+  "type": "nvarchar(1000)",
+  "nullable": true,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Films",
+  "ord": 7,
+  "col": "PosterPath",
+  "type": "nvarchar(260)",
+  "nullable": true,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Films",
+  "ord": 8,
+  "col": "IsActive",
+  "type": "bit",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Genres",
+  "ord": 1,
+  "col": "GenreId",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Genres",
+  "ord": 2,
+  "col": "Name",
+  "type": "nvarchar(50)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Halls",
+  "ord": 1,
+  "col": "HallId",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Halls",
+  "ord": 2,
+  "col": "Number",
+  "type": "tinyint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Halls",
+  "ord": 3,
+  "col": "Name",
+  "type": "nvarchar(50)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Halls",
+  "ord": 4,
+  "col": "RowsCount",
+  "type": "tinyint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Halls",
+  "ord": 5,
+  "col": "SeatsPerRow",
+  "type": "tinyint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Orders",
+  "ord": 1,
+  "col": "OrderId",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Orders",
+  "ord": 2,
+  "col": "UserId",
+  "type": "int",
+  "nullable": true,
+  "pk": 0,
+  "fk": "Users",
+  "uq": 0
+ },
+ {
+  "tbl": "Orders",
+  "ord": 3,
+  "col": "CashierId",
+  "type": "int",
+  "nullable": true,
+  "pk": 0,
+  "fk": "Users",
+  "uq": 0
+ },
+ {
+  "tbl": "Orders",
+  "ord": 4,
+  "col": "SessionId",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Sessions",
+  "uq": 0
+ },
+ {
+  "tbl": "Orders",
+  "ord": 5,
+  "col": "PromoCodeId",
+  "type": "int",
+  "nullable": true,
+  "pk": 0,
+  "fk": "PromoCodes",
+  "uq": 0
+ },
+ {
+  "tbl": "Orders",
+  "ord": 6,
+  "col": "StatusId",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "OrderStatuses",
+  "uq": 0
+ },
+ {
+  "tbl": "Orders",
+  "ord": 7,
+  "col": "CreatedAt",
+  "type": "datetime2(0)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Orders",
+  "ord": 8,
+  "col": "ReservedUntil",
+  "type": "datetime2(0)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "OrderStatuses",
+  "ord": 1,
+  "col": "StatusId",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "OrderStatuses",
+  "ord": 2,
+  "col": "Code",
+  "type": "nvarchar(20)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "OrderStatuses",
+  "ord": 3,
+  "col": "Name",
+  "type": "nvarchar(50)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Payments",
+  "ord": 1,
+  "col": "PaymentId",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Payments",
+  "ord": 2,
+  "col": "OrderId",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Orders",
+  "uq": 0
+ },
+ {
+  "tbl": "Payments",
+  "ord": 3,
+  "col": "Kind",
+  "type": "nvarchar(10)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Payments",
+  "ord": 4,
+  "col": "Amount",
+  "type": "decimal(10,2)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Payments",
+  "ord": 5,
+  "col": "BankTransactionId",
+  "type": "nvarchar(50)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Payments",
+  "ord": 6,
+  "col": "IsSuccessful",
+  "type": "bit",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Payments",
+  "ord": 7,
+  "col": "CreatedAt",
+  "type": "datetime2(0)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "PromoCodes",
+  "ord": 1,
+  "col": "PromoCodeId",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "PromoCodes",
+  "ord": 2,
+  "col": "Code",
+  "type": "nvarchar(30)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "PromoCodes",
+  "ord": 3,
+  "col": "DiscountPercent",
+  "type": "tinyint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "PromoCodes",
+  "ord": 4,
+  "col": "ValidUntil",
+  "type": "date",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "PromoCodes",
+  "ord": 5,
+  "col": "IsActive",
+  "type": "bit",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Reviews",
+  "ord": 1,
+  "col": "ReviewId",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Reviews",
+  "ord": 2,
+  "col": "UserId",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Users",
+  "uq": 1
+ },
+ {
+  "tbl": "Reviews",
+  "ord": 3,
+  "col": "FilmId",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Films",
+  "uq": 1
+ },
+ {
+  "tbl": "Reviews",
+  "ord": 4,
+  "col": "Rating",
+  "type": "tinyint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Reviews",
+  "ord": 5,
+  "col": "Text",
+  "type": "nvarchar(1000)",
+  "nullable": true,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Reviews",
+  "ord": 6,
+  "col": "CreatedAt",
+  "type": "datetime2(0)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Roles",
+  "ord": 1,
+  "col": "RoleId",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Roles",
+  "ord": 2,
+  "col": "Code",
+  "type": "nvarchar(20)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Roles",
+  "ord": 3,
+  "col": "Name",
+  "type": "nvarchar(50)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Seats",
+  "ord": 1,
+  "col": "SeatId",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Seats",
+  "ord": 2,
+  "col": "HallId",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Halls",
+  "uq": 1
+ },
+ {
+  "tbl": "Seats",
+  "ord": 3,
+  "col": "RowNum",
+  "type": "tinyint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Seats",
+  "ord": 4,
+  "col": "SeatNum",
+  "type": "tinyint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Seats",
+  "ord": 5,
+  "col": "SeatTypeId",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "SeatTypes",
+  "uq": 0
+ },
+ {
+  "tbl": "SeatTypes",
+  "ord": 1,
+  "col": "SeatTypeId",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "SeatTypes",
+  "ord": 2,
+  "col": "Name",
+  "type": "nvarchar(50)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "SeatTypes",
+  "ord": 3,
+  "col": "PriceFactor",
+  "type": "decimal(4,2)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Sessions",
+  "ord": 1,
+  "col": "SessionId",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Sessions",
+  "ord": 2,
+  "col": "FilmId",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Films",
+  "uq": 0
+ },
+ {
+  "tbl": "Sessions",
+  "ord": 3,
+  "col": "HallId",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Halls",
+  "uq": 1
+ },
+ {
+  "tbl": "Sessions",
+  "ord": 4,
+  "col": "StartsAt",
+  "type": "datetime2(0)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Sessions",
+  "ord": 5,
+  "col": "Format",
+  "type": "nvarchar(10)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Sessions",
+  "ord": 6,
+  "col": "BasePrice",
+  "type": "decimal(10,2)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Tickets",
+  "ord": 1,
+  "col": "TicketId",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Tickets",
+  "ord": 2,
+  "col": "OrderId",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Orders",
+  "uq": 1
+ },
+ {
+  "tbl": "Tickets",
+  "ord": 3,
+  "col": "SeatId",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Seats",
+  "uq": 1
+ },
+ {
+  "tbl": "Tickets",
+  "ord": 4,
+  "col": "Price",
+  "type": "decimal(10,2)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Tickets",
+  "ord": 5,
+  "col": "QrCode",
+  "type": "uniqueidentifier",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Tickets",
+  "ord": 6,
+  "col": "UsedAt",
+  "type": "datetime2(0)",
+  "nullable": true,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Users",
+  "ord": 1,
+  "col": "UserId",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Users",
+  "ord": 2,
+  "col": "FullName",
+  "type": "nvarchar(100)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Users",
+  "ord": 3,
+  "col": "Email",
+  "type": "nvarchar(100)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Users",
+  "ord": 4,
+  "col": "Phone",
+  "type": "nvarchar(20)",
+  "nullable": true,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Users",
+  "ord": 5,
+  "col": "PasswordHash",
+  "type": "nvarchar(200)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Users",
+  "ord": 6,
+  "col": "RoleId",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Roles",
+  "uq": 0
+ },
+ {
+  "tbl": "Users",
+  "ord": 7,
+  "col": "IsBlocked",
+  "type": "bit",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Users",
+  "ord": 8,
+  "col": "CreatedAt",
+  "type": "datetime2(0)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ }
+]
