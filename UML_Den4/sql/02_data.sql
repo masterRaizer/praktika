@@ -9,70 +9,70 @@
      cashier1@kinotochka.ru — кассир
      ivanov@example.com     — зритель
    =================================================================== */
-USE Kinotochka;
+USE Киноточка;
 GO
 SET NOCOUNT ON;
 
 -- очистка в обратном порядке связей
-DELETE FROM dbo.Reviews;
-DELETE FROM dbo.Payments;
-DELETE FROM dbo.Tickets;
-DELETE FROM dbo.Orders;
-DELETE FROM dbo.OrderStatuses;
-DELETE FROM dbo.PromoCodes;
-DELETE FROM dbo.Sessions;
-DELETE FROM dbo.Seats;
-DELETE FROM dbo.SeatTypes;
-DELETE FROM dbo.Halls;
-DELETE FROM dbo.Films;
-DELETE FROM dbo.Genres;
-DELETE FROM dbo.Users;
-DELETE FROM dbo.Roles;
+DELETE FROM dbo.Отзывы;
+DELETE FROM dbo.Платежи;
+DELETE FROM dbo.Билеты;
+DELETE FROM dbo.Заказы;
+DELETE FROM dbo.СтатусыЗаказа;
+DELETE FROM dbo.Промокоды;
+DELETE FROM dbo.Сеансы;
+DELETE FROM dbo.Места;
+DELETE FROM dbo.ТипыМест;
+DELETE FROM dbo.Залы;
+DELETE FROM dbo.Фильмы;
+DELETE FROM dbo.Жанры;
+DELETE FROM dbo.Пользователи;
+DELETE FROM dbo.Роли;
 GO
 
 /* ---------- справочники ---------- */
 -- ролей и статусов столько, сколько их в предметной области (3 и 6)
-INSERT INTO dbo.Roles (RoleId, Code, Name) VALUES
-    (1, N'VIEWER',  N'Зритель'),
-    (2, N'CASHIER', N'Кассир'),
-    (3, N'ADMIN',   N'Администратор');
+INSERT INTO dbo.Роли (КодРоли, Обозначение, Название) VALUES
+    (1, N'ЗРИТЕЛЬ',  N'Зритель'),
+    (2, N'КАССИР', N'Кассир'),
+    (3, N'АДМИНИСТРАТОР',   N'Администратор');
 
-INSERT INTO dbo.OrderStatuses (StatusId, Code, Name) VALUES
-    (1, N'BOOKED',    N'Забронирован'),
-    (2, N'PAYING',    N'Оплачивается'),
-    (3, N'PAID',      N'Оплачен'),
-    (4, N'DONE',      N'Завершён'),
-    (5, N'CANCELLED', N'Отменён'),
-    (6, N'REFUNDED',  N'Возвращён');
+INSERT INTO dbo.СтатусыЗаказа (КодСтатуса, Обозначение, Название) VALUES
+    (1, N'ЗАБРОНИРОВАН',    N'Забронирован'),
+    (2, N'ОПЛАЧИВАЕТСЯ',    N'Оплачивается'),
+    (3, N'ОПЛАЧЕН',      N'Оплачен'),
+    (4, N'ЗАВЕРШЁН',      N'Завершён'),
+    (5, N'ОТМЕНЁН', N'Отменён'),
+    (6, N'ВОЗВРАЩЁН',  N'Возвращён');
 
-SET IDENTITY_INSERT dbo.Genres ON;
-INSERT INTO dbo.Genres (GenreId, Name) VALUES
+SET IDENTITY_INSERT dbo.Жанры ON;
+INSERT INTO dbo.Жанры (КодЖанра, Название) VALUES
     (1, N'Драма'), (2, N'Комедия'), (3, N'Фантастика'),
     (4, N'Мультфильм'), (5, N'Триллер'), (6, N'Приключения');
-SET IDENTITY_INSERT dbo.Genres OFF;
+SET IDENTITY_INSERT dbo.Жанры OFF;
 
-SET IDENTITY_INSERT dbo.SeatTypes ON;
-INSERT INTO dbo.SeatTypes (SeatTypeId, Name, PriceFactor) VALUES
+SET IDENTITY_INSERT dbo.ТипыМест ON;
+INSERT INTO dbo.ТипыМест (КодТипаМеста, Название, КоэффициентЦены) VALUES
     (1, N'Стандарт', 1.00),
     (2, N'Комфорт', 1.20),
     (3, N'VIP', 1.60),
     (4, N'Диван', 1.80),
     (5, N'Для маломобильных зрителей', 0.70);
-SET IDENTITY_INSERT dbo.SeatTypes OFF;
+SET IDENTITY_INSERT dbo.ТипыМест OFF;
 
-SET IDENTITY_INSERT dbo.PromoCodes ON;
-INSERT INTO dbo.PromoCodes (PromoCodeId, Code, DiscountPercent, ValidUntil, IsActive) VALUES
+SET IDENTITY_INSERT dbo.Промокоды ON;
+INSERT INTO dbo.Промокоды (КодПромокода, Обозначение, ПроцентСкидки, ДействуетДо, Активен) VALUES
     (1, N'STUDENT20',  20, '2026-12-31', 1),
     (2, N'FIRST10',    10, '2027-06-30', 1),
     (3, N'NEWYEAR25',  25, '2027-01-15', 1),
     (4, N'BIRTHDAY50', 50, '2026-12-31', 1),
     (5, N'AUTUMN15',   15, '2026-10-31', 0);
-SET IDENTITY_INSERT dbo.PromoCodes OFF;
+SET IDENTITY_INSERT dbo.Промокоды OFF;
 GO
 
 /* ---------- пользователи (пароль 123456) ---------- */
-SET IDENTITY_INSERT dbo.Users ON;
-INSERT INTO dbo.Users (UserId, FullName, Email, Phone, PasswordHash, RoleId, IsBlocked, CreatedAt) VALUES
+SET IDENTITY_INSERT dbo.Пользователи ON;
+INSERT INTO dbo.Пользователи (КодПользователя, ФИО, ЭлПочта, Телефон, ХешПароля, КодРоли, Заблокирован, ДатаСоздания) VALUES
     (1, N'Смирнов Андрей Петрович',     N'admin@kinotochka.ru',    N'+7 900 100-00-01',
         N'PBKDF2$100000$XaIgAfe2jWh1oueO7gQR3w==$mUJFyxMEAoSb+Rj+Ca/HyMUzckTRJ6aq4EybQmaYdaQ=', 3, 0, '2026-09-01T09:00:00'),
     (2, N'Орлова Мария Сергеевна',      N'cashier1@kinotochka.ru', N'+7 900 100-00-02',
@@ -89,12 +89,12 @@ INSERT INTO dbo.Users (UserId, FullName, Email, Phone, PasswordHash, RoleId, IsB
         N'PBKDF2$100000$bTcYt14CxMF0DYtKv3tBoQ==$Dig0B+M1KbQ4NwrfKgNK2veXEogYuew41LeVgnwc72k=', 1, 0, '2026-10-20T08:45:00'),
     (8, N'Морозов Дмитрий Алексеевич',  N'morozov@example.com',    NULL,
         N'PBKDF2$100000$AE6DiWzwh93jjO8/tOXXKA==$KD0sIhLKbdq/LfzLvo+j6wC0taNEMCzNPuomb9wOcO8=', 1, 1, '2026-11-01T10:00:00');
-SET IDENTITY_INSERT dbo.Users OFF;
+SET IDENTITY_INSERT dbo.Пользователи OFF;
 GO
 
 /* ---------- каталог ---------- */
-SET IDENTITY_INSERT dbo.Films ON;
-INSERT INTO dbo.Films (FilmId, Title, GenreId, DurationMin, AgeRating, Description, PosterPath, IsActive) VALUES
+SET IDENTITY_INSERT dbo.Фильмы ON;
+INSERT INTO dbo.Фильмы (КодФильма, Название, КодЖанра, ДлительностьМин, ВозрастнойРейтинг, Описание, Постер, Активен) VALUES
     (1, N'Звёздный маршрут',  3, 128, N'12+', N'Экипаж грузового корабля сбивается с курса и находит заброшенную станцию.', N'posters/star_route.jpg', 1),
     (2, N'Последний трамвай', 1, 112, N'16+', N'Ночной рейс через весь город, который меняет жизнь пятерых пассажиров.', N'posters/last_tram.jpg', 1),
     (3, N'Кот в библиотеке',  4,  88, N'0+',  N'Рыжий кот помогает маленькой читательнице найти пропавшую книгу.', N'posters/library_cat.jpg', 1),
@@ -102,16 +102,16 @@ INSERT INTO dbo.Films (FilmId, Title, GenreId, DurationMin, AgeRating, Descripti
     (5, N'Свадьба по ошибке', 2,  96, N'12+', N'Двух гостей перепутали с женихом и невестой — и отступать уже поздно.', N'posters/wrong_wedding.jpg', 1),
     (6, N'Остров туманов',    6, 118, N'6+',  N'Школьники отправляются на поиски старого маяка на острове, которого нет на картах.', N'posters/fog_island.jpg', 1),
     (7, N'Старый маяк',       1, 101, N'12+', N'Фильм снят с проката.', NULL, 0);
-SET IDENTITY_INSERT dbo.Films OFF;
+SET IDENTITY_INSERT dbo.Фильмы OFF;
 
-SET IDENTITY_INSERT dbo.Halls ON;
-INSERT INTO dbo.Halls (HallId, Number, Name, RowsCount, SeatsPerRow) VALUES
+SET IDENTITY_INSERT dbo.Залы ON;
+INSERT INTO dbo.Залы (КодЗала, Номер, Название, КоличествоРядов, МестВРяду) VALUES
     (1, 1, N'Большой', 8, 12),
     (2, 2, N'Комфорт', 6, 10),
     (3, 3, N'VIP',     4,  6),
     (4, 4, N'Малый',   5,  8),
     (5, 5, N'IMAX',    9, 14);
-SET IDENTITY_INSERT dbo.Halls OFF;
+SET IDENTITY_INSERT dbo.Залы OFF;
 GO
 
 -- места генерируются по размерам залов:
@@ -121,23 +121,23 @@ WITH n AS (
     SELECT TOP (20) CAST(ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS TINYINT) AS k
     FROM sys.all_objects
 )
-INSERT INTO dbo.Seats (HallId, RowNum, SeatNum, SeatTypeId)
-SELECT h.HallId, r.k, s.k,
+INSERT INTO dbo.Места (КодЗала, Ряд, НомерМеста, КодТипаМеста)
+SELECT h.КодЗала, r.k, s.k,
        CASE
-           WHEN h.Number = 3                                       THEN 3
-           WHEN r.k = h.RowsCount                                  THEN 4
-           WHEN r.k = 1 AND s.k IN (1, h.SeatsPerRow)              THEN 5
-           WHEN r.k BETWEEN h.RowsCount / 2 AND h.RowsCount / 2 + 1 THEN 2
+           WHEN h.Номер = 3                                       THEN 3
+           WHEN r.k = h.КоличествоРядов                                  THEN 4
+           WHEN r.k = 1 AND s.k IN (1, h.МестВРяду)              THEN 5
+           WHEN r.k BETWEEN h.КоличествоРядов / 2 AND h.КоличествоРядов / 2 + 1 THEN 2
            ELSE 1
        END
-FROM dbo.Halls h
-JOIN n r ON r.k <= h.RowsCount
-JOIN n s ON s.k <= h.SeatsPerRow
-ORDER BY h.HallId, r.k, s.k;
+FROM dbo.Залы h
+JOIN n r ON r.k <= h.КоличествоРядов
+JOIN n s ON s.k <= h.МестВРяду
+ORDER BY h.КодЗала, r.k, s.k;
 GO
 
-SET IDENTITY_INSERT dbo.Sessions ON;
-INSERT INTO dbo.Sessions (SessionId, FilmId, HallId, StartsAt, Format, BasePrice) VALUES
+SET IDENTITY_INSERT dbo.Сеансы ON;
+INSERT INTO dbo.Сеансы (КодСеанса, КодФильма, КодЗала, НачалоСеанса, Формат, БазоваяЦена) VALUES
     ( 1, 1, 1, '2026-11-12T19:00:00', N'2D',   450.00),
     ( 2, 3, 2, '2026-11-14T11:00:00', N'2D',   300.00),
     ( 3, 2, 4, '2026-11-15T20:30:00', N'2D',   400.00),
@@ -150,13 +150,13 @@ INSERT INTO dbo.Sessions (SessionId, FilmId, HallId, StartsAt, Format, BasePrice
     (10, 6, 2, '2026-11-22T13:00:00', N'3D',   420.00),
     (11, 5, 5, '2026-11-23T20:00:00', N'2D',   450.00),
     (12, 4, 4, '2026-11-23T23:00:00', N'2D',   400.00);
-SET IDENTITY_INSERT dbo.Sessions OFF;
+SET IDENTITY_INSERT dbo.Сеансы OFF;
 GO
 
 /* ---------- заказы ---------- */
 -- статусы: 1 забронирован, 2 оплачивается, 3 оплачен, 4 завершён, 5 отменён, 6 возвращён
-SET IDENTITY_INSERT dbo.Orders ON;
-INSERT INTO dbo.Orders (OrderId, UserId, CashierId, SessionId, PromoCodeId, StatusId, CreatedAt, ReservedUntil) VALUES
+SET IDENTITY_INSERT dbo.Заказы ON;
+INSERT INTO dbo.Заказы (КодЗаказа, КодПользователя, КодКассира, КодСеанса, КодПромокода, КодСтатуса, ДатаСоздания, БроньДо) VALUES
     ( 1,    4, NULL,  1, NULL, 4, '2026-11-10T12:00:00', '2026-11-10T12:15:00'),
     ( 2,    5, NULL,  1,    1, 4, '2026-11-11T09:00:00', '2026-11-11T09:15:00'),
     ( 3, NULL,    3,  2, NULL, 4, '2026-11-14T10:40:00', '2026-11-14T10:55:00'),
@@ -169,13 +169,13 @@ INSERT INTO dbo.Orders (OrderId, UserId, CashierId, SessionId, PromoCodeId, Stat
     (10,    4, NULL,  7,    3, 2, '2026-11-19T09:55:00', '2026-11-19T10:10:00'),
     (11, NULL,    2,  4, NULL, 3, '2026-11-19T09:30:00', '2026-11-19T09:45:00'),
     (12,    8, NULL, 11,    4, 3, '2026-11-01T11:00:00', '2026-11-01T11:15:00');
-SET IDENTITY_INSERT dbo.Orders OFF;
+SET IDENTITY_INSERT dbo.Заказы OFF;
 GO
 
 -- билеты: место задаётся рядом и номером в зале сеанса,
 -- цена = базовая цена сеанса × коэффициент типа места
-INSERT INTO dbo.Tickets (OrderId, SeatId, Price, UsedAt)
-SELECT v.OrderId, st.SeatId, CAST(s.BasePrice * ty.PriceFactor AS DECIMAL(10,2)), v.UsedAt
+INSERT INTO dbo.Билеты (КодЗаказа, КодМеста, Цена, ВремяПрохода)
+SELECT v.КодЗаказа, st.КодМеста, CAST(s.БазоваяЦена * ty.КоэффициентЦены AS DECIMAL(10,2)), v.ВремяПрохода
 FROM (VALUES
     ( 1, 5,  6, CAST('2026-11-12T18:48:00' AS DATETIME2(0))),
     ( 1, 5,  7, CAST('2026-11-12T18:48:00' AS DATETIME2(0))),
@@ -193,61 +193,61 @@ FROM (VALUES
     (10, 3,  4, NULL),
     (11, 3,  5, NULL), (11, 3,  6, NULL), (11, 3,  7, NULL), (11, 3,  8, NULL),
     (12, 6,  9, NULL), (12, 6, 10, NULL)
-) AS v (OrderId, RowNum, SeatNum, UsedAt)
-JOIN dbo.Orders    o  ON o.OrderId = v.OrderId
-JOIN dbo.Sessions  s  ON s.SessionId = o.SessionId
-JOIN dbo.Seats     st ON st.HallId = s.HallId AND st.RowNum = v.RowNum AND st.SeatNum = v.SeatNum
-JOIN dbo.SeatTypes ty ON ty.SeatTypeId = st.SeatTypeId
-ORDER BY v.OrderId, v.RowNum, v.SeatNum;
+) AS v (КодЗаказа, Ряд, НомерМеста, ВремяПрохода)
+JOIN dbo.Заказы    o  ON o.КодЗаказа = v.КодЗаказа
+JOIN dbo.Сеансы  s  ON s.КодСеанса = o.КодСеанса
+JOIN dbo.Места     st ON st.КодЗала = s.КодЗала AND st.Ряд = v.Ряд AND st.НомерМеста = v.НомерМеста
+JOIN dbo.ТипыМест ty ON ty.КодТипаМеста = st.КодТипаМеста
+ORDER BY v.КодЗаказа, v.Ряд, v.НомерМеста;
 GO
 
--- платежи: сумма берётся из представления vOrderTotals (стоимость билетов минус скидка)
-SET IDENTITY_INSERT dbo.Payments ON;
-INSERT INTO dbo.Payments (PaymentId, OrderId, Kind, Amount, BankTransactionId, IsSuccessful, CreatedAt)
-SELECT v.PaymentId, v.OrderId, v.Kind, t.Total, v.Tx, v.Ok, v.CreatedAt
+-- платежи: сумма берётся из представления СуммыЗаказов (стоимость билетов минус скидка)
+SET IDENTITY_INSERT dbo.Платежи ON;
+INSERT INTO dbo.Платежи (КодПлатежа, КодЗаказа, ВидОперации, Сумма, НомерТранзакции, Успешно, ДатаСоздания)
+SELECT v.КодПлатежа, v.КодЗаказа, v.ВидОперации, t.Итого, v.Транзакция, v.Успех, v.ДатаСоздания
 FROM (VALUES
-    ( 1,  1, N'PAYMENT', N'BANK-2026-000101', 1, CAST('2026-11-10T12:03:00' AS DATETIME2(0))),
-    ( 2,  2, N'PAYMENT', N'BANK-2026-000102', 1, CAST('2026-11-11T09:04:00' AS DATETIME2(0))),
-    ( 3,  3, N'PAYMENT', N'CASH-2026-000001', 1, CAST('2026-11-14T10:42:00' AS DATETIME2(0))),
-    ( 4,  4, N'PAYMENT', N'BANK-2026-000103', 1, CAST('2026-11-13T19:08:00' AS DATETIME2(0))),
-    ( 5,  5, N'PAYMENT', N'BANK-2026-000104', 1, CAST('2026-11-18T14:05:00' AS DATETIME2(0))),
-    ( 6,  6, N'PAYMENT', N'BANK-2026-000105', 0, CAST('2026-11-18T16:24:00' AS DATETIME2(0))),
-    ( 7,  6, N'PAYMENT', N'BANK-2026-000106', 1, CAST('2026-11-18T16:27:00' AS DATETIME2(0))),
-    ( 8,  7, N'PAYMENT', N'BANK-2026-000107', 1, CAST('2026-11-17T21:06:00' AS DATETIME2(0))),
-    ( 9,  7, N'REFUND',  N'BANK-2026-000108', 1, CAST('2026-11-19T08:30:00' AS DATETIME2(0))),
-    (10,  8, N'PAYMENT', N'BANK-2026-000109', 0, CAST('2026-11-18T20:09:00' AS DATETIME2(0))),
-    (11, 11, N'PAYMENT', N'CASH-2026-000002', 1, CAST('2026-11-19T09:33:00' AS DATETIME2(0))),
-    (12, 12, N'PAYMENT', N'BANK-2026-000110', 1, CAST('2026-11-01T11:06:00' AS DATETIME2(0)))
-) AS v (PaymentId, OrderId, Kind, Tx, Ok, CreatedAt)
-JOIN dbo.vOrderTotals t ON t.OrderId = v.OrderId;
-SET IDENTITY_INSERT dbo.Payments OFF;
+    ( 1,  1, N'ОПЛАТА', N'BANK-2026-000101', 1, CAST('2026-11-10T12:03:00' AS DATETIME2(0))),
+    ( 2,  2, N'ОПЛАТА', N'BANK-2026-000102', 1, CAST('2026-11-11T09:04:00' AS DATETIME2(0))),
+    ( 3,  3, N'ОПЛАТА', N'CASH-2026-000001', 1, CAST('2026-11-14T10:42:00' AS DATETIME2(0))),
+    ( 4,  4, N'ОПЛАТА', N'BANK-2026-000103', 1, CAST('2026-11-13T19:08:00' AS DATETIME2(0))),
+    ( 5,  5, N'ОПЛАТА', N'BANK-2026-000104', 1, CAST('2026-11-18T14:05:00' AS DATETIME2(0))),
+    ( 6,  6, N'ОПЛАТА', N'BANK-2026-000105', 0, CAST('2026-11-18T16:24:00' AS DATETIME2(0))),
+    ( 7,  6, N'ОПЛАТА', N'BANK-2026-000106', 1, CAST('2026-11-18T16:27:00' AS DATETIME2(0))),
+    ( 8,  7, N'ОПЛАТА', N'BANK-2026-000107', 1, CAST('2026-11-17T21:06:00' AS DATETIME2(0))),
+    ( 9,  7, N'ВОЗВРАТ',  N'BANK-2026-000108', 1, CAST('2026-11-19T08:30:00' AS DATETIME2(0))),
+    (10,  8, N'ОПЛАТА', N'BANK-2026-000109', 0, CAST('2026-11-18T20:09:00' AS DATETIME2(0))),
+    (11, 11, N'ОПЛАТА', N'CASH-2026-000002', 1, CAST('2026-11-19T09:33:00' AS DATETIME2(0))),
+    (12, 12, N'ОПЛАТА', N'BANK-2026-000110', 1, CAST('2026-11-01T11:06:00' AS DATETIME2(0)))
+) AS v (КодПлатежа, КодЗаказа, ВидОперации, Транзакция, Успех, ДатаСоздания)
+JOIN dbo.СуммыЗаказов t ON t.КодЗаказа = v.КодЗаказа;
+SET IDENTITY_INSERT dbo.Платежи OFF;
 GO
 
 /* ---------- отзывы ---------- */
-SET IDENTITY_INSERT dbo.Reviews ON;
-INSERT INTO dbo.Reviews (ReviewId, UserId, FilmId, Rating, Text, CreatedAt) VALUES
+SET IDENTITY_INSERT dbo.Отзывы ON;
+INSERT INTO dbo.Отзывы (КодОтзыва, КодПользователя, КодФильма, Оценка, ТекстОтзыва, ДатаСоздания) VALUES
     (1, 4, 1, 5, N'Отличная фантастика, смотрели в IMAX — звук потрясающий.', '2026-11-12T22:00:00'),
     (2, 5, 1, 4, N'Красиво, но середина немного затянута.',                    '2026-11-13T10:15:00'),
     (3, 6, 2, 5, N'Сильная драма, актёры играют прекрасно.',                   '2026-11-15T23:10:00'),
     (4, 7, 3, 5, N'Ребёнок в восторге, взрослым тоже понравилось.',             '2026-11-14T13:30:00'),
     (5, 8, 1, 3, N'Ожидал большего от сюжета.',                                '2026-11-13T19:45:00'),
     (6, 6, 3, 4, N'Добрый мультфильм для всей семьи.',                         '2026-11-14T14:00:00');
-SET IDENTITY_INSERT dbo.Reviews OFF;
+SET IDENTITY_INSERT dbo.Отзывы OFF;
 GO
 
 /* ---------- итог: число записей в каждой таблице ---------- */
-SELECT N'Roles' AS TableName, COUNT(*) AS Rows FROM dbo.Roles
-UNION ALL SELECT N'Users', COUNT(*) FROM dbo.Users
-UNION ALL SELECT N'Genres', COUNT(*) FROM dbo.Genres
-UNION ALL SELECT N'Films', COUNT(*) FROM dbo.Films
-UNION ALL SELECT N'Halls', COUNT(*) FROM dbo.Halls
-UNION ALL SELECT N'SeatTypes', COUNT(*) FROM dbo.SeatTypes
-UNION ALL SELECT N'Seats', COUNT(*) FROM dbo.Seats
-UNION ALL SELECT N'Sessions', COUNT(*) FROM dbo.Sessions
-UNION ALL SELECT N'PromoCodes', COUNT(*) FROM dbo.PromoCodes
-UNION ALL SELECT N'OrderStatuses', COUNT(*) FROM dbo.OrderStatuses
-UNION ALL SELECT N'Orders', COUNT(*) FROM dbo.Orders
-UNION ALL SELECT N'Tickets', COUNT(*) FROM dbo.Tickets
-UNION ALL SELECT N'Payments', COUNT(*) FROM dbo.Payments
-UNION ALL SELECT N'Reviews', COUNT(*) FROM dbo.Reviews;
+SELECT N'Роли' AS Таблица, COUNT(*) AS Записей FROM dbo.Роли
+UNION ALL SELECT N'Пользователи', COUNT(*) FROM dbo.Пользователи
+UNION ALL SELECT N'Жанры', COUNT(*) FROM dbo.Жанры
+UNION ALL SELECT N'Фильмы', COUNT(*) FROM dbo.Фильмы
+UNION ALL SELECT N'Залы', COUNT(*) FROM dbo.Залы
+UNION ALL SELECT N'ТипыМест', COUNT(*) FROM dbo.ТипыМест
+UNION ALL SELECT N'Места', COUNT(*) FROM dbo.Места
+UNION ALL SELECT N'Сеансы', COUNT(*) FROM dbo.Сеансы
+UNION ALL SELECT N'Промокоды', COUNT(*) FROM dbo.Промокоды
+UNION ALL SELECT N'СтатусыЗаказа', COUNT(*) FROM dbo.СтатусыЗаказа
+UNION ALL SELECT N'Заказы', COUNT(*) FROM dbo.Заказы
+UNION ALL SELECT N'Билеты', COUNT(*) FROM dbo.Билеты
+UNION ALL SELECT N'Платежи', COUNT(*) FROM dbo.Платежи
+UNION ALL SELECT N'Отзывы', COUNT(*) FROM dbo.Отзывы;
 GO
