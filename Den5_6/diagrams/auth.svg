@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1080" viewBox="0 0 1100 1080" font-family="DejaVu Sans">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect width="1100" height="1080" fill="#FFFFFF"/>
+<text x="30" y="42" font-size="22" font-weight="bold" fill="#1F2937">Алгоритм авторизации (AuthService.Login)</text>
+<polyline points="330.0,116.0 330.0,150.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polyline points="330.0,210.0 330.0,245.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polyline points="330.0,335.0 330.0,370.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="316.0" y="333.5" width="28.0" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="330.0" y="344.5" font-size="11.5" text-anchor="middle" fill="#475569">нет</text>
+<polyline points="460.0,290.0 640.0,290.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="539.3" y="271.0" width="21.3" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="550.0" y="282.0" font-size="11.5" text-anchor="middle" fill="#475569">да</text>
+<polyline points="330.0,460.0 330.0,495.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="319.3" y="458.5" width="21.3" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="330.0" y="469.5" font-size="11.5" text-anchor="middle" fill="#475569">да</text>
+<polyline points="460.0,415.0 640.0,415.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="536.0" y="396.0" width="28.0" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="550.0" y="407.0" font-size="11.5" text-anchor="middle" fill="#475569">нет</text>
+<polyline points="330.0,555.0 330.0,590.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polyline points="330.0,680.0 330.0,715.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="319.3" y="678.5" width="21.3" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="330.0" y="689.5" font-size="11.5" text-anchor="middle" fill="#475569">да</text>
+<polyline points="460.0,635.0 640.0,635.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="536.0" y="616.0" width="28.0" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="550.0" y="627.0" font-size="11.5" text-anchor="middle" fill="#475569">нет</text>
+<polyline points="330.0,805.0 330.0,840.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="316.0" y="803.5" width="28.0" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="330.0" y="814.5" font-size="11.5" text-anchor="middle" fill="#475569">нет</text>
+<polyline points="460.0,760.0 640.0,760.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="539.3" y="741.0" width="21.3" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="550.0" y="752.0" font-size="11.5" text-anchor="middle" fill="#475569">да</text>
+<polyline points="330.0,900.0 330.0,950.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polyline points="1040.0,290.0 1070.0,290.0 1070.0,180.0 480.0,180.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+<rect x="1036.0" y="216.0" width="68.0" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="1070.0" y="227.0" font-size="11.5" text-anchor="middle" fill="#475569">повторить</text>
+<rect x="240" y="70" width="180" height="46" rx="23.0" fill="#1F2937" stroke="#1F2937" stroke-width="1.6"/>
+<text x="330.0" y="98.0" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Начало</text>
+<rect x="180" y="150" width="300" height="60" rx="10" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.6"/>
+<path d="M180,210 L180,160 Q180,150 190,150 L470,150 Q480,150 480,160 L480,210 L480,200 Q480,210 470,210 L190,210 Q180,210 180,200 Z" fill="#DCE9FA" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="330.0" y="185.0" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Ввод эл. почты и пароля</text>
+<polygon points="330.0,245 460,290.0 330.0,335 200,290.0" fill="#FFF7D6" stroke="#B67600" stroke-width="1.6"/>
+<text x="330.0" y="287.0" font-size="13" text-anchor="middle" fill="#1F2937">Вход</text>
+<text x="330.0" y="303.0" font-size="13" text-anchor="middle" fill="#1F2937">приостановлен?</text>
+<polygon points="330.0,370 460,415.0 330.0,460 200,415.0" fill="#FFF7D6" stroke="#B67600" stroke-width="1.6"/>
+<text x="330.0" y="412.0" font-size="13" text-anchor="middle" fill="#1F2937">Поля заполнены</text>
+<text x="330.0" y="428.0" font-size="13" text-anchor="middle" fill="#1F2937">и почта верна?</text>
+<rect x="160" y="495" width="340" height="60" rx="10" fill="#FFFFFF" stroke="#B45309" stroke-width="1.6"/>
+<path d="M160,555 L160,505 Q160,495 170,495 L490,495 Q500,495 500,505 L500,555 L500,545 Q500,555 490,555 L170,555 Q160,555 160,545 Z" fill="#FDEBD3" stroke="#B45309" stroke-width="1.6"/>
+<text x="330.0" y="530.0" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">SELECT … WHERE ЭлПочта = @ЭлПочта</text>
+<polygon points="330.0,590 460,635.0 330.0,680 200,635.0" fill="#FFF7D6" stroke="#B67600" stroke-width="1.6"/>
+<text x="330.0" y="632.0" font-size="13" text-anchor="middle" fill="#1F2937">Пользователь найден</text>
+<text x="330.0" y="648.0" font-size="13" text-anchor="middle" fill="#1F2937">и хеш совпал?</text>
+<polygon points="330.0,715 460,760.0 330.0,805 200,760.0" fill="#FFF7D6" stroke="#B67600" stroke-width="1.6"/>
+<text x="330.0" y="757.0" font-size="13" text-anchor="middle" fill="#1F2937">Учётная запись</text>
+<text x="330.0" y="773.0" font-size="13" text-anchor="middle" fill="#1F2937">заблокирована?</text>
+<rect x="180" y="840" width="300" height="60" rx="10" fill="#FFFFFF" stroke="#2F7A47" stroke-width="1.6"/>
+<path d="M180,900 L180,850 Q180,840 190,840 L470,840 Q480,840 480,850 L480,900 L480,890 Q480,900 470,900 L190,900 Q180,900 180,890 Z" fill="#DDF1E3" stroke="#2F7A47" stroke-width="1.6"/>
+<text x="330.0" y="875.0" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Открыть главное окно по роли</text>
+<rect x="240" y="950" width="180" height="46" rx="23.0" fill="#1F2937" stroke="#1F2937" stroke-width="1.6"/>
+<text x="330.0" y="978.0" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Конец</text>
+<rect x="640" y="260" width="400" height="60" rx="10" fill="#FFFFFF" stroke="#B4234A" stroke-width="1.6"/>
+<path d="M640,320 L640,270 Q640,260 650,260 L1030,260 Q1040,260 1040,270 L1040,320 L1040,310 Q1040,320 1030,320 L650,320 Q640,320 640,310 Z" fill="#FBE0E6" stroke="#B4234A" stroke-width="1.6"/>
+<text x="840.0" y="295.0" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">«Повторите вход через N с»</text>
+<rect x="640" y="385" width="400" height="60" rx="10" fill="#FFFFFF" stroke="#B4234A" stroke-width="1.6"/>
+<path d="M640,445 L640,395 Q640,385 650,385 L1030,385 Q1040,385 1040,395 L1040,445 L1040,435 Q1040,445 1030,445 L650,445 Q640,445 640,435 Z" fill="#FBE0E6" stroke="#B4234A" stroke-width="1.6"/>
+<text x="840.0" y="420.0" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">«Заполните поле…» / «Неверный формат…»</text>
+<rect x="640" y="590" width="400" height="90" rx="10" fill="#FFFFFF" stroke="#2F7A47" stroke-width="1.6"/>
+<path d="M640,620 L640,600 Q640,590 650,590 L1030,590 Q1040,590 1040,600 L1040,620 L640,620 Z" fill="#DDF1E3" stroke="#2F7A47" stroke-width="1.6"/>
+<text x="840.0" y="610" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Счётчик попыток + 1</text>
+<text x="652" y="639" font-size="12" fill="#1F2937">3 неудачи подряд → пауза 30 секунд;</text>
+<text x="652" y="656" font-size="12" fill="#1F2937">текст одинаковый для неизвестной</text>
+<text x="652" y="673" font-size="12" fill="#1F2937">почты и неверного пароля</text>
+<rect x="640" y="730" width="400" height="60" rx="10" fill="#FFFFFF" stroke="#B4234A" stroke-width="1.6"/>
+<path d="M640,790 L640,740 Q640,730 650,730 L1030,730 Q1040,730 1040,740 L1040,790 L1040,780 Q1040,790 1030,790 L650,790 Q640,790 640,780 Z" fill="#FBE0E6" stroke="#B4234A" stroke-width="1.6"/>
+<text x="840.0" y="765.0" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">«Учётная запись заблокирована»</text>
+</svg>

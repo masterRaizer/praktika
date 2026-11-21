@@ -1,0 +1,76 @@
+name: Дни 5–6 — приложение «Киноточка» (сборка, проверки, релиз)
+
+on:
+  push:
+    branches: [claude/elegant-ptolemy-c1gknu]
+    paths:
+      - 'Den5_6/**'
+      - '.github/release-notes/den5-6.md'
+      - '.github/workflows/release-den5-6.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Архив исходников
+        shell: pwsh
+        run: Compress-Archive -Path Den5_6 -DestinationPath Den5_6_src.zip
+
+      - uses: microsoft/setup-msbuild@v2
+
+      - name: Сборка решения
+        run: msbuild Den5_6\src\Kinotochka.sln /p:Configuration=Release /v:m /nologo
+
+      - name: База «Киноточка» на LocalDB
+        id: db
+        continue-on-error: true
+        shell: pwsh
+        run: |
+          sqllocaldb create MSSQLLocalDB -s 2>$null
+          sqllocaldb start MSSQLLocalDB
+          sqlcmd -S "(localdb)\MSSQLLocalDB" -E -b -f 65001 -i Den5_6\db\01_create.sql
+          if ($LASTEXITCODE -ne 0) { throw "01_create.sql не выполнен" }
+          sqlcmd -S "(localdb)\MSSQLLocalDB" -E -b -f 65001 -i Den5_6\db\02_data.sql
+          if ($LASTEXITCODE -ne 0) { throw "02_data.sql не выполнен" }
+
+      - name: Проверки (Kinotochka.Tests)
+        if: steps.db.outcome == 'success'
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force ci-tests | Out-Null
+          & Den5_6\src\Kinotochka.Tests\bin\Release\Kinotochka.Tests.exe --report=ci-tests
+          if ($LASTEXITCODE -ne 0) { throw "Проверки не пройдены" }
+
+      - name: Файлы релиза
+        shell: pwsh
+        run: |
+          Remove-Item Den5_6\src\Kinotochka\bin\Release\*.pdb -ErrorAction SilentlyContinue
+          Compress-Archive -Path Den5_6\src\Kinotochka\bin\Release\* -DestinationPath Kinotochka_exe.zip
+          Remove-Item Den5_6\src\Kinotochka.Tests\bin\Release\*.pdb -ErrorAction SilentlyContinue
+          Compress-Archive -Path Den5_6\src\Kinotochka.Tests\bin\Release\* -DestinationPath Kinotochka_Tests_exe.zip
+          Copy-Item "Den5_6\Отчёт_День5-6.pdf" Den5-6_Otchet.pdf
+          Copy-Item Den5_6\db\01_create.sql, Den5_6\db\02_data.sql, Den5_6\db\03_app_queries.sql .
+          Copy-Item Den5_6\diagrams\architecture.png, Den5_6\diagrams\navigation.png, Den5_6\diagrams\auth.png .
+          Copy-Item "Den5_6\tests\Результаты_тестирования.csv" Den5-6_Testy.csv
+          Copy-Item Den5_6\ЗАЩИТА.md Den5-6_Zashchita.md
+
+      - name: Релиз
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $tag = "den5-6-2026-11-21"
+          $notes = ".github/release-notes/den5-6.md"
+          gh release view $tag *> $null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create $tag --target $env:GITHUB_SHA --title "Дни 5–6 — 21.11.2026: приложение «Киноточка» с базой данных" --notes-file $notes
+          } else {
+            gh release edit $tag --notes-file $notes
+          }
+          gh release upload $tag Kinotochka_exe.zip Kinotochka_Tests_exe.zip Den5_6_src.zip Den5-6_Otchet.pdf 01_create.sql 02_data.sql 03_app_queries.sql architecture.png navigation.png auth.png Den5-6_Testy.csv Den5-6_Zashchita.md --clobber

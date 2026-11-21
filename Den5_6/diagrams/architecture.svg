@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" font-family="DejaVu Sans">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect width="1500" height="900" fill="#FFFFFF"/>
+<text x="30" y="42" font-size="22" font-weight="bold" fill="#1F2937">Структура решения Kinotochka.sln: интерфейс, бизнес-логика, работа с данными</text>
+<rect x="20" y="70" width="1090" height="300" rx="14" fill="#F8FAFC" stroke="#94A3B8" stroke-dasharray="6 5"/>
+<text x="34" y="92" font-size="13" font-weight="bold" fill="#475569">Проект Kinotochka (Windows Forms, .NET Framework 4.7.2)</text>
+<polyline points="370.0,230.0 400.0,230.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="354.3" y="211.0" width="61.4" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="385.0" y="222.0" font-size="11.5" text-anchor="middle" fill="#475569">вызывает</text>
+<polyline points="730.0,230.0 760.0,230.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="714.3" y="211.0" width="61.4" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="745.0" y="222.0" font-size="11.5" text-anchor="middle" fill="#475569">вызывает</text>
+<polyline points="1090.0,230.0 1180.0,230.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1107.7" y="211.0" width="54.7" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="1135.0" y="222.0" font-size="11.5" text-anchor="middle" fill="#475569">ADO.NET</text>
+<rect x="1101.0" y="226.0" width="68.0" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="1135.0" y="237.0" font-size="11.5" text-anchor="middle" fill="#475569">SqlClient</text>
+<polyline points="205.0,355.0 205.0,420.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="167.7" y="368.5" width="74.7" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="205.0" y="379.5" font-size="11.5" text-anchor="middle" fill="#475569">оформление</text>
+<polyline points="925.0,355.0 925.0,420.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+<rect x="901.0" y="368.5" width="48.0" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="925.0" y="379.5" font-size="11.5" text-anchor="middle" fill="#475569">читает</text>
+<polyline points="565.0,650.0 565.0,355.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="531.0" y="483.5" width="68.0" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="565.0" y="494.5" font-size="11.5" text-anchor="middle" fill="#475569">проверяет</text>
+<rect x="40" y="105" width="330" height="250" rx="10" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.6"/>
+<path d="M40,135 L40,115 Q40,105 50,105 L360,105 Q370,105 370,115 L370,135 L40,135 Z" fill="#DCE9FA" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="205.0" y="125" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Интерфейс — папка Forms</text>
+<text x="52" y="154" font-size="12" fill="#1F2937">LoginForm — авторизация</text>
+<text x="52" y="171" font-size="12" fill="#1F2937">RegisterForm — регистрация</text>
+<text x="52" y="188" font-size="12" fill="#1F2937">ConnectionForm — подключение</text>
+<text x="52" y="205" font-size="12" fill="#1F2937">MainForm — главное окно и разделы</text>
+<text x="52" y="222" font-size="12" fill="#1F2937">FilmEditForm — фильм</text>
+<text x="52" y="239" font-size="12" fill="#1F2937">ScreeningEditForm — сеанс</text>
+<text x="52" y="256" font-size="12" fill="#1F2937">UserEditForm — пользователь</text>
+<text x="52" y="273" font-size="12" fill="#1F2937">OrderStatusForm — статус заказа</text>
+<text x="52" y="290" font-size="12" fill="#1F2937">FormKit — показ ошибок, проверка полей</text>
+<rect x="400" y="105" width="330" height="250" rx="10" fill="#FFFFFF" stroke="#2F7A47" stroke-width="1.6"/>
+<path d="M400,135 L400,115 Q400,105 410,105 L720,105 Q730,105 730,115 L730,135 L400,135 Z" fill="#DDF1E3" stroke="#2F7A47" stroke-width="1.6"/>
+<text x="565.0" y="125" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Бизнес-логика — папка Logic</text>
+<text x="412" y="154" font-size="12" fill="#1F2937">AuthService — вход, регистрация,</text>
+<text x="412" y="171" font-size="12" fill="#1F2937">   3 попытки и пауза 30 с</text>
+<text x="412" y="188" font-size="12" fill="#1F2937">FilmService, ScreeningService,</text>
+<text x="412" y="205" font-size="12" fill="#1F2937">   OrderService, UserService</text>
+<text x="412" y="222" font-size="12" fill="#1F2937">Roles — права ролей</text>
+<text x="412" y="239" font-size="12" fill="#1F2937">Validator — проверка ввода</text>
+<text x="412" y="256" font-size="12" fill="#1F2937">PasswordHasher — PBKDF2-SHA256</text>
+<text x="412" y="273" font-size="12" fill="#1F2937">ErrorTranslator, ErrorLog — исключения</text>
+<rect x="760" y="105" width="330" height="250" rx="10" fill="#FFFFFF" stroke="#B45309" stroke-width="1.6"/>
+<path d="M760,135 L760,115 Q760,105 770,105 L1080,105 Q1090,105 1090,115 L1090,135 L760,135 Z" fill="#FDEBD3" stroke="#B45309" stroke-width="1.6"/>
+<text x="925.0" y="125" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Работа с данными — папка Data</text>
+<text x="772" y="154" font-size="12" fill="#1F2937">Db — строка подключения, открытие</text>
+<text x="772" y="171" font-size="12" fill="#1F2937">   и закрытие соединения (using),</text>
+<text x="772" y="188" font-size="12" fill="#1F2937">   параметры SqlParameter</text>
+<text x="772" y="205" font-size="12" fill="#1F2937">LookupRepository — справочники</text>
+<text x="772" y="222" font-size="12" fill="#1F2937">UserRepository, FilmRepository</text>
+<text x="772" y="239" font-size="12" fill="#1F2937">ScreeningRepository, OrderRepository</text>
+<text x="772" y="256" font-size="12" fill="#1F2937">DashboardRepository — показатели</text>
+<text x="772" y="273" font-size="12" fill="#1F2937">Models — классы записей</text>
+<rect x="40" y="420" width="330" height="150" rx="10" fill="#FFFFFF" stroke="#5B47E0" stroke-width="1.6"/>
+<path d="M40,450 L40,430 Q40,420 50,420 L360,420 Q370,420 370,430 L370,450 L40,450 Z" fill="#EEE9FB" stroke="#5B47E0" stroke-width="1.6"/>
+<text x="205.0" y="440" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Библиотека FxKit — папка Fx</text>
+<text x="52" y="469" font-size="12" fill="#1F2937">окно без рамки, боковая панель, темы</text>
+<text x="52" y="486" font-size="12" fill="#1F2937">FxTable — таблица с выделением строки</text>
+<text x="52" y="503" font-size="12" fill="#1F2937">FxDialog — формы ввода и сообщения</text>
+<text x="52" y="520" font-size="12" fill="#1F2937">FxTextBox, FxSelect, FxButton, FxSwitch</text>
+<rect x="1180" y="105" width="290" height="250" rx="10" fill="#FFFFFF" stroke="#B4234A" stroke-width="1.6"/>
+<path d="M1180,135 L1180,115 Q1180,105 1190,105 L1460,105 Q1470,105 1470,115 L1470,135 L1180,135 Z" fill="#FBE0E6" stroke="#B4234A" stroke-width="1.6"/>
+<text x="1325.0" y="125" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">MS SQL Server: база «Киноточка»</text>
+<text x="1192" y="154" font-size="12" fill="#1F2937">14 таблиц (день 4): Пользователи,</text>
+<text x="1192" y="171" font-size="12" fill="#1F2937">Роли, Фильмы, Жанры, Сеансы,</text>
+<text x="1192" y="188" font-size="12" fill="#1F2937">Залы, Места, ТипыМест, Заказы,</text>
+<text x="1192" y="205" font-size="12" fill="#1F2937">Билеты, Платежи, Промокоды,</text>
+<text x="1192" y="222" font-size="12" fill="#1F2937">СтатусыЗаказа, Отзывы</text>
+<text x="1192" y="239" font-size="12" fill="#1F2937">триггер ТР_Билеты_ПроверкаМеста</text>
+<text x="1192" y="256" font-size="12" fill="#1F2937">представление СуммыЗаказов</text>
+<rect x="760" y="420" width="330" height="150" rx="10" fill="#FFFFFF" stroke="#B45309" stroke-width="1.6"/>
+<path d="M760,450 L760,430 Q760,420 770,420 L1080,420 Q1090,420 1090,430 L1090,450 L760,450 Z" fill="#FDEBD3" stroke="#B45309" stroke-width="1.6"/>
+<text x="925.0" y="440" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Настройки подключения</text>
+<text x="772" y="469" font-size="12" fill="#1F2937">Kinotochka.exe.config — строка</text>
+<text x="772" y="486" font-size="12" fill="#1F2937">   подключения (LocalDB по умолчанию)</text>
+<text x="772" y="503" font-size="12" fill="#1F2937">%LOCALAPPDATA%\Kinotochka\server.txt</text>
+<text x="772" y="520" font-size="12" fill="#1F2937">   — сервер из формы «Подключение»</text>
+<text x="772" y="537" font-size="12" fill="#1F2937">%LOCALAPPDATA%\Kinotochka\errors.log</text>
+<rect x="400" y="650" width="330" height="150" rx="10" fill="#FFFFFF" stroke="#475569" stroke-width="1.6"/>
+<path d="M400,680 L400,660 Q400,650 410,650 L720,650 Q730,650 730,660 L730,680 L400,680 Z" fill="#F1F5F9" stroke="#475569" stroke-width="1.6"/>
+<text x="565.0" y="670" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Проект Kinotochka.Tests</text>
+<text x="412" y="699" font-size="12" fill="#1F2937">58 проверок: вход, регистрация, ввод,</text>
+<text x="412" y="716" font-size="12" fill="#1F2937">добавление, изменение, удаление,</text>
+<text x="412" y="733" font-size="12" fill="#1F2937">поиск, права ролей, ограничения базы,</text>
+<text x="412" y="750" font-size="12" fill="#1F2937">недоступность сервера</text>
+<text x="412" y="767" font-size="12" fill="#1F2937">→ Результаты_тестирования.md / .csv</text>
+</svg>

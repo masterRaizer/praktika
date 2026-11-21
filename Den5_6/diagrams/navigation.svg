@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1580" height="960" viewBox="0 0 1580 960" font-family="DejaVu Sans">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect width="1580" height="960" fill="#FFFFFF"/>
+<text x="30" y="42" font-size="22" font-weight="bold" fill="#1F2937">Навигация между формами приложения «Киноточка»</text>
+<polyline points="260.0,136.0 260.0,200.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polyline points="200.0,320.0 200.0,430.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="152.6" y="356.0" width="94.7" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="200.0" y="367.0" font-size="11.5" text-anchor="middle" fill="#475569">«Регистрация»</text>
+<polyline points="320.0,430.0 320.0,320.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="296.0" y="356.0" width="48.0" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="320.0" y="367.0" font-size="11.5" text-anchor="middle" fill="#475569">создан</text>
+<rect x="292.7" y="371.0" width="54.7" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="320.0" y="382.0" font-size="11.5" text-anchor="middle" fill="#475569">аккаунт</text>
+<polyline points="140.0,290.0 100.0,290.0 100.0,670.0 140.0,670.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="52.6" y="461.0" width="94.7" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="100.0" y="472.0" font-size="11.5" text-anchor="middle" fill="#475569">«Подключение»</text>
+<polyline points="140.0,230.0 40.0,230.0 40.0,863.0 170.0,863.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+<rect x="12.7" y="527.5" width="54.7" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="40.0" y="538.5" font-size="11.5" text-anchor="middle" fill="#475569">закрыть</text>
+<rect x="22.7" y="542.5" width="34.7" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="40.0" y="553.5" font-size="11.5" text-anchor="middle" fill="#475569">окно</text>
+<polyline points="380.0,230.0 540.0,230.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="412.6" y="211.0" width="94.7" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="460.0" y="222.0" font-size="11.5" text-anchor="middle" fill="#475569">вход выполнен</text>
+<polyline points="540.0,275.0 380.0,275.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="432.7" y="256.0" width="54.7" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="460.0" y="267.0" font-size="11.5" text-anchor="middle" fill="#475569">«Выйти»</text>
+<polyline points="380.0,305.0 470.0,305.0 470.0,655.0 540.0,655.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+<rect x="416.0" y="461.0" width="108.0" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="470.0" y="472.0" font-size="11.5" text-anchor="middle" fill="#475569">нет подключения</text>
+<polyline points="695.0,400.0 695.0,600.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+<rect x="654.3" y="481.0" width="81.4" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="695.0" y="492.0" font-size="11.5" text-anchor="middle" fill="#475569">ошибка базы</text>
+<polyline points="850.0,220.0 990.0,130.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="852.6" y="156.0" width="134.7" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="920.0" y="167.0" font-size="11.5" text-anchor="middle" fill="#475569">Добавить / Изменить</text>
+<polyline points="850.0,240.0 990.0,240.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polyline points="850.0,300.0 990.0,350.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="869.3" y="306.0" width="101.4" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="920.0" y="317.0" font-size="11.5" text-anchor="middle" fill="#475569">Сменить статус</text>
+<polyline points="850.0,340.0 990.0,460.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<polyline points="850.0,380.0 920.0,380.0 920.0,655.0 990.0,655.0" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="892.7" y="498.5" width="54.7" height="15" fill="#FFFFFF" opacity="0.92"/>
+<text x="920.0" y="509.5" font-size="11.5" text-anchor="middle" fill="#475569">Удалить</text>
+<rect x="170" y="90" width="180" height="46" rx="23.0" fill="#1F2937" stroke="#1F2937" stroke-width="1.6"/>
+<text x="260.0" y="118.0" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Запуск программы</text>
+<rect x="140" y="200" width="240" height="120" rx="10" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.6"/>
+<path d="M140,230 L140,210 Q140,200 150,200 L370,200 Q380,200 380,210 L380,230 L140,230 Z" fill="#DCE9FA" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="260.0" y="220" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Форма 1. Вход</text>
+<text x="152" y="249" font-size="12" fill="#1F2937">эл. почта и пароль,</text>
+<text x="152" y="266" font-size="12" fill="#1F2937">проверка подключения</text>
+<text x="152" y="283" font-size="12" fill="#1F2937">к базе данных</text>
+<rect x="140" y="430" width="240" height="100" rx="10" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.6"/>
+<path d="M140,460 L140,440 Q140,430 150,430 L370,430 Q380,430 380,440 L380,460 L140,460 Z" fill="#DCE9FA" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="260.0" y="450" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Форма 2. Регистрация</text>
+<text x="152" y="479" font-size="12" fill="#1F2937">новый зритель,</text>
+<text x="152" y="496" font-size="12" fill="#1F2937">пароль → хеш</text>
+<rect x="140" y="620" width="240" height="100" rx="10" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.6"/>
+<path d="M140,650 L140,630 Q140,620 150,620 L370,620 Q380,620 380,630 L380,650 L140,650 Z" fill="#DCE9FA" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="260.0" y="640" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Форма 3. Подключение</text>
+<text x="152" y="669" font-size="12" fill="#1F2937">имя сервера SQL Server,</text>
+<text x="152" y="686" font-size="12" fill="#1F2937">кнопка «Проверить»</text>
+<rect x="170" y="840" width="180" height="46" rx="23.0" fill="#1F2937" stroke="#1F2937" stroke-width="1.6"/>
+<text x="260.0" y="868.0" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Выход из программы</text>
+<rect x="540" y="180" width="310" height="220" rx="10" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.6"/>
+<path d="M540,210 L540,190 Q540,180 550,180 L840,180 Q850,180 850,190 L850,210 L540,210 Z" fill="#DCE9FA" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="695.0" y="200" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Форма 4. Главное окно</text>
+<text x="552" y="229" font-size="12" fill="#1F2937">боковая панель разделов:</text>
+<text x="552" y="246" font-size="12" fill="#1F2937">• Главная — показатели, афиша</text>
+<text x="552" y="263" font-size="12" fill="#1F2937">• Фильмы</text>
+<text x="552" y="280" font-size="12" fill="#1F2937">• Сеансы</text>
+<text x="552" y="297" font-size="12" fill="#1F2937">• Заказы / Мои заказы</text>
+<text x="552" y="314" font-size="12" fill="#1F2937">• Пользователи (администратор)</text>
+<rect x="540" y="600" width="310" height="110" rx="10" fill="#FFFFFF" stroke="#B4234A" stroke-width="1.6"/>
+<path d="M540,630 L540,610 Q540,600 550,600 L840,600 Q850,600 850,610 L850,630 L540,630 Z" fill="#FBE0E6" stroke="#B4234A" stroke-width="1.6"/>
+<text x="695.0" y="620" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Сообщение об ошибке</text>
+<text x="552" y="649" font-size="12" fill="#1F2937">понятный текст на русском,</text>
+<text x="552" y="666" font-size="12" fill="#1F2937">«Подробнее» — номер ошибки</text>
+<text x="552" y="683" font-size="12" fill="#1F2937">без паролей и строки подключения</text>
+<rect x="990" y="90" width="260" height="80" rx="10" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.6"/>
+<path d="M990,120 L990,100 Q990,90 1000,90 L1240,90 Q1250,90 1250,100 L1250,120 L990,120 Z" fill="#DCE9FA" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="1120.0" y="110" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Форма 5. Фильм</text>
+<text x="1002" y="139" font-size="12" fill="#1F2937">добавление и изменение</text>
+<rect x="990" y="200" width="260" height="80" rx="10" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.6"/>
+<path d="M990,230 L990,210 Q990,200 1000,200 L1240,200 Q1250,200 1250,210 L1250,230 L990,230 Z" fill="#DCE9FA" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="1120.0" y="220" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Форма 6. Сеанс</text>
+<text x="1002" y="249" font-size="12" fill="#1F2937">добавление и изменение</text>
+<rect x="990" y="310" width="260" height="80" rx="10" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.6"/>
+<path d="M990,340 L990,320 Q990,310 1000,310 L1240,310 Q1250,310 1250,320 L1250,340 L990,340 Z" fill="#DCE9FA" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="1120.0" y="330" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Форма 8. Статус заказа</text>
+<text x="1002" y="359" font-size="12" fill="#1F2937">кассир, администратор</text>
+<rect x="990" y="420" width="260" height="80" rx="10" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.6"/>
+<path d="M990,450 L990,430 Q990,420 1000,420 L1240,420 Q1250,420 1250,430 L1250,450 L990,450 Z" fill="#DCE9FA" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="1120.0" y="440" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Форма 7. Пользователь</text>
+<text x="1002" y="469" font-size="12" fill="#1F2937">только администратор</text>
+<rect x="990" y="600" width="260" height="110" rx="10" fill="#FFFFFF" stroke="#2F7A47" stroke-width="1.6"/>
+<path d="M990,630 L990,610 Q990,600 1000,600 L1240,600 Q1250,600 1250,610 L1250,630 L990,630 Z" fill="#DDF1E3" stroke="#2F7A47" stroke-width="1.6"/>
+<text x="1120.0" y="620" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Подтверждение</text>
+<text x="1002" y="649" font-size="12" fill="#1F2937">удаление записи,</text>
+<text x="1002" y="666" font-size="12" fill="#1F2937">блокировка, выход;</text>
+<text x="1002" y="683" font-size="12" fill="#1F2937">запрет при связанных данных</text>
+<rect x="1290" y="90" width="270" height="300" rx="10" fill="#FFFFFF" stroke="#2F7A47" stroke-width="1.6"/>
+<path d="M1290,120 L1290,100 Q1290,90 1300,90 L1550,90 Q1560,90 1560,100 L1560,120 L1290,120 Z" fill="#DDF1E3" stroke="#2F7A47" stroke-width="1.6"/>
+<text x="1425.0" y="110" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#1F2937">Права ролей</text>
+<text x="1302" y="139" font-size="12" fill="#1F2937">Зритель:</text>
+<text x="1302" y="156" font-size="12" fill="#1F2937">  Главная, Фильмы и Сеансы —</text>
+<text x="1302" y="173" font-size="12" fill="#1F2937">  просмотр, Мои заказы</text>
+<text x="1302" y="190" font-size="12" fill="#1F2937">Кассир:</text>
+<text x="1302" y="207" font-size="12" fill="#1F2937">  + все заказы, смена статуса</text>
+<text x="1302" y="224" font-size="12" fill="#1F2937">Администратор:</text>
+<text x="1302" y="241" font-size="12" fill="#1F2937">  + добавление, изменение</text>
+<text x="1302" y="258" font-size="12" fill="#1F2937">  и удаление фильмов,</text>
+<text x="1302" y="275" font-size="12" fill="#1F2937">  сеансов, заказов;</text>
+<text x="1302" y="292" font-size="12" fill="#1F2937">  раздел Пользователи</text>
+</svg>

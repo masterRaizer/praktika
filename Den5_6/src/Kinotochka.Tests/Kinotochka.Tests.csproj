@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C83F1D52-6A9E-4E07-B4D1-2F7A9C5E3B18}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Kinotochka.Tests</RootNamespace>
+    <AssemblyName>Kinotochka.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Те же классы бизнес-логики и работы с данными, что использует приложение (без форм) -->
+    <Compile Include="..\Kinotochka\Data\Db.cs"><Link>Data\Db.cs</Link></Compile>
+    <Compile Include="..\Kinotochka\Data\Repositories.cs"><Link>Data\Repositories.cs</Link></Compile>
+    <Compile Include="..\Kinotochka\Logic\Errors.cs"><Link>Logic\Errors.cs</Link></Compile>
+    <Compile Include="..\Kinotochka\Logic\PasswordHasher.cs"><Link>Logic\PasswordHasher.cs</Link></Compile>
+    <Compile Include="..\Kinotochka\Logic\Services.cs"><Link>Logic\Services.cs</Link></Compile>
+    <Compile Include="..\Kinotochka\Logic\Validator.cs"><Link>Logic\Validator.cs</Link></Compile>
+    <Compile Include="..\Kinotochka\Models\Models.cs"><Link>Models\Models.cs</Link></Compile>
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
