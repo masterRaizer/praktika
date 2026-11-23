@@ -1,0 +1,785 @@
+[
+ {
+  "tbl": "Билеты",
+  "ord": 1,
+  "col": "КодБилета",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Билеты",
+  "ord": 2,
+  "col": "КодЗаказа",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Заказы",
+  "uq": 1
+ },
+ {
+  "tbl": "Билеты",
+  "ord": 3,
+  "col": "КодМеста",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Места",
+  "uq": 1
+ },
+ {
+  "tbl": "Билеты",
+  "ord": 4,
+  "col": "Цена",
+  "type": "decimal(10,2)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Билеты",
+  "ord": 5,
+  "col": "QRКод",
+  "type": "uniqueidentifier",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Билеты",
+  "ord": 6,
+  "col": "ВремяПрохода",
+  "type": "datetime2(0)",
+  "nullable": true,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Жанры",
+  "ord": 1,
+  "col": "КодЖанра",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Жанры",
+  "ord": 2,
+  "col": "Название",
+  "type": "nvarchar(50)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "ЖурналДействий",
+  "ord": 1,
+  "col": "КодЗаписи",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "ЖурналДействий",
+  "ord": 2,
+  "col": "КодПользователя",
+  "type": "int",
+  "nullable": true,
+  "pk": 0,
+  "fk": "Пользователи",
+  "uq": 0
+ },
+ {
+  "tbl": "ЖурналДействий",
+  "ord": 3,
+  "col": "Действие",
+  "type": "nvarchar(200)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "ЖурналДействий",
+  "ord": 4,
+  "col": "Подробности",
+  "type": "nvarchar(500)",
+  "nullable": true,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "ЖурналДействий",
+  "ord": 5,
+  "col": "ВремяДействия",
+  "type": "datetime2(0)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Заказы",
+  "ord": 1,
+  "col": "КодЗаказа",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Заказы",
+  "ord": 2,
+  "col": "КодПользователя",
+  "type": "int",
+  "nullable": true,
+  "pk": 0,
+  "fk": "Пользователи",
+  "uq": 0
+ },
+ {
+  "tbl": "Заказы",
+  "ord": 3,
+  "col": "КодКассира",
+  "type": "int",
+  "nullable": true,
+  "pk": 0,
+  "fk": "Пользователи",
+  "uq": 0
+ },
+ {
+  "tbl": "Заказы",
+  "ord": 4,
+  "col": "КодСеанса",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Сеансы",
+  "uq": 0
+ },
+ {
+  "tbl": "Заказы",
+  "ord": 5,
+  "col": "КодПромокода",
+  "type": "int",
+  "nullable": true,
+  "pk": 0,
+  "fk": "Промокоды",
+  "uq": 0
+ },
+ {
+  "tbl": "Заказы",
+  "ord": 6,
+  "col": "КодСтатуса",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "СтатусыЗаказа",
+  "uq": 0
+ },
+ {
+  "tbl": "Заказы",
+  "ord": 7,
+  "col": "ДатаСоздания",
+  "type": "datetime2(0)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Заказы",
+  "ord": 8,
+  "col": "БроньДо",
+  "type": "datetime2(0)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Залы",
+  "ord": 1,
+  "col": "КодЗала",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Залы",
+  "ord": 2,
+  "col": "Номер",
+  "type": "tinyint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Залы",
+  "ord": 3,
+  "col": "Название",
+  "type": "nvarchar(50)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Залы",
+  "ord": 4,
+  "col": "КоличествоРядов",
+  "type": "tinyint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Залы",
+  "ord": 5,
+  "col": "МестВРяду",
+  "type": "tinyint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Места",
+  "ord": 1,
+  "col": "КодМеста",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Места",
+  "ord": 2,
+  "col": "КодЗала",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Залы",
+  "uq": 1
+ },
+ {
+  "tbl": "Места",
+  "ord": 3,
+  "col": "Ряд",
+  "type": "tinyint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Места",
+  "ord": 4,
+  "col": "НомерМеста",
+  "type": "tinyint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Места",
+  "ord": 5,
+  "col": "КодТипаМеста",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "ТипыМест",
+  "uq": 0
+ },
+ {
+  "tbl": "Отзывы",
+  "ord": 1,
+  "col": "КодОтзыва",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Отзывы",
+  "ord": 2,
+  "col": "КодПользователя",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Пользователи",
+  "uq": 1
+ },
+ {
+  "tbl": "Отзывы",
+  "ord": 3,
+  "col": "КодФильма",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Фильмы",
+  "uq": 1
+ },
+ {
+  "tbl": "Отзывы",
+  "ord": 4,
+  "col": "Оценка",
+  "type": "tinyint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Отзывы",
+  "ord": 5,
+  "col": "ТекстОтзыва",
+  "type": "nvarchar(1000)",
+  "nullable": true,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Отзывы",
+  "ord": 6,
+  "col": "ДатаСоздания",
+  "type": "datetime2(0)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Платежи",
+  "ord": 1,
+  "col": "КодПлатежа",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Платежи",
+  "ord": 2,
+  "col": "КодЗаказа",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Заказы",
+  "uq": 0
+ },
+ {
+  "tbl": "Платежи",
+  "ord": 3,
+  "col": "ВидОперации",
+  "type": "nvarchar(10)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Платежи",
+  "ord": 4,
+  "col": "Сумма",
+  "type": "decimal(10,2)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Платежи",
+  "ord": 5,
+  "col": "НомерТранзакции",
+  "type": "nvarchar(50)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Платежи",
+  "ord": 6,
+  "col": "Успешно",
+  "type": "bit",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Платежи",
+  "ord": 7,
+  "col": "ДатаСоздания",
+  "type": "datetime2(0)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Пользователи",
+  "ord": 1,
+  "col": "КодПользователя",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Пользователи",
+  "ord": 2,
+  "col": "ФИО",
+  "type": "nvarchar(100)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Пользователи",
+  "ord": 3,
+  "col": "ЭлПочта",
+  "type": "nvarchar(100)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Пользователи",
+  "ord": 4,
+  "col": "Телефон",
+  "type": "nvarchar(20)",
+  "nullable": true,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Пользователи",
+  "ord": 5,
+  "col": "ХешПароля",
+  "type": "nvarchar(200)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Пользователи",
+  "ord": 6,
+  "col": "КодРоли",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Роли",
+  "uq": 0
+ },
+ {
+  "tbl": "Пользователи",
+  "ord": 7,
+  "col": "Заблокирован",
+  "type": "bit",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Пользователи",
+  "ord": 8,
+  "col": "ДатаСоздания",
+  "type": "datetime2(0)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Промокоды",
+  "ord": 1,
+  "col": "КодПромокода",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Промокоды",
+  "ord": 2,
+  "col": "Обозначение",
+  "type": "nvarchar(30)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Промокоды",
+  "ord": 3,
+  "col": "ПроцентСкидки",
+  "type": "tinyint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Промокоды",
+  "ord": 4,
+  "col": "ДействуетДо",
+  "type": "date",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Промокоды",
+  "ord": 5,
+  "col": "Активен",
+  "type": "bit",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "ПрофилиЗрителей",
+  "ord": 1,
+  "col": "КодПользователя",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "fk": "Пользователи",
+  "uq": 0
+ },
+ {
+  "tbl": "ПрофилиЗрителей",
+  "ord": 2,
+  "col": "ДатаРождения",
+  "type": "date",
+  "nullable": true,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "ПрофилиЗрителей",
+  "ord": 3,
+  "col": "Город",
+  "type": "nvarchar(60)",
+  "nullable": true,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "ПрофилиЗрителей",
+  "ord": 4,
+  "col": "ПодпискаНаРассылку",
+  "type": "bit",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "ПрофилиЗрителей",
+  "ord": 5,
+  "col": "ДатаИзменения",
+  "type": "datetime2(0)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Роли",
+  "ord": 1,
+  "col": "КодРоли",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Роли",
+  "ord": 2,
+  "col": "Обозначение",
+  "type": "nvarchar(20)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Роли",
+  "ord": 3,
+  "col": "Название",
+  "type": "nvarchar(50)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Сеансы",
+  "ord": 1,
+  "col": "КодСеанса",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Сеансы",
+  "ord": 2,
+  "col": "КодФильма",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Фильмы",
+  "uq": 0
+ },
+ {
+  "tbl": "Сеансы",
+  "ord": 3,
+  "col": "КодЗала",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Залы",
+  "uq": 1
+ },
+ {
+  "tbl": "Сеансы",
+  "ord": 4,
+  "col": "НачалоСеанса",
+  "type": "datetime2(0)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "Сеансы",
+  "ord": 5,
+  "col": "Формат",
+  "type": "nvarchar(10)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Сеансы",
+  "ord": 6,
+  "col": "БазоваяЦена",
+  "type": "decimal(10,2)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "СтатусыЗаказа",
+  "ord": 1,
+  "col": "КодСтатуса",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "СтатусыЗаказа",
+  "ord": 2,
+  "col": "Обозначение",
+  "type": "nvarchar(20)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "СтатусыЗаказа",
+  "ord": 3,
+  "col": "Название",
+  "type": "nvarchar(50)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "ТипыМест",
+  "ord": 1,
+  "col": "КодТипаМеста",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "ТипыМест",
+  "ord": 2,
+  "col": "Название",
+  "type": "nvarchar(50)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 1
+ },
+ {
+  "tbl": "ТипыМест",
+  "ord": 3,
+  "col": "КоэффициентЦены",
+  "type": "decimal(4,2)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Фильмы",
+  "ord": 1,
+  "col": "КодФильма",
+  "type": "int",
+  "nullable": false,
+  "pk": 1,
+  "uq": 0
+ },
+ {
+  "tbl": "Фильмы",
+  "ord": 2,
+  "col": "Название",
+  "type": "nvarchar(150)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Фильмы",
+  "ord": 3,
+  "col": "КодЖанра",
+  "type": "int",
+  "nullable": false,
+  "pk": 0,
+  "fk": "Жанры",
+  "uq": 0
+ },
+ {
+  "tbl": "Фильмы",
+  "ord": 4,
+  "col": "ДлительностьМин",
+  "type": "smallint",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Фильмы",
+  "ord": 5,
+  "col": "ВозрастнойРейтинг",
+  "type": "nvarchar(3)",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Фильмы",
+  "ord": 6,
+  "col": "Описание",
+  "type": "nvarchar(1000)",
+  "nullable": true,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Фильмы",
+  "ord": 7,
+  "col": "Постер",
+  "type": "nvarchar(260)",
+  "nullable": true,
+  "pk": 0,
+  "uq": 0
+ },
+ {
+  "tbl": "Фильмы",
+  "ord": 8,
+  "col": "Активен",
+  "type": "bit",
+  "nullable": false,
+  "pk": 0,
+  "uq": 0
+ }
+]

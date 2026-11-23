@@ -1,0 +1,232 @@
+openapi: 3.0.3
+info:
+  title: Киноточка — модули «Клиенты» и «Заявки» (день 7)
+  version: 1.0.0
+  description: |
+    Два независимых модуля (отдельные процессы на своих портах) обмениваются данными в формате JSON по HTTP.
+    Модуль «Заявки» перед созданием заявки проверяет клиента запросом к модулю «Клиенты»;
+    модуль «Клиенты» собирает карточку клиента, запрашивая его заявки у модуля «Заявки».
+    Запуск: Den5_7.exe --module=clients --port=5101 --peer=http://127.0.0.1:5102
+            Den5_7.exe --module=requests --port=5102 --peer=http://127.0.0.1:5101
+    (или кнопка «Запустить оба модуля» на вкладке «Модули» дня 7).
+    Все ответы — JSON в UTF-8; ошибка — объект {"error": "текст", "status": код}.
+servers:
+  - url: http://127.0.0.1:5101
+    description: модуль «Клиенты»
+  - url: http://127.0.0.1:5102
+    description: модуль «Заявки»
+tags:
+  - name: Клиенты
+    description: модуль «Клиенты», порт 5101
+  - name: Заявки
+    description: модуль «Заявки», порт 5102
+paths:
+  /api/health:
+    get:
+      summary: Проверка доступности модуля (есть в обоих модулях)
+      responses:
+        '200':
+          description: модуль работает
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  module: { type: string, example: clients }
+                  status: { type: string, example: ok }
+  /api/clients:
+    servers:
+      - url: http://127.0.0.1:5101
+    get:
+      tags: [Клиенты]
+      summary: Список клиентов
+      responses:
+        '200':
+          description: список клиентов
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/Client' }
+    post:
+      tags: [Клиенты]
+      summary: Добавить клиента
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/NewClient' }
+      responses:
+        '201':
+          description: клиент создан
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Client' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+  /api/clients/{id}:
+    servers:
+      - url: http://127.0.0.1:5101
+    get:
+      tags: [Клиенты]
+      summary: Клиент по коду (этим запросом модуль «Заявки» проверяет клиента)
+      parameters:
+        - $ref: '#/components/parameters/Id'
+      responses:
+        '200':
+          description: клиент найден
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Client' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /api/clients/{id}/card:
+    servers:
+      - url: http://127.0.0.1:5101
+    get:
+      tags: [Клиенты]
+      summary: Карточка клиента — клиент и его заявки (данные из двух модулей)
+      parameters:
+        - $ref: '#/components/parameters/Id'
+      responses:
+        '200':
+          description: карточка собрана
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  client: { $ref: '#/components/schemas/Client' }
+                  requests:
+                    type: array
+                    items: { $ref: '#/components/schemas/Request' }
+                  requestsCount: { type: integer, example: 2 }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '502': { $ref: '#/components/responses/PeerError' }
+        '503': { $ref: '#/components/responses/PeerUnavailable' }
+  /api/requests:
+    servers:
+      - url: http://127.0.0.1:5102
+    get:
+      tags: [Заявки]
+      summary: Список заявок, можно только одного клиента
+      parameters:
+        - name: clientId
+          in: query
+          required: false
+          schema: { type: integer, minimum: 1 }
+      responses:
+        '200':
+          description: список заявок
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/Request' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+    post:
+      tags: [Заявки]
+      summary: Создать заявку (клиент проверяется в модуле «Клиенты»)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/NewRequest' }
+      responses:
+        '201':
+          description: заявка создана, к ней добавлено имя клиента из модуля «Клиенты»
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Request' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '422':
+          description: клиента с таким кодом нет — заявка не создана
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+              example: { error: 'Клиент с id = 999 не найден: заявка не создана.', status: 422 }
+        '502': { $ref: '#/components/responses/PeerError' }
+        '503': { $ref: '#/components/responses/PeerUnavailable' }
+  /api/requests/{id}:
+    servers:
+      - url: http://127.0.0.1:5102
+    get:
+      tags: [Заявки]
+      summary: Заявка по коду
+      parameters:
+        - $ref: '#/components/parameters/Id'
+      responses:
+        '200':
+          description: заявка найдена
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Request' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '404': { $ref: '#/components/responses/NotFound' }
+components:
+  parameters:
+    Id:
+      name: id
+      in: path
+      required: true
+      schema: { type: integer, minimum: 1 }
+  schemas:
+    Client:
+      type: object
+      properties:
+        id: { type: integer, example: 1 }
+        fullName: { type: string, example: Иванов Иван Иванович }
+        phone: { type: string, example: +7 900 111-22-33 }
+        email: { type: string, example: ivanov@example.com }
+    NewClient:
+      type: object
+      required: [fullName]
+      properties:
+        fullName: { type: string, maxLength: 150 }
+        phone: { type: string }
+        email: { type: string, format: email }
+    Request:
+      type: object
+      properties:
+        id: { type: integer, example: 7 }
+        topic: { type: string, example: Возврат билета }
+        description: { type: string, example: Сеанс перенесли, прошу вернуть деньги. }
+        clientId: { type: integer, example: 2 }
+        clientName: { type: string, example: Петрова Анна Сергеевна }
+        createdAt: { type: string, example: '2026-11-23T14:48:00' }
+    NewRequest:
+      type: object
+      required: [topic, clientId]
+      properties:
+        topic: { type: string, minLength: 1, maxLength: 200 }
+        description: { type: string, maxLength: 2000 }
+        clientId: { type: integer, minimum: 1 }
+    Error:
+      type: object
+      properties:
+        error: { type: string }
+        status: { type: integer }
+  responses:
+    BadRequest:
+      description: неверный формат данных (не JSON, пустая тема, нечисловой код и т. п.)
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }
+          example: { error: 'Поле topic (тема) обязательно.', status: 400 }
+    NotFound:
+      description: записи с таким кодом нет
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }
+          example: { error: 'Клиент с id = 777 не найден.', status: 404 }
+    PeerUnavailable:
+      description: второй модуль не ответил за 3 секунды — операция не выполнена, этот модуль продолжает работать
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }
+          example: { error: 'Модуль «Клиенты» недоступен: заявка не создана. Повторите позже.', status: 503 }
+    PeerError:
+      description: второй модуль ответил ошибкой
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Error' }

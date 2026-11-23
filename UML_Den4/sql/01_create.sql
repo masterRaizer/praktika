@@ -17,6 +17,11 @@ USE Киноточка;
 GO
 
 -- удаление в обратном порядке связей (для повторного запуска)
+-- сначала объекты дня 5 (sql/04_den5.sql), если он уже выполнялся: они ссылаются на Пользователи
+DROP VIEW  IF EXISTS dbo.Афиша;
+DROP VIEW  IF EXISTS dbo.ВыручкаПоФильмам;
+DROP TABLE IF EXISTS dbo.ЖурналДействий;
+DROP TABLE IF EXISTS dbo.ПрофилиЗрителей;
 DROP VIEW  IF EXISTS dbo.СуммыЗаказов;
 DROP TABLE IF EXISTS dbo.Отзывы;
 DROP TABLE IF EXISTS dbo.Платежи;

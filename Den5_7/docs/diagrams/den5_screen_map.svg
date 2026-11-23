@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1110" viewBox="0 0 1900 1110">
+<rect width="1900" height="1110" fill="#FFFFFF"/>
+<text x="950.0" y="40.0" font-family="DejaVu Sans" font-size="22" font-weight="bold" fill="#1F2937" text-anchor="middle">Карта экранов и переходов приложения «Киноточка» (дни 5–7)</text>
+<polyline points="490.0,126.0 490.0,170.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="495.5,158.0 490.0,170.0 484.5,158.0" fill="#475569"/>
+<polyline points="1180.0,126.0 1180.0,170.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1185.5,158.0 1180.0,170.0 1174.5,158.0" fill="#475569"/>
+<polyline points="1640.0,126.0 1640.0,170.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1645.5,158.0 1640.0,170.0 1634.5,158.0" fill="#475569"/>
+<polyline points="300.0,272.0 390.0,272.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="378.0,266.5 390.0,272.0 378.0,277.5" fill="#475569"/>
+<polyline points="150.0,314.0 150.0,390.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="155.5,378.0 150.0,390.0 144.5,378.0" fill="#475569"/>
+<polyline points="230.0,390.0 230.0,314.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="224.5,326.0 230.0,314.0 235.5,326.0" fill="#475569"/>
+<polyline points="610.0,282.0 690.0,282.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="678.0,276.5 690.0,282.0 678.0,287.5" fill="#475569"/>
+<polyline points="800.0,250.0 800.0,216.0 190.0,216.0 190.0,250.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="195.5,238.0 190.0,250.0 184.5,238.0" fill="#475569"/>
+<polyline points="500.0,314.0 500.0,460.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="505.5,448.0 500.0,460.0 494.5,448.0" fill="#475569"/>
+<polyline points="610.0,492.0 690.0,492.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="678.0,486.5 690.0,492.0 678.0,497.5" fill="#475569"/>
+<polyline points="470.0,524.0 470.0,680.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="475.5,668.0 470.0,680.0 464.5,668.0" fill="#475569"/>
+<polyline points="540.0,680.0 540.0,524.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="534.5,536.0 540.0,524.0 545.5,536.0" fill="#475569"/>
+<polyline points="610.0,700.0 650.0,700.0 650.0,652.0 690.0,652.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="678.0,646.5 690.0,652.0 678.0,657.5" fill="#475569"/>
+<polyline points="610.0,724.0 650.0,724.0 650.0,772.0 690.0,772.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="678.0,766.5 690.0,772.0 678.0,777.5" fill="#475569"/>
+<polyline points="390.0,300.0 350.0,300.0 350.0,592.0 300.0,592.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="312.0,597.5 300.0,592.0 312.0,586.5" fill="#475569"/>
+<polyline points="390.0,300.0 350.0,300.0 350.0,712.0 300.0,712.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="312.0,717.5 300.0,712.0 312.0,706.5" fill="#475569"/>
+<polyline points="390.0,300.0 350.0,300.0 350.0,832.0 300.0,832.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="312.0,837.5 300.0,832.0 312.0,826.5" fill="#475569"/>
+<polyline points="1270.0,282.0 1340.0,282.0 1340.0,832.0 1270.0,832.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1282.0,837.5 1270.0,832.0 1282.0,826.5" fill="#475569"/>
+<polyline points="1270.0,412.0 1340.0,412.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1640.0,444.0 1640.0,500.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1645.5,488.0 1640.0,500.0 1634.5,488.0" fill="#475569"/>
+<polyline points="1640.0,704.0 1640.0,760.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1645.5,748.0 1640.0,760.0 1634.5,748.0" fill="#475569"/>
+<polyline points="1530.0,282.0 1470.0,282.0 1470.0,412.0 1530.0,412.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1518.0,406.5 1530.0,412.0 1518.0,417.5" fill="#475569"/>
+<polyline points="1530.0,282.0 1470.0,282.0 1470.0,672.0 1530.0,672.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1518.0,666.5 1530.0,672.0 1518.0,677.5" fill="#475569"/>
+<rect x="40" y="70" width="1820" height="56" rx="10" fill="#1E3A5F" stroke="#1E3A5F" stroke-width="1.6"/>
+<text x="950.0" y="103.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Главное окно: боковая панель «День 5 · День 6 · День 7», кнопка «☰» (три полоски) сворачивает панель; разделы дня — вкладки сверху</text>
+<rect x="40" y="170" width="900" height="900" rx="12" fill="none" stroke="#CBD5E1" stroke-width="1.6"/>
+<text x="490.0" y="624.7" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle"></text>
+<rect x="970" y="170" width="420" height="900" rx="12" fill="none" stroke="#CBD5E1" stroke-width="1.6"/>
+<text x="1180.0" y="624.7" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle"></text>
+<rect x="1420" y="170" width="440" height="900" rx="12" fill="none" stroke="#CBD5E1" stroke-width="1.6"/>
+<text x="1640.0" y="624.7" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle"></text>
+<rect x="80" y="250" width="220" height="64" rx="8" fill="#E3EEFB" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="190.0" y="277.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Вход</text>
+<text x="190.0" y="302.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">e-mail и пароль</text>
+<rect x="390" y="250" width="220" height="64" rx="8" fill="#E3EEFB" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="500.0" y="277.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Главная</text>
+<text x="500.0" y="302.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">сводка и афиша</text>
+<rect x="690" y="250" width="220" height="64" rx="14" fill="#FFF4E0" stroke="#B45309" stroke-width="1.6"/>
+<text x="800.0" y="278.8" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">Подтверждение:</text><text x="800.0" y="293.5" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">«Выйти из системы?»</text>
+<rect x="80" y="390" width="220" height="64" rx="14" fill="#FDE8EC" stroke="#B4234A" stroke-width="1.6"/>
+<text x="190.0" y="418.8" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">Сообщение:</text><text x="190.0" y="433.5" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">«Неверный e-mail или пароль»</text>
+<rect x="390" y="460" width="220" height="64" rx="8" fill="#E6F4EA" stroke="#2F7A47" stroke-width="1.6"/>
+<text x="500.0" y="487.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Фильмы (справочник)</text>
+<text x="500.0" y="512.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">поиск, фильтр, сортировка</text>
+<rect x="690" y="460" width="220" height="64" rx="14" fill="#FFF4E0" stroke="#B45309" stroke-width="1.6"/>
+<text x="800.0" y="488.8" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">Подтверждение:</text><text x="800.0" y="503.5" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">«Удалить фильм?»</text>
+<rect x="390" y="680" width="220" height="64" rx="8" fill="#E6F4EA" stroke="#2F7A47" stroke-width="1.6"/>
+<text x="500.0" y="707.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Карточка фильма</text>
+<text x="500.0" y="732.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">добавление и изменение</text>
+<rect x="690" y="620" width="220" height="64" rx="14" fill="#FDE8EC" stroke="#B4234A" stroke-width="1.6"/>
+<text x="800.0" y="648.8" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">Сообщение: ошибки</text><text x="800.0" y="663.5" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">проверки данных</text>
+<rect x="690" y="740" width="220" height="64" rx="14" fill="#FFF4E0" stroke="#B45309" stroke-width="1.6"/>
+<text x="800.0" y="768.8" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">Подтверждение:</text><text x="800.0" y="783.5" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">«Отменить изменения?»</text>
+<rect x="80" y="560" width="220" height="64" rx="8" fill="#E3EEFB" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="190.0" y="587.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">SQL-запросы</text>
+<text x="190.0" y="612.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">13 запросов, параметры</text>
+<rect x="80" y="680" width="220" height="64" rx="8" fill="#E3EEFB" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="190.0" y="707.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Словарь данных</text>
+<text x="190.0" y="732.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">из MS_Description</text>
+<rect x="80" y="800" width="220" height="64" rx="8" fill="#E3EEFB" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="190.0" y="827.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Модель</text>
+<text x="190.0" y="852.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">IDEF0 и карта экранов</text>
+<rect x="1050" y="250" width="220" height="64" rx="8" fill="#E0F2F1" stroke="#0F766E" stroke-width="1.6"/>
+<text x="1160.0" y="277.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Отчёты</text>
+<text x="1160.0" y="302.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">администратор, кассир</text>
+<rect x="1050" y="380" width="220" height="64" rx="8" fill="#E0F2F1" stroke="#0F766E" stroke-width="1.6"/>
+<text x="1160.0" y="407.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Журнал действий</text>
+<text x="1160.0" y="432.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">только администратор</text>
+<rect x="1050" y="510" width="220" height="64" rx="8" fill="#E0F2F1" stroke="#0F766E" stroke-width="1.6"/>
+<text x="1160.0" y="537.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Тест-кейсы</text>
+<text x="1160.0" y="562.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">21 проверка</text>
+<rect x="1050" y="640" width="220" height="64" rx="8" fill="#E0F2F1" stroke="#0F766E" stroke-width="1.6"/>
+<text x="1160.0" y="667.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Документация</text>
+<text x="1160.0" y="692.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">инструкции и сценарий</text>
+<rect x="1050" y="800" width="220" height="64" rx="14" fill="#FFFFFF" stroke="#64748B" stroke-width="1.6"/>
+<text x="1160.0" y="828.8" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">Диалог «Сохранить как»</text><text x="1160.0" y="843.5" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">→ «Файл сохранён»</text>
+<rect x="1050" y="930" width="220" height="64" rx="14" fill="#FDE8EC" stroke="#B4234A" stroke-width="1.6"/>
+<text x="1160.0" y="958.8" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">Нет прав: раздел скрыт,</text><text x="1160.0" y="973.5" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">показано пояснение</text>
+<rect x="1530" y="250" width="220" height="64" rx="8" fill="#EFE9FB" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="1640.0" y="277.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Модули</text>
+<text x="1640.0" y="302.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">запуск, остановка, проверка</text>
+<rect x="1530" y="380" width="220" height="64" rx="8" fill="#EFE9FB" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="1640.0" y="407.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Клиенты</text>
+<text x="1640.0" y="432.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">GET /api/clients</text>
+<rect x="1530" y="500" width="220" height="64" rx="8" fill="#EFE9FB" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="1640.0" y="527.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Карточка клиента</text>
+<text x="1640.0" y="552.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">клиент + его заявки</text>
+<rect x="1530" y="640" width="220" height="64" rx="8" fill="#EFE9FB" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="1640.0" y="667.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Новая заявка</text>
+<text x="1640.0" y="692.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">POST /api/requests</text>
+<rect x="1530" y="760" width="220" height="64" rx="14" fill="#FDE8EC" stroke="#B4234A" stroke-width="1.6"/>
+<text x="1640.0" y="788.8" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">Результат: 201 создана /</text><text x="1640.0" y="803.5" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" fill="#1F2937" text-anchor="middle">422 нет клиента / 503</text>
+<rect x="1530" y="880" width="220" height="64" rx="8" fill="#EFE9FB" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="1640.0" y="907.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Тесты интеграции</text>
+<text x="1640.0" y="932.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">10 сквозных сценариев</text>
+<rect x="1530" y="990" width="220" height="56" rx="8" fill="#EFE9FB" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="1640.0" y="1022.7" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">Контракт API</text>
+<rect x="316.8" y="231.0" width="56.4" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="345.0" y="244.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">вход</text>
+<text x="345.0" y="259.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">успешен</text>
+<rect x="155.0" y="343.0" width="49.2" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="158.0" y="356.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">ошибка</text>
+<rect x="235.0" y="343.0" width="20.4" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="238.0" y="356.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">ОК</text>
+<rect x="621.8" y="259.0" width="56.4" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="650.0" y="272.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">«Выйти»</text>
+<rect x="477.6" y="199.0" width="34.8" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="495.0" y="212.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">«Да»</text>
+<rect x="505.0" y="377.0" width="63.6" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="508.0" y="390.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">«Фильмы»</text>
+<rect x="614.6" y="469.0" width="70.8" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="650.0" y="482.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">«Удалить»</text>
+<rect x="379.8" y="577.0" width="85.2" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="462.0" y="590.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="end">«Добавить»,</text>
+<text x="462.0" y="605.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="end">«Изменить»</text>
+<rect x="545.0" y="577.0" width="92.4" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="548.0" y="590.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">«Сохранить»,</text>
+<text x="548.0" y="605.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">«Отмена»</text>
+<rect x="1271.4" y="729.0" width="63.6" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1332.0" y="742.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="end">«Экспорт</text>
+<text x="1332.0" y="757.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="end">в CSV»</text>
+<rect x="1645.0" y="453.0" width="78.0" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1648.0" y="466.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">щелчок</text>
+<text x="1648.0" y="481.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">по клиенту</text>
+<rect x="1645.0" y="713.0" width="63.6" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1648.0" y="726.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">«Создать</text>
+<text x="1648.0" y="741.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">заявку»</text>
+<rect x="1475.0" y="317.0" width="63.6" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1478.0" y="330.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">модули</text>
+<text x="1478.0" y="345.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">запущены</text>
+<text x="60.0" y="199.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="start">День 5 — интерфейс и база данных</text>
+<text x="990.0" y="199.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="start">День 6 — функции и тестирование</text>
+<text x="1440.0" y="199.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="start">День 7 — интеграция REST API</text>
+<text x="80.0" y="939.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">Сообщения об ошибках — розовые, подтверждения опасных действий — жёлтые,</text><text x="80.0" y="954.3" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">стандартные диалоги Windows — белые. Кассир и зритель не видят кнопок изменения фильмов.</text><text x="80.0" y="969.7" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">Сообщения не содержат технических подробностей и паролей.</text>
+</svg>

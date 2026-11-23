@@ -1,0 +1,68 @@
+name: Дни 5–7 — сборка и релиз
+
+on:
+  push:
+    branches: [claude/modest-einstein-rjcvzn]
+    paths:
+      - 'Den5_7/**'
+      - 'UML_Den4/sql/**'
+      - '.github/release-notes/den5-7.md'
+      - '.github/workflows/release-den5-7.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Архив исходников
+        shell: pwsh
+        run: Compress-Archive -Path Den5_7 -DestinationPath Den5_7.zip
+
+      - uses: microsoft/setup-msbuild@v2
+
+      - name: Сборка
+        run: msbuild Den5_7\src\Den5_7.sln /p:Configuration=Release /v:m /nologo
+
+      - name: Тесты интеграции дня 7 (модули на портах 5101 и 5102, база не нужна)
+        shell: pwsh
+        run: |
+          $exe = Resolve-Path Den5_7\src\Den5_7\bin\Release\Den5_7.exe
+          $p = Start-Process $exe -ArgumentList "--run-integration=$PWD\Den5_7_integration_windows.md" -Wait -PassThru
+          Get-Content Den5_7_integration_windows.md -Encoding utf8
+          if ($p.ExitCode -ne 0) { throw "Тесты интеграции не пройдены (код $($p.ExitCode))" }
+
+      - name: Файлы релиза
+        shell: pwsh
+        run: |
+          Remove-Item Den5_7\src\Den5_7\bin\Release\*.pdb -ErrorAction SilentlyContinue
+          Compress-Archive -Path Den5_7\src\Den5_7\bin\Release\* -DestinationPath Den5_7_exe.zip
+          New-Item -ItemType Directory sql | Out-Null
+          Copy-Item UML_Den4\sql\01_create.sql, UML_Den4\sql\02_data.sql, Den5_7\sql\04_den5.sql, Den5_7\sql\05_queries.sql sql\
+          Compress-Archive -Path sql\* -DestinationPath Den5_7_sql.zip
+          Compress-Archive -Path Den5_7\docs\* -DestinationPath Den5_7_docs.zip
+          Copy-Item "Den5_7\docs\Пояснительная_записка.pdf" Den5_7_Poyasnitelnaya_zapiska.pdf
+          Copy-Item "Den5_7\ПРОМПТ_ДЛЯ_АГЕНТА.md" PROMPT_dlya_agenta.md
+          Copy-Item Den5_7\docs\diagrams\*.png .
+          Get-Content .github\release-notes\den5-7.md, "Den5_7\ПРОМПТ_ДЛЯ_АГЕНТА.md" -Encoding utf8 | Set-Content notes.md -Encoding utf8
+
+      - name: Релиз
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $tag = "den5-7-2026-11-23"
+          gh release view $tag *> $null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create $tag --target $env:GITHUB_SHA --title "Дни 5–7 — 23.11.2026: интерфейс и база данных, тестирование, интеграция REST API" --notes-file notes.md
+          } else {
+            gh release edit $tag --notes-file notes.md
+          }
+          $files = @("Den5_7_exe.zip", "Den5_7.zip", "Den5_7_sql.zip", "Den5_7_docs.zip", "Den5_7_Poyasnitelnaya_zapiska.pdf",
+                     "PROMPT_dlya_agenta.md", "Den5_7_integration_windows.md") + (Get-ChildItem sql\*.sql | ForEach-Object { $_.FullName }) +
+                    (Get-ChildItem den*.png | ForEach-Object { $_.Name })
+          gh release upload $tag @files --clobber

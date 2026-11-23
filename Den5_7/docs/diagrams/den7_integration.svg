@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="900" viewBox="0 0 1760 900">
+<rect width="1760" height="900" fill="#FFFFFF"/>
+<text x="880.0" y="40.0" font-family="DejaVu Sans" font-size="22" font-weight="bold" fill="#1F2937" text-anchor="middle">Интеграция модулей «Клиенты» и «Заявки» через REST API (день 7)</text>
+<polyline points="340.0,670.0 340.0,720.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1420.0,670.0 1420.0,720.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="700.0,200.0 700.0,250.0 340.0,250.0 340.0,300.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="345.5,288.0 340.0,300.0 334.5,288.0" fill="#475569"/>
+<polyline points="1060.0,200.0 1060.0,250.0 1420.0,250.0 1420.0,300.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1425.5,288.0 1420.0,300.0 1414.5,288.0" fill="#475569"/>
+<polyline points="1140.0,430.0 620.0,430.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="632.0,435.5 620.0,430.0 632.0,424.5" fill="#475569"/>
+<polyline points="620.0,580.0 1140.0,580.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1128.0,574.5 1140.0,580.0 1128.0,585.5" fill="#475569"/>
+<rect x="640" y="90" width="480" height="110" rx="8" fill="#E3EEFB" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="880.0" y="141.8" font-family="DejaVu Sans" font-size="16" font-weight="bold" fill="#1F2937" text-anchor="middle">Окно Den5_7.exe — вкладки дня 7</text>
+<text x="880.0" y="188.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">HTTP-клиент: запуск модулей, клиенты, новая заявка, тесты</text>
+<rect x="60" y="340" width="560" height="330" rx="8" fill="#FFFFFF" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="340.0" y="474.2" font-family="DejaVu Sans" font-size="14" font-weight="normal" fill="#1F2937" text-anchor="middle">GET  /api/health</text><text x="340.0" y="492.1" font-family="DejaVu Sans" font-size="14" font-weight="normal" fill="#1F2937" text-anchor="middle">GET  /api/clients</text><text x="340.0" y="510.0" font-family="DejaVu Sans" font-size="14" font-weight="normal" fill="#1F2937" text-anchor="middle">GET  /api/clients/{id}</text><text x="340.0" y="528.0" font-family="DejaVu Sans" font-size="14" font-weight="normal" fill="#1F2937" text-anchor="middle">GET  /api/clients/{id}/card</text><text x="340.0" y="545.9" font-family="DejaVu Sans" font-size="14" font-weight="normal" fill="#1F2937" text-anchor="middle">POST /api/clients</text>
+<rect x="1140" y="340" width="560" height="330" rx="8" fill="#FFFFFF" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="1420.0" y="483.2" font-family="DejaVu Sans" font-size="14" font-weight="normal" fill="#1F2937" text-anchor="middle">GET  /api/health</text><text x="1420.0" y="501.1" font-family="DejaVu Sans" font-size="14" font-weight="normal" fill="#1F2937" text-anchor="middle">GET  /api/requests[?clientId=]</text><text x="1420.0" y="519.0" font-family="DejaVu Sans" font-size="14" font-weight="normal" fill="#1F2937" text-anchor="middle">GET  /api/requests/{id}</text><text x="1420.0" y="536.9" font-family="DejaVu Sans" font-size="14" font-weight="normal" fill="#1F2937" text-anchor="middle">POST /api/requests</text>
+<rect x="60" y="300" width="560" height="46" rx="8" fill="#EFE9FB" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="340.0" y="328.4" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Модуль «Клиенты» — http://127.0.0.1:5101</text>
+<rect x="1140" y="300" width="560" height="46" rx="8" fill="#EFE9FB" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="1420.0" y="328.4" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Модуль «Заявки» — http://127.0.0.1:5102</text>
+<rect x="160" y="720" width="360" height="70" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.6"/>
+<text x="340.0" y="751.4" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle">Своё хранилище клиентов</text><text x="340.0" y="768.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle">(в памяти процесса)</text>
+<rect x="1240" y="720" width="360" height="70" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.6"/>
+<text x="1420.0" y="751.4" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle">Своё хранилище заявок</text><text x="1420.0" y="768.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle">(в памяти процесса)</text>
+<rect x="358.6" y="227.0" width="322.8" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="520.0" y="240.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">GET /api/clients, GET /api/clients/{id}/card</text>
+<rect x="1060.6" y="227.0" width="358.8" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1240.0" y="240.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">POST /api/requests {topic, description, clientId}</text>
+<rect x="682.6" y="395.0" width="394.8" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="880.0" y="408.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">1) перед созданием заявки: GET /api/clients/{clientId}</text>
+<text x="880.0" y="423.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">200 — клиент есть → 201; 404 → 422; нет ответа → 503</text>
+<rect x="689.8" y="545.0" width="380.4" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="880.0" y="558.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">2) карточка клиента: GET /api/requests?clientId={id}</text>
+<text x="880.0" y="573.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">нет ответа → 503 «Модуль «Заявки» недоступен»</text>
+<text x="60.0" y="844.3" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">Обмен — JSON в UTF-8; ошибки — {"error": текст, "status": код}. Каждый модуль — отдельный процесс на своём порту; при отказе одного другой продолжает работать.</text>
+</svg>

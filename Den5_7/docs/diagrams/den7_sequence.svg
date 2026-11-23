@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1060" viewBox="0 0 1700 1060">
+<rect width="1700" height="1060" fill="#FFFFFF"/>
+<text x="850.0" y="40.0" font-family="DejaVu Sans" font-size="22" font-weight="bold" fill="#1F2937" text-anchor="middle">Диаграмма последовательности: создание заявки (день 7)</text>
+<polyline points="150.0,144.0 150.0,1000.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="560.0,144.0 560.0,1000.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1000.0,144.0 1000.0,1000.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1450.0,144.0 1450.0,1000.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="150.0,200.0 560.0,200.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="548.0,194.5 560.0,200.0 548.0,205.5" fill="#475569"/>
+<polyline points="560.0,230.0 620.0,230.0 620.0,260.0 560.0,260.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="572.0,265.5 560.0,260.0 572.0,254.5" fill="#475569"/>
+<polyline points="560.0,320.0 1000.0,320.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="988.0,314.5 1000.0,320.0 988.0,325.5" fill="#475569"/>
+<polyline points="1000.0,350.0 1060.0,350.0 1060.0,380.0 1000.0,380.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1012.0,385.5 1000.0,380.0 1012.0,374.5" fill="#475569"/>
+<polyline points="1000.0,440.0 1450.0,440.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1438.0,434.5 1450.0,440.0 1438.0,445.5" fill="#475569"/>
+<polyline points="1450.0,540.0 1000.0,540.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1012.0,545.5 1000.0,540.0 1012.0,534.5" fill="#475569"/>
+<polyline points="1000.0,560.0 1060.0,560.0 1060.0,590.0 1000.0,590.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1012.0,595.5 1000.0,590.0 1012.0,584.5" fill="#475569"/>
+<polyline points="1000.0,640.0 560.0,640.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="572.0,645.5 560.0,640.0 572.0,634.5" fill="#475569"/>
+<polyline points="300.0,670.0 1640.0,670.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1450.0,730.0 1000.0,730.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1012.0,735.5 1000.0,730.0 1012.0,724.5" fill="#475569"/>
+<polyline points="1000.0,770.0 560.0,770.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="572.0,775.5 560.0,770.0 572.0,764.5" fill="#475569"/>
+<polyline points="300.0,800.0 1640.0,800.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polyline points="1000.0,880.0 560.0,880.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="572.0,885.5 560.0,880.0 572.0,874.5" fill="#475569"/>
+<polyline points="560.0,960.0 150.0,960.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="162.0,965.5 150.0,960.0 162.0,954.5" fill="#475569"/>
+<rect x="30" y="80" width="240" height="64" rx="8" fill="#E3EEFB" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="150.0" y="117.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">Пользователь</text>
+<rect x="440" y="80" width="240" height="64" rx="8" fill="#E3EEFB" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="560.0" y="108.1" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">Окно: вкладка</text><text x="560.0" y="126.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">«Новая заявка»</text>
+<rect x="880" y="80" width="240" height="64" rx="8" fill="#EFE9FB" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="1000.0" y="108.1" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">Модуль «Заявки»</text><text x="1000.0" y="126.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">:5102</text>
+<rect x="1330" y="80" width="240" height="64" rx="8" fill="#EFE9FB" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="1450.0" y="108.1" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">Модуль «Клиенты»</text><text x="1450.0" y="126.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">:5101</text>
+<rect x="300" y="480" width="1340" height="430" rx="0" fill="none" stroke="#94A3B8" stroke-width="1.6"/>
+<text x="970.0" y="699.7" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle"></text>
+<rect x="300" y="480" width="70" height="26" rx="0" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.6"/>
+<text x="335.0" y="497.3" font-family="DejaVu Sans" font-size="12" font-weight="bold" fill="#1F2937" text-anchor="middle">alt</text>
+<rect x="143.2" y="177.0" width="423.6" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="355.0" y="190.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">выбирает клиента, вводит тему и описание, «Создать заявку»</text>
+<rect x="627.0" y="237.0" width="178.8" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="630.0" y="250.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">проверка: тема не пустая</text>
+<rect x="600.6" y="297.0" width="358.8" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="780.0" y="310.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">POST /api/requests {topic, description, clientId}</text>
+<rect x="1067.0" y="357.0" width="222.0" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1070.0" y="370.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">JSON и поля верны? иначе → 400</text>
+<rect x="1124.8" y="417.0" width="200.4" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1225.0" y="430.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">GET /api/clients/{clientId}</text>
+<rect x="1106.8" y="517.0" width="236.4" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1225.0" y="530.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">200 {id, fullName, phone, email}</text>
+<rect x="1067.0" y="567.0" width="243.6" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1070.0" y="580.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">сохранить заявку с именем клиента</text>
+<rect x="604.2" y="617.0" width="351.6" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="780.0" y="630.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">201 {id, topic, clientId, clientName, createdAt}</text>
+<rect x="1182.4" y="707.0" width="85.2" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1225.0" y="720.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">404 {error}</text>
+<rect x="597.0" y="747.0" width="366.0" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="780.0" y="760.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">422 «Клиент с id = … не найден: заявка не создана»</text>
+<rect x="589.8" y="857.0" width="380.4" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="780.0" y="870.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">503 «Модуль «Клиенты» недоступен: заявка не создана»</text>
+<rect x="161.2" y="937.0" width="387.6" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="355.0" y="950.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">сообщение с результатом; при 201 — номер новой заявки</text>
+<text x="575.0" y="498.3" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">[клиент найден]</text>
+<text x="575.0" y="694.3" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">[клиента нет (404)]</text>
+<text x="575.0" y="824.3" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">[модуль «Клиенты» не ответил за 3 с]</text>
+</svg>

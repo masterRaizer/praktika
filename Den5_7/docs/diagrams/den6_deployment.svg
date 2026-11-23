@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="860" viewBox="0 0 1700 860">
+<rect width="1700" height="860" fill="#FFFFFF"/>
+<text x="850.0" y="40.0" font-family="DejaVu Sans" font-size="22" font-weight="bold" fill="#1F2937" text-anchor="middle">Схема развёртывания приложения «Киноточка» (день 6)</text>
+<polyline points="240.0,270.0 240.0,340.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="245.5,328.0 240.0,340.0 234.5,328.0" fill="#475569"/>
+<polyline points="90.0,250.0 65.0,250.0 65.0,690.0 90.0,690.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="78.0,684.5 90.0,690.0 78.0,695.5" fill="#475569"/>
+<polyline points="420.0,160.0 420.0,135.0 1100.0,135.0 1100.0,210.0 1180.0,210.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1168.0,204.5 1180.0,210.0 1168.0,215.5" fill="#475569"/>
+<polyline points="470.0,215.0 660.0,215.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="648.0,209.5 660.0,215.0 648.0,220.5" fill="#475569"/>
+<polyline points="470.0,250.0 600.0,250.0 600.0,615.0 660.0,615.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="648.0,609.5 660.0,615.0 648.0,620.5" fill="#475569"/>
+<polyline points="720.0,270.0 720.0,560.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="725.5,548.0 720.0,560.0 714.5,548.0" fill="#475569"/>
+<polyline points="980.0,560.0 980.0,270.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="974.5,282.0 980.0,270.0 985.5,282.0" fill="#475569"/>
+<polyline points="1395.0,370.0 1395.0,290.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1389.5,302.0 1395.0,290.0 1400.5,302.0" fill="#475569"/>
+<polyline points="1395.0,600.0 1395.0,520.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1389.5,532.0 1395.0,520.0 1400.5,532.0" fill="#475569"/>
+<rect x="40" y="80" width="1040" height="740" rx="12" fill="none" stroke="#94A3B8" stroke-width="1.6"/>
+<text x="560.0" y="454.7" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle"></text>
+<rect x="1130" y="80" width="530" height="740" rx="12" fill="none" stroke="#94A3B8" stroke-width="1.6"/>
+<text x="1395.0" y="454.7" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle"></text>
+<rect x="90" y="160" width="380" height="110" rx="8" fill="#E3EEFB" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="280.0" y="211.8" font-family="DejaVu Sans" font-size="16" font-weight="bold" fill="#1F2937" text-anchor="middle">Den5_7.exe</text>
+<text x="280.0" y="258.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">окно: дни 5, 6, 7 (WinForms)</text>
+<rect x="90" y="340" width="300" height="90" rx="8" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="240.0" y="381.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">Den5_7.exe.config</text>
+<text x="240.0" y="418.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">подключение «Киноточка», порты</text>
+<rect x="90" y="500" width="300" height="80" rx="8" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.6"/>
+<text x="240.0" y="536.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">Fonts\, Resources\</text>
+<text x="240.0" y="568.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">рядом с exe: шрифты, логотип</text>
+<rect x="90" y="650" width="300" height="80" rx="8" fill="#FFFFFF" stroke="#B4234A" stroke-width="1.6"/>
+<text x="240.0" y="686.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">Файлы *.csv</text>
+<text x="240.0" y="718.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">экспорт (UTF-8, «;»)</text>
+<rect x="660" y="160" width="380" height="110" rx="8" fill="#EFE9FB" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="850.0" y="211.4" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Модуль «Клиенты»</text>
+<text x="850.0" y="258.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">Den5_7.exe --module=clients, порт 5101</text>
+<rect x="660" y="560" width="380" height="110" rx="8" fill="#EFE9FB" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="850.0" y="611.4" font-family="DejaVu Sans" font-size="15" font-weight="bold" fill="#1F2937" text-anchor="middle">Модуль «Заявки»</text>
+<text x="850.0" y="658.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">Den5_7.exe --module=requests, порт 5102</text>
+<rect x="1180" y="160" width="430" height="130" rx="8" fill="#E6F4EA" stroke="#2F7A47" stroke-width="1.6"/>
+<text x="1395.0" y="221.8" font-family="DejaVu Sans" font-size="16" font-weight="bold" fill="#1F2937" text-anchor="middle">БД «Киноточка»</text>
+<text x="1395.0" y="278.0" font-family="DejaVu Sans" font-size="11" font-weight="normal" fill="#64748B" text-anchor="middle" font-style="italic">16 таблиц, 3 представления</text>
+<rect x="1180" y="370" width="430" height="150" rx="8" fill="#FFFFFF" stroke="#2F7A47" stroke-width="1.6"/>
+<text x="1395.0" y="433.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle">Скрипты создания (по порядку):</text><text x="1395.0" y="449.7" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle">01_create.sql, 02_data.sql (день 4)</text><text x="1395.0" y="466.3" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle">04_den5.sql, 05_queries.sql (день 5)</text>
+<rect x="1180" y="600" width="430" height="120" rx="8" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.6"/>
+<text x="1395.0" y="656.4" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle">sqlcmd -S "(localdb)\MSSQLLocalDB" -E</text><text x="1395.0" y="673.0" font-family="DejaVu Sans" font-size="13" font-weight="normal" fill="#1F2937" text-anchor="middle">-b -f 65001 -i &lt;файл&gt;</text>
+<rect x="247.0" y="297.0" width="135.6" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="250.0" y="310.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">читает при запуске</text>
+<rect x="70.0" y="607.0" width="70.8" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="73.0" y="620.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">сохраняет</text>
+<rect x="605.8" y="114.0" width="308.4" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="760.0" y="127.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">ADO.NET (SqlClient): запросы с параметрами</text>
+<rect x="526.0" y="192.0" width="78.0" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="565.0" y="205.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">HTTP, JSON</text>
+<rect x="387.4" y="447.0" width="207.6" height="49.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="592.0" y="460.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="end">запуск процессов (--parent):</text>
+<text x="592.0" y="475.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="end">модули закрываются</text>
+<text x="592.0" y="491.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="end">вместе с окном</text>
+<rect x="725.0" y="367.0" width="193.2" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="728.0" y="380.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">GET /api/requests?clientId</text>
+<rect x="817.8" y="427.0" width="157.2" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="972.0" y="440.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="end">GET /api/clients/{id}</text>
+<rect x="1400.0" y="322.0" width="56.4" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1403.0" y="335.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">создают</text>
+<rect x="1400.0" y="552.0" width="70.8" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1403.0" y="565.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">выполняет</text>
+<text x="60.0" y="109.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="start">Компьютер пользователя: Windows 10/11, .NET Framework 4.7.2</text>
+<text x="1150.0" y="109.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="start">SQL Server (LocalDB, Express или полный)</text>
+<text x="60.0" y="794.3" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">Модули — тот же Den5_7.exe без окна; права администратора Windows не нужны (адрес 127.0.0.1).</text>
+</svg>

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1080" viewBox="0 0 1900 1080">
+<rect width="1900" height="1080" fill="#FFFFFF"/>
+<text x="950.0" y="40.0" font-family="DejaVu Sans" font-size="22" font-weight="bold" fill="#1F2937" text-anchor="middle">IDEF0, A0: функции приложения «Киноточка» (день 5)</text>
+<polyline points="40.0,225.0 320.0,225.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="308.0,219.5 320.0,225.0 308.0,230.5" fill="#475569"/>
+<polyline points="40.0,395.0 590.0,395.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="578.0,389.5 590.0,395.0 578.0,400.5" fill="#475569"/>
+<polyline points="40.0,565.0 860.0,565.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="848.0,559.5 860.0,565.0 848.0,570.5" fill="#475569"/>
+<polyline points="40.0,759.2 1130.0,759.2" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1118.0,753.7 1130.0,759.2 1118.0,764.7" fill="#475569"/>
+<polyline points="440.0,90.0 440.0,170.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="445.5,158.0 440.0,170.0 434.5,158.0" fill="#475569"/>
+<polyline points="780.0,90.0 780.0,340.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="785.5,328.0 780.0,340.0 774.5,328.0" fill="#475569"/>
+<polyline points="1050.0,90.0 1050.0,510.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1055.5,498.0 1050.0,510.0 1044.5,498.0" fill="#475569"/>
+<polyline points="1600.0,90.0 1600.0,850.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1605.5,838.0 1600.0,850.0 1594.5,838.0" fill="#475569"/>
+<polyline points="560.0,225.0 650.0,225.0 650.0,340.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="655.5,328.0 650.0,340.0 644.5,328.0" fill="#475569"/>
+<polyline points="560.0,225.0 1190.0,225.0 1190.0,680.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1195.5,668.0 1190.0,680.0 1184.5,668.0" fill="#475569"/>
+<polyline points="830.0,395.0 920.0,395.0 920.0,510.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="925.5,498.0 920.0,510.0 914.5,498.0" fill="#475569"/>
+<polyline points="1100.0,565.0 1122.0,565.0 1122.0,713.0 1130.0,713.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1118.0,707.5 1130.0,713.0 1118.0,718.5" fill="#475569"/>
+<polyline points="1370.0,762.5 1392.0,762.5 1392.0,883.0 1400.0,883.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1388.0,877.5 1400.0,883.0 1388.0,888.5" fill="#475569"/>
+<polyline points="1100.0,537.5 1860.0,537.5" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1848.0,532.0 1860.0,537.5 1848.0,543.0" fill="#475569"/>
+<polyline points="1370.0,713.0 1860.0,713.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1848.0,707.5 1860.0,713.0 1848.0,718.5" fill="#475569"/>
+<polyline points="1640.0,905.0 1860.0,905.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1848.0,899.5 1860.0,905.0 1848.0,910.5" fill="#475569"/>
+<polyline points="440.0,330.0 440.0,280.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="434.5,292.0 440.0,280.0 445.5,292.0" fill="#475569"/>
+<polyline points="710.0,500.0 710.0,450.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="704.5,462.0 710.0,450.0 715.5,462.0" fill="#475569"/>
+<polyline points="980.0,670.0 980.0,620.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="974.5,632.0 980.0,620.0 985.5,632.0" fill="#475569"/>
+<polyline points="1250.0,840.0 1250.0,790.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1244.5,802.0 1250.0,790.0 1255.5,802.0" fill="#475569"/>
+<polyline points="1520.0,1010.0 1520.0,960.0" fill="none" stroke="#475569" stroke-width="1.6"/>
+<polygon points="1514.5,972.0 1520.0,960.0 1525.5,972.0" fill="#475569"/>
+<rect x="320" y="170" width="240" height="110" rx="0" fill="#E3EEFB" stroke="#2B4C7E" stroke-width="1.6"/>
+<text x="440.0" y="221.1" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">Войти в систему</text><text x="440.0" y="239.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">и определить роль</text>
+<text x="552.0" y="272.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#2B4C7E" text-anchor="end">A1</text>
+<rect x="590" y="340" width="240" height="110" rx="0" fill="#E6F4EA" stroke="#2F7A47" stroke-width="1.6"/>
+<text x="710.0" y="391.1" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">Вести справочник</text><text x="710.0" y="409.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">фильмов</text>
+<text x="822.0" y="442.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#2F7A47" text-anchor="end">A2</text>
+<rect x="860" y="510" width="240" height="110" rx="0" fill="#FFF4E0" stroke="#B45309" stroke-width="1.6"/>
+<text x="980.0" y="561.1" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">Искать, фильтровать</text><text x="980.0" y="579.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">и сортировать</text>
+<text x="1092.0" y="612.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#B45309" text-anchor="end">A3</text>
+<rect x="1130" y="680" width="240" height="110" rx="0" fill="#FDE8EC" stroke="#B4234A" stroke-width="1.6"/>
+<text x="1250.0" y="731.1" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">Формировать отчёты</text><text x="1250.0" y="749.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">и экспорт в CSV</text>
+<text x="1362.0" y="782.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#B4234A" text-anchor="end">A4</text>
+<rect x="1400" y="850" width="240" height="110" rx="0" fill="#EFE9FB" stroke="#5B3FA8" stroke-width="1.6"/>
+<text x="1520.0" y="901.1" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">Вести журнал</text><text x="1520.0" y="919.0" font-family="DejaVu Sans" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">действий</text>
+<text x="1632.0" y="952.0" font-family="DejaVu Sans" font-size="13" font-weight="bold" fill="#5B3FA8" text-anchor="end">A5</text>
+<rect x="47.0" y="205.0" width="114.0" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="50.0" y="218.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">e-mail и пароль</text>
+<rect x="47.0" y="360.0" width="99.6" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="50.0" y="373.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">данные фильма</text>
+<text x="50.0" y="388.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">из карточки</text>
+<rect x="47.0" y="530.0" width="150.0" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="50.0" y="543.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">строка поиска, жанр,</text>
+<text x="50.0" y="558.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">порядок сортировки</text>
+<rect x="47.0" y="724.2" width="178.8" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="50.0" y="737.2" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">заказы, билеты, платежи;</text>
+<text x="50.0" y="752.7" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">перечень для экспорта</text>
+<rect x="445.0" y="91.0" width="229.2" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="448.0" y="104.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">ролевая модель; пароли хранятся</text>
+<text x="448.0" y="119.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">только в виде хеша PBKDF2</text>
+<rect x="785.0" y="91.0" width="200.4" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="788.0" y="104.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">ограничения базы:</text>
+<text x="788.0" y="119.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">NOT NULL, UNIQUE, CHECK, FK</text>
+<rect x="1055.0" y="91.0" width="178.8" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1058.0" y="104.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">ввод передаётся</text>
+<text x="1058.0" y="119.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">параметрами SqlParameter</text>
+<rect x="1605.0" y="91.0" width="150.0" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1608.0" y="104.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">просмотр журнала —</text>
+<text x="1608.0" y="119.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">только администратор</text>
+<rect x="569.0" y="204.0" width="150.0" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="572.0" y="217.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">роль и права доступа</text>
+<rect x="839.0" y="360.0" width="114.0" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="842.0" y="373.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">каталог фильмов</text>
+<text x="842.0" y="388.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">и жанров</text>
+<rect x="1041.0" y="622.0" width="78.0" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1116.0" y="635.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="end">отобранный</text>
+<text x="1116.0" y="650.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="end">список</text>
+<rect x="1397.0" y="783.5" width="193.2" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1400.0" y="796.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">сведения о действиях</text>
+<text x="1400.0" y="812.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">(вход, изменения, экспорт)</text>
+<rect x="1627.0" y="517.5" width="157.2" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1630.0" y="530.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">список фильмов, афиша</text>
+<rect x="1627.0" y="678.0" width="178.8" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1630.0" y="691.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">отчёты о выручке и</text>
+<text x="1630.0" y="706.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">заполняемости, файлы CSV</text>
+<rect x="1677.0" y="885.0" width="114.0" height="18.5" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1680.0" y="898.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="start">журнал действий</text>
+<rect x="372.2" y="333.0" width="135.6" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="440.0" y="346.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">окно входа,</text>
+<text x="440.0" y="361.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">Пользователи, Роли</text>
+<rect x="656.6" y="503.0" width="106.8" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="710.0" y="516.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">администратор,</text>
+<text x="710.0" y="531.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">таблица Фильмы</text>
+<rect x="908.6" y="673.0" width="142.8" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="980.0" y="686.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">приложение,</text>
+<text x="980.0" y="701.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">представление Афиша</text>
+<rect x="1167.8" y="843.0" width="164.4" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1250.0" y="856.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">кассир, администратор,</text>
+<text x="1250.0" y="871.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">ВыручкаПоФильмам</text>
+<rect x="1466.6" y="1013.0" width="106.8" height="34.0" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="1520.0" y="1026.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">таблица</text>
+<text x="1520.0" y="1041.5" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">ЖурналДействий</text>
+<text x="40.0" y="1054.3" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">Стрелки: слева — входы (I), сверху — управление (C), справа — выходы (O), снизу — механизмы (M). Права из A1 управляют A2 и A4.</text>
+</svg>
