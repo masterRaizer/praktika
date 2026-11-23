@@ -43,7 +43,7 @@
 <mxCell id="e17l0" value="сообщение с результатом; при 201 — номер новой заявки" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#1F2937;labelBackgroundColor=#FFFFFF;fontFamily=DejaVu Sans;" vertex="1" connectable="0" parent="e17"><mxGeometry x="-1" relative="1" as="geometry"><mxPoint x="-205.0" y="-14.0" as="offset"/></mxGeometry></mxCell>
 <mxCell id="t0" value="[клиент найден]" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#64748B;fontFamily=DejaVu Sans;" vertex="1" parent="1"><mxGeometry x="575.0" y="483.2" width="118.0" height="21.6" as="geometry"/></mxCell>
 <mxCell id="t1" value="[клиента нет (404)]" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#64748B;fontFamily=DejaVu Sans;" vertex="1" parent="1"><mxGeometry x="575.0" y="679.2" width="146.8" height="21.6" as="geometry"/></mxCell>
-<mxCell id="t2" value="[модуль «Клиенты» не ответил за 3 с]" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#64748B;fontFamily=DejaVu Sans;" vertex="1" parent="1"><mxGeometry x="575.0" y="809.2" width="269.2" height="21.6" as="geometry"/></mxCell>
+<mxCell id="t2" value="[модуль «Клиенты» не ответил за 2 с]" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#64748B;fontFamily=DejaVu Sans;" vertex="1" parent="1"><mxGeometry x="575.0" y="809.2" width="269.2" height="21.6" as="geometry"/></mxCell>
 </root>
 </mxGraphModel>
 </diagram>

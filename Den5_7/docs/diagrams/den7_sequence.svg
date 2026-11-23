@@ -69,5 +69,5 @@
 <text x="355.0" y="950.0" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#1F2937" text-anchor="middle">сообщение с результатом; при 201 — номер новой заявки</text>
 <text x="575.0" y="498.3" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">[клиент найден]</text>
 <text x="575.0" y="694.3" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">[клиента нет (404)]</text>
-<text x="575.0" y="824.3" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">[модуль «Клиенты» не ответил за 3 с]</text>
+<text x="575.0" y="824.3" font-family="DejaVu Sans" font-size="12" font-weight="normal" fill="#64748B" text-anchor="start">[модуль «Клиенты» не ответил за 2 с]</text>
 </svg>

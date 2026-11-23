@@ -220,7 +220,7 @@ components:
           schema: { $ref: '#/components/schemas/Error' }
           example: { error: 'Клиент с id = 777 не найден.', status: 404 }
     PeerUnavailable:
-      description: второй модуль не ответил за 3 секунды — операция не выполнена, этот модуль продолжает работать
+      description: второй модуль не ответил за 2 секунды — операция не выполнена, этот модуль продолжает работать
       content:
         application/json:
           schema: { $ref: '#/components/schemas/Error' }

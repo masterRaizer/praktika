@@ -63,7 +63,7 @@ namespace Den5_7.Integration
             if (!m.Groups[2].Success) return HttpResponseData.Of(200, client);
 
             // карточка: данные клиента + заявки из модуля «Заявки»
-            ApiResult requests = ApiClient.Send("GET", requestsUrl + "/api/requests?clientId=" + id);
+            ApiResult requests = ApiClient.Send("GET", requestsUrl + "/api/requests?clientId=" + id, null, ApiClient.PeerTimeoutMs);
             if (requests.Status == 0)
             {
                 return HttpResponseData.Error(503, "Модуль «Заявки» недоступен: карточку клиента собрать нельзя. Повторите позже.");
@@ -178,7 +178,7 @@ namespace Den5_7.Integration
             if (!clientId.HasValue || clientId.Value <= 0) return HttpResponseData.Error(400, "Поле clientId должно быть положительным целым числом.");
 
             // проверка существования клиента в модуле «Клиенты»
-            ApiResult client = ApiClient.Send("GET", clientsUrl + "/api/clients/" + clientId.Value);
+            ApiResult client = ApiClient.Send("GET", clientsUrl + "/api/clients/" + clientId.Value, null, ApiClient.PeerTimeoutMs);
             if (client.Status == 0)
             {
                 return HttpResponseData.Error(503, "Модуль «Клиенты» недоступен: заявка не создана. Повторите позже.");

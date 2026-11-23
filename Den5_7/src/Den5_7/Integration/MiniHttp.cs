@@ -286,7 +286,13 @@ namespace Den5_7.Integration
     /// <summary>Клиент REST API с таймаутом: ошибки сети не выбрасываются, а возвращаются в ApiResult.</summary>
     public static class ApiClient
     {
-        public static ApiResult Send(string method, string url, string jsonBody = null, int timeoutMs = 3000)
+        /// <summary>
+        /// Таймаут вызова между модулями. Он меньше таймаута по умолчанию, чтобы модуль успел ответить 503
+        /// раньше, чем его клиент перестанет ждать (в Windows подключение к закрытому порту длится около 2 с).
+        /// </summary>
+        public const int PeerTimeoutMs = 2000;
+
+        public static ApiResult Send(string method, string url, string jsonBody = null, int timeoutMs = 5000)
         {
             var result = new ApiResult();
             try
@@ -296,6 +302,7 @@ namespace Den5_7.Integration
                 request.Timeout = timeoutMs;
                 request.ReadWriteTimeout = timeoutMs;
                 request.Proxy = null;
+                request.KeepAlive = false;   // модули закрывают соединение после ответа
                 request.Accept = "application/json";
                 if (jsonBody != null)
                 {
